@@ -149,16 +149,22 @@ namespace TwittPeek
         public IEnumerable<ITweet> mSearchTweets()
         {
 
-            var searchParameter = new SearchTweetsParameters("tweetinvi")
+            var searchParameter = new SearchTweetsParameters("dilma")
             {
-                GeoCode = new GeoCode(-122.398720, 37.781157, 1, DistanceMeasure.Miles),
-                Lang = Language.English,
+
+
+                //Decimal Values porto alegre
+                //Latitude =  -30.031055
+                //Longitude = -51.196289
+
+                GeoCode = new GeoCode(-30.031055, -51.196289, 109, DistanceMeasure.Kilometers),
+                Lang = Language.Portuguese,
                 SearchType = SearchResultType.Popular,
-                MaximumNumberOfResults = 100,
-                Until = new DateTime(2015, 06, 02),
+                MaximumNumberOfResults = 500,
+                Until = new DateTime(2016, 08, 29),
                 SinceId = 399616835892781056,
                 MaxId = 405001488843284480,
-                Filters = TweetSearchFilters.Images
+                Filters = TweetSearchFilters.None
             };
 
             var tweets = Search.SearchTweets(searchParameter);
@@ -171,11 +177,17 @@ namespace TwittPeek
         public void mFilteredStream(string sWord)
         {
             var stream = Stream.CreateFilteredStream();
-            stream.AddTrack(sWord);
+            //stream.AddTrack(sWord);
             stream.MatchingTweetReceived += (sender, args) =>
             {
                 Console.WriteLine("A tweet containing '" + sWord +"' has been found; the tweet is '" + args.Tweet + "'");
             };
+
+
+            //location DF
+            var centerOfNewYork = new Location(new Coordinates(-15.517205, -48.218994), new Coordinates(-16.003576, -47.362061));
+            stream.AddLocation(centerOfNewYork);    
+
             stream.StartStreamMatchingAllConditions();
         }
 
@@ -189,12 +201,16 @@ namespace TwittPeek
                 // Do what you want with the Tweet.
                 Console.WriteLine(args.Tweet);
             };
+
+
             stream.StartStream();
         }
 
         public void mTweetinvi_testes()
         {
-
+            //mFilteredStream("golpe");
+            //mSearchTweets();
+            mFilteredStream("fatima");
         }
 
 
