@@ -29,153 +29,147 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTweetPeek));
-            this.btnTweetPost = new System.Windows.Forms.Button();
-            this.txtTweetBox = new System.Windows.Forms.TextBox();
-            this.lblTweetCounter = new System.Windows.Forms.Label();
-            this.lblStatus = new System.Windows.Forms.Label();
-            this.btnGetData = new System.Windows.Forms.Button();
-            this.dataGridViewTimeLine = new System.Windows.Forms.DataGridView();
-            this.txtNumTwittsToGet = new System.Windows.Forms.TextBox();
-            this.lblNumTwittsToGet = new System.Windows.Forms.Label();
-            this.dataGridViewFollowing = new System.Windows.Forms.DataGridView();
-            this.btnTrigger = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTimeLine)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFollowing)).BeginInit();
+            this.pnlMain = new System.Windows.Forms.Panel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.testeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.teste11ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.directToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.teste2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.teste21ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.userToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.triggerDeTestesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.followingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.twittsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnTweetPost
+            // pnlMain
             // 
-            this.btnTweetPost.Location = new System.Drawing.Point(168, 106);
-            this.btnTweetPost.Name = "btnTweetPost";
-            this.btnTweetPost.Size = new System.Drawing.Size(75, 23);
-            this.btnTweetPost.TabIndex = 0;
-            this.btnTweetPost.Text = "Tweetar";
-            this.btnTweetPost.UseVisualStyleBackColor = true;
-            this.btnTweetPost.Click += new System.EventHandler(this.btnTweetPost_Click);
+            this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlMain.Location = new System.Drawing.Point(0, 24);
+            this.pnlMain.Name = "pnlMain";
+            this.pnlMain.Size = new System.Drawing.Size(501, 473);
+            this.pnlMain.TabIndex = 10;
             // 
-            // txtTweetBox
+            // menuStrip1
             // 
-            this.txtTweetBox.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.txtTweetBox.Location = new System.Drawing.Point(12, 12);
-            this.txtTweetBox.Multiline = true;
-            this.txtTweetBox.Name = "txtTweetBox";
-            this.txtTweetBox.Size = new System.Drawing.Size(231, 88);
-            this.txtTweetBox.TabIndex = 1;
-            this.txtTweetBox.TextChanged += new System.EventHandler(this.txtTweetBox_TextChanged);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.testeToolStripMenuItem,
+            this.teste2ToolStripMenuItem,
+            this.searchToolStripMenuItem,
+            this.triggerDeTestesToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(501, 24);
+            this.menuStrip1.TabIndex = 11;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // lblTweetCounter
+            // testeToolStripMenuItem
             // 
-            this.lblTweetCounter.AutoSize = true;
-            this.lblTweetCounter.Location = new System.Drawing.Point(137, 116);
-            this.lblTweetCounter.Name = "lblTweetCounter";
-            this.lblTweetCounter.Size = new System.Drawing.Size(25, 13);
-            this.lblTweetCounter.TabIndex = 2;
-            this.lblTweetCounter.Text = "140";
+            this.testeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.teste11ToolStripMenuItem,
+            this.directToolStripMenuItem});
+            this.testeToolStripMenuItem.Name = "testeToolStripMenuItem";
+            this.testeToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
+            this.testeToolStripMenuItem.Text = "Send";
             // 
-            // lblStatus
+            // teste11ToolStripMenuItem
             // 
-            this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(12, 103);
-            this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(60, 13);
-            this.lblStatus.TabIndex = 3;
-            this.lblStatus.Text = "Status info:";
+            this.teste11ToolStripMenuItem.Name = "teste11ToolStripMenuItem";
+            this.teste11ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.teste11ToolStripMenuItem.Text = "Twett";
+            this.teste11ToolStripMenuItem.Click += new System.EventHandler(this.teste11ToolStripMenuItem_Click);
             // 
-            // btnGetData
+            // directToolStripMenuItem
             // 
-            this.btnGetData.Location = new System.Drawing.Point(544, 101);
-            this.btnGetData.Name = "btnGetData";
-            this.btnGetData.Size = new System.Drawing.Size(152, 32);
-            this.btnGetData.TabIndex = 4;
-            this.btnGetData.Text = "GetData - TimeLine";
-            this.btnGetData.UseVisualStyleBackColor = true;
-            this.btnGetData.Click += new System.EventHandler(this.btnGetData_Click);
+            this.directToolStripMenuItem.Name = "directToolStripMenuItem";
+            this.directToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.directToolStripMenuItem.Text = "Direct";
             // 
-            // dataGridViewTimeLine
+            // teste2ToolStripMenuItem
             // 
-            this.dataGridViewTimeLine.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewTimeLine.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewTimeLine.Location = new System.Drawing.Point(325, 139);
-            this.dataGridViewTimeLine.Name = "dataGridViewTimeLine";
-            this.dataGridViewTimeLine.Size = new System.Drawing.Size(386, 346);
-            this.dataGridViewTimeLine.TabIndex = 5;
+            this.teste2ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.teste21ToolStripMenuItem,
+            this.followingToolStripMenuItem});
+            this.teste2ToolStripMenuItem.Name = "teste2ToolStripMenuItem";
+            this.teste2ToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.teste2ToolStripMenuItem.Text = "Get";
             // 
-            // txtNumTwittsToGet
+            // teste21ToolStripMenuItem
             // 
-            this.txtNumTwittsToGet.Location = new System.Drawing.Point(544, 80);
-            this.txtNumTwittsToGet.Name = "txtNumTwittsToGet";
-            this.txtNumTwittsToGet.Size = new System.Drawing.Size(54, 20);
-            this.txtNumTwittsToGet.TabIndex = 6;
+            this.teste21ToolStripMenuItem.Name = "teste21ToolStripMenuItem";
+            this.teste21ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.teste21ToolStripMenuItem.Text = "TimeLine";
+            this.teste21ToolStripMenuItem.Click += new System.EventHandler(this.teste21ToolStripMenuItem_Click);
             // 
-            // lblNumTwittsToGet
+            // searchToolStripMenuItem
             // 
-            this.lblNumTwittsToGet.AutoSize = true;
-            this.lblNumTwittsToGet.Location = new System.Drawing.Point(604, 83);
-            this.lblNumTwittsToGet.Name = "lblNumTwittsToGet";
-            this.lblNumTwittsToGet.Size = new System.Drawing.Size(92, 13);
-            this.lblNumTwittsToGet.TabIndex = 7;
-            this.lblNumTwittsToGet.Text = "Nº of Twitts to get";
+            this.searchToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.userToolStripMenuItem,
+            this.twittsToolStripMenuItem});
+            this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
+            this.searchToolStripMenuItem.Text = "Search";
             // 
-            // dataGridViewFollowing
+            // userToolStripMenuItem
             // 
-            this.dataGridViewFollowing.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewFollowing.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewFollowing.Location = new System.Drawing.Point(12, 201);
-            this.dataGridViewFollowing.Name = "dataGridViewFollowing";
-            this.dataGridViewFollowing.Size = new System.Drawing.Size(247, 284);
-            this.dataGridViewFollowing.TabIndex = 8;
+            this.userToolStripMenuItem.Name = "userToolStripMenuItem";
+            this.userToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.userToolStripMenuItem.Text = "User";
             // 
-            // btnTrigger
+            // triggerDeTestesToolStripMenuItem
             // 
-            this.btnTrigger.Location = new System.Drawing.Point(395, 12);
-            this.btnTrigger.Name = "btnTrigger";
-            this.btnTrigger.Size = new System.Drawing.Size(152, 32);
-            this.btnTrigger.TabIndex = 9;
-            this.btnTrigger.Text = "trigger de testes";
-            this.btnTrigger.UseVisualStyleBackColor = true;
-            this.btnTrigger.Click += new System.EventHandler(this.btnTrigger_Click);
+            this.triggerDeTestesToolStripMenuItem.Name = "triggerDeTestesToolStripMenuItem";
+            this.triggerDeTestesToolStripMenuItem.Size = new System.Drawing.Size(107, 20);
+            this.triggerDeTestesToolStripMenuItem.Text = "Trigger de Testes";
+            this.triggerDeTestesToolStripMenuItem.Click += new System.EventHandler(this.triggerDeTestesToolStripMenuItem_Click);
+            // 
+            // followingToolStripMenuItem
+            // 
+            this.followingToolStripMenuItem.Name = "followingToolStripMenuItem";
+            this.followingToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.followingToolStripMenuItem.Text = "Following";
+            this.followingToolStripMenuItem.Click += new System.EventHandler(this.followingToolStripMenuItem_Click);
+            // 
+            // twittsToolStripMenuItem
+            // 
+            this.twittsToolStripMenuItem.Name = "twittsToolStripMenuItem";
+            this.twittsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.twittsToolStripMenuItem.Text = "Twitts";
+            this.twittsToolStripMenuItem.Click += new System.EventHandler(this.twittsToolStripMenuItem_Click);
             // 
             // frmTweetPeek
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(719, 497);
-            this.Controls.Add(this.btnTrigger);
-            this.Controls.Add(this.dataGridViewFollowing);
-            this.Controls.Add(this.lblNumTwittsToGet);
-            this.Controls.Add(this.txtNumTwittsToGet);
-            this.Controls.Add(this.btnGetData);
-            this.Controls.Add(this.lblStatus);
-            this.Controls.Add(this.lblTweetCounter);
-            this.Controls.Add(this.txtTweetBox);
-            this.Controls.Add(this.btnTweetPost);
-            this.Controls.Add(this.dataGridViewTimeLine);
+            this.ClientSize = new System.Drawing.Size(501, 497);
+            this.Controls.Add(this.pnlMain);
+            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmTweetPeek";
             this.Text = "TweetPeek";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTimeLine)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFollowing)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnTweetPost;
-        private System.Windows.Forms.TextBox txtTweetBox;
-        private System.Windows.Forms.Label lblTweetCounter;
-        private System.Windows.Forms.Label lblStatus;
-        private System.Windows.Forms.Button btnGetData;
-        private System.Windows.Forms.DataGridView dataGridViewTimeLine;
-        private System.Windows.Forms.TextBox txtNumTwittsToGet;
-        private System.Windows.Forms.Label lblNumTwittsToGet;
-        private System.Windows.Forms.DataGridView dataGridViewFollowing;
-        private System.Windows.Forms.Button btnTrigger;
+        private System.Windows.Forms.Panel pnlMain;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem testeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem teste11ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem teste2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem teste21ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem directToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem userToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem triggerDeTestesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem followingToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem twittsToolStripMenuItem;
     }
 }
 

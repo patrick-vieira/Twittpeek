@@ -137,7 +137,7 @@ namespace TwittPeek
         /// <returns>Array com 100 os ultimos twetts contendo a palavra</returns>
         public IEnumerable<ITweet> mSearchTweets(string sSearch)
         {
-            var matchingTweets = Search.SearchTweets("dilma");
+            var matchingTweets = Search.SearchTweets(sSearch);
 
             return matchingTweets;
         }
@@ -177,7 +177,7 @@ namespace TwittPeek
         public void mFilteredStream(string sWord)
         {
             var stream = Stream.CreateFilteredStream();
-            //stream.AddTrack(sWord);
+            stream.AddTrack(sWord);
             stream.MatchingTweetReceived += (sender, args) =>
             {
                 Console.WriteLine("A tweet containing '" + sWord +"' has been found; the tweet is '" + args.Tweet + "'");
@@ -185,8 +185,8 @@ namespace TwittPeek
 
 
             //location DF
-            var centerOfNewYork = new Location(new Coordinates(-15.517205, -48.218994), new Coordinates(-16.003576, -47.362061));
-            stream.AddLocation(centerOfNewYork);    
+            //var centerOfNewYork = new Location(new Coordinates(-15.517205, -48.218994), new Coordinates(-16.003576, -47.362061));
+            //stream.AddLocation(centerOfNewYork);    
 
             stream.StartStreamMatchingAllConditions();
         }
@@ -208,9 +208,8 @@ namespace TwittPeek
 
         public void mTweetinvi_testes()
         {
-            //mFilteredStream("golpe");
-            //mSearchTweets();
-            mFilteredStream("fatima");
+            // Simple Search
+            var matchingTweets = Search.SearchTweets("fatima");
         }
 
 

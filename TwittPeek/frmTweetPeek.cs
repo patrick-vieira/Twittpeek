@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TwittPeek.userControls;
 
 
 namespace TwittPeek
@@ -17,67 +18,86 @@ namespace TwittPeek
     {
 
         csMainTweetinvi oClassMainTweetinvi;
-        int nCountChar = 140;
-        
+
+        private static userControl_SendTwitt oUserControl_SendTwitt;
+        private static userControl_TimeLine oUserControl_TimeLine;
+        private static userControl_GetFollowing oUserControl_GetFollowing;
+        private static userControl_SearchTweet oUserControl_SearchTweet;
+
+        private void inicializaUserControls()
+        {
+            oUserControl_SendTwitt = new userControl_SendTwitt(oClassMainTweetinvi);
+            pnlMain.Controls.Add(oUserControl_SendTwitt);
+            oUserControl_SendTwitt.Dock = DockStyle.Fill;
+            oUserControl_SendTwitt.Show();
+
+            oUserControl_TimeLine = new userControl_TimeLine(oClassMainTweetinvi);
+            pnlMain.Controls.Add(oUserControl_TimeLine);
+            oUserControl_TimeLine.Dock = DockStyle.Fill;
+            oUserControl_TimeLine.Hide();
+
+            oUserControl_GetFollowing = new userControl_GetFollowing(oClassMainTweetinvi);
+            pnlMain.Controls.Add(oUserControl_GetFollowing);
+            oUserControl_GetFollowing.Dock = DockStyle.Fill;
+            oUserControl_GetFollowing.Hide();
+
+            oUserControl_SearchTweet = new userControl_SearchTweet(oClassMainTweetinvi);
+            pnlMain.Controls.Add(oUserControl_SearchTweet);
+            oUserControl_SearchTweet.Dock = DockStyle.Fill;
+            oUserControl_SearchTweet.Hide();
+            
+
+        }
+
+        private void showUserControl(object oShowControl)
+        {
+            foreach (Control oControl in pnlMain.Controls)
+            {
+
+                if (oControl == oShowControl)
+                    oControl.Show();
+                else
+                    oControl.Hide();
+
+            }
+        }
+
         public frmTweetPeek()
         {
             InitializeComponent();
-
+            
             oClassMainTweetinvi = new csMainTweetinvi();
 
             oClassMainTweetinvi.startApplication();
 
-            dataGridViewFollowing.DataSource = oClassMainTweetinvi.mGetFollowing();
+            inicializaUserControls();
+            
         }
 
-        private void btnTweetPost_Click(object sender, EventArgs e)
+        private void teste11ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            lblStatus.Text = "Status info:";
-
-            if (oClassMainTweetinvi.mPostTwitt(txtTweetBox.Text))
-            {
-                lblStatus.Text += " Texto publicado!";
-                lblStatus.ForeColor = Color.Green;
-            }
-            else
-            {
-                lblStatus.Text += " Falha ao publicar texto!";
-                lblStatus.ForeColor = Color.Red;
-            }
-
+            showUserControl(oUserControl_SendTwitt);
         }
 
-        private void txtTweetBox_TextChanged(object sender, EventArgs e)
+        private void teste21ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (txtTweetBox.TextLength >= nCountChar)
-            {
-                btnTweetPost.Enabled = false;
-
-                txtTweetBox.ForeColor = Color.Red;
-            }
-            else
-            {
-                txtTweetBox.ForeColor = Color.CornflowerBlue;
-
-                btnTweetPost.Enabled = true;
-            }
-
-            lblTweetCounter.Text = (nCountChar - txtTweetBox.TextLength).ToString();
+            showUserControl(oUserControl_TimeLine);
         }
 
-        private void btnGetData_Click(object sender, EventArgs e)
-        {
-
-            int numTwittsToGet = 10;
-
-            int.TryParse(txtNumTwittsToGet.Text, out numTwittsToGet);
-
-            dataGridViewTimeLine.DataSource = oClassMainTweetinvi.mGetHomeTimeline(numTwittsToGet);
-        }
-
-        private void btnTrigger_Click(object sender, EventArgs e)
+        private void triggerDeTestesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             oClassMainTweetinvi.mTweetinvi_testes();
+        }
+
+        private void followingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            showUserControl(oUserControl_GetFollowing);
+        }
+
+        private void twittsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            showUserControl(oUserControl_SearchTweet);
         }
     }
 }
