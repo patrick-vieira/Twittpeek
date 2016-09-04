@@ -49,16 +49,18 @@ namespace TwittPeek
 
         }
 
+        /// <summary>
+        /// Função para mostrar no formulario principal o userControl passado pelo parametro
+        /// </summary>
+        /// <param name="oShowControl">userControl que vai ser mostrado</param>
         private void showUserControl(object oShowControl)
         {
             foreach (Control oControl in pnlMain.Controls)
             {
-
                 if (oControl == oShowControl)
                     oControl.Show();
                 else
                     oControl.Hide();
-
             }
         }
 
@@ -70,8 +72,7 @@ namespace TwittPeek
 
             oClassMainTweetinvi.startApplication();
 
-            inicializaUserControls();
-            
+            inicializaUserControls();            
         }
 
         private void teste11ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -96,7 +97,6 @@ namespace TwittPeek
 
         private void twittsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
             showUserControl(oUserControl_SearchTweet);
         }
     }

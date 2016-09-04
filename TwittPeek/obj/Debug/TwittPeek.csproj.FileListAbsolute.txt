@@ -50,3 +50,4 @@ C:\Users\vieir\OneDrive\UFRGS\5ºsemestre\CPD\Twittpeek\TwittPeek\obj\Debug\Twit
 C:\Users\vieir\OneDrive\UFRGS\5ºsemestre\CPD\Twittpeek\TwittPeek\obj\Debug\TwittPeek.userControls.userControl_TimeLine.resources
 C:\Users\vieir\OneDrive\UFRGS\5ºsemestre\CPD\Twittpeek\TwittPeek\obj\Debug\TwittPeek.userControls.userControl_GetFollowing.resources
 C:\Users\vieir\OneDrive\UFRGS\5ºsemestre\CPD\Twittpeek\TwittPeek\obj\Debug\TwittPeek.userControls.userControl_SearchTweet.resources
+C:\Users\vieir\OneDrive\UFRGS\5ºsemestre\CPD\Twittpeek\TwittPeek\obj\Debug\TwittPeek.userControls.userControl_SearchParameterized.resources

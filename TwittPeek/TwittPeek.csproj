@@ -97,6 +97,12 @@
     <Compile Include="userControls\userControl_GetFollowing.Designer.cs">
       <DependentUpon>userControl_GetFollowing.cs</DependentUpon>
     </Compile>
+    <Compile Include="userControls\userControl_SearchParameterized.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControls\userControl_SearchParameterized.Designer.cs">
+      <DependentUpon>userControl_SearchParameterized.cs</DependentUpon>
+    </Compile>
     <Compile Include="userControls\userControl_SearchTweet.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -129,6 +135,9 @@
     </Compile>
     <EmbeddedResource Include="userControls\userControl_GetFollowing.resx">
       <DependentUpon>userControl_GetFollowing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControls\userControl_SearchParameterized.resx">
+      <DependentUpon>userControl_SearchParameterized.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userControls\userControl_SearchTweet.resx">
       <DependentUpon>userControl_SearchTweet.cs</DependentUpon>

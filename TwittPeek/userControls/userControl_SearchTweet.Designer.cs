@@ -77,6 +77,7 @@
             this.txtKeyWord.Name = "txtKeyWord";
             this.txtKeyWord.Size = new System.Drawing.Size(268, 64);
             this.txtKeyWord.TabIndex = 0;
+            this.txtKeyWord.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnSearch
             // 
