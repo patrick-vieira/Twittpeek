@@ -58,14 +58,12 @@
             // 
             this.txtTweetBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTweetBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTweetBox.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.txtTweetBox.Location = new System.Drawing.Point(21, 21);
             this.txtTweetBox.Multiline = true;
             this.txtTweetBox.Name = "txtTweetBox";
             this.txtTweetBox.Size = new System.Drawing.Size(241, 134);
             this.txtTweetBox.TabIndex = 5;
-            this.txtTweetBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtTweetBox.TextChanged += new System.EventHandler(this.txtTweetBox_TextChanged);
             // 
             // btnTweetPost
