@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Tweetinvi;
 using Tweetinvi.Models;
@@ -200,6 +201,7 @@ namespace TwittPeek
             {
                 // Do what you want with the Tweet.
                 Console.WriteLine(args.Tweet);
+
             };
 
 
@@ -210,8 +212,33 @@ namespace TwittPeek
         {
             // Simple Search
             var matchingTweets = Search.SearchTweets("fatima");
+            //mStream("dilma");
+            
+            Thread workerThread = new Thread(DoWork);
+
+            workerThread.Start();
+
+            _shouldStop = !_shouldStop;
+
+
+        }
+        
+
+        private volatile bool _shouldStop = true;
+
+        public void DoWork()
+        {
+            while (!_shouldStop)
+            {
+                Console.WriteLine("worker thread: working...");
+            }
+            Console.WriteLine("worker thread: terminating gracefully.");
         }
 
+        public void RequestStop()
+        {
+            _shouldStop = true;
+        }
 
     }
 }

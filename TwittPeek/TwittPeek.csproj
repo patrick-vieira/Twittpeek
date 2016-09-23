@@ -82,6 +82,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmDados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDados.Designer.cs">
+      <DependentUpon>frmDados.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTweetPeek.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,11 +97,65 @@
     <Compile Include="mainTweetinvi.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="userControls\algoritmos\userControl_Alg_BBST.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControls\algoritmos\userControl_Alg_BBST.Designer.cs">
+      <DependentUpon>userControl_Alg_BBST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControls\algoritmos\userControl_Alg_HPST.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControls\algoritmos\userControl_Alg_HPST.Designer.cs">
+      <DependentUpon>userControl_Alg_HPST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControls\algoritmos\userControl_Alg_ISBB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControls\algoritmos\userControl_Alg_ISBB.Designer.cs">
+      <DependentUpon>userControl_Alg_ISBB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControls\algoritmos\userControl_Alg_ISBL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControls\algoritmos\userControl_Alg_ISBL.Designer.cs">
+      <DependentUpon>userControl_Alg_ISBL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControls\algoritmos\userControl_Alg_MGST.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControls\algoritmos\userControl_Alg_MGST.Designer.cs">
+      <DependentUpon>userControl_Alg_MGST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControls\algoritmos\userControl_Alg_QSRM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControls\algoritmos\userControl_Alg_QSRM.Designer.cs">
+      <DependentUpon>userControl_Alg_QSRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControls\algoritmos\userControl_Alg_RMSD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControls\algoritmos\userControl_Alg_RMSD.Designer.cs">
+      <DependentUpon>userControl_Alg_RMSD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControls\algoritmos\userControl_Alg_SHST.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControls\algoritmos\userControl_Alg_SHST.Designer.cs">
+      <DependentUpon>userControl_Alg_SHST.cs</DependentUpon>
+    </Compile>
     <Compile Include="userControls\userControl_GetFollowing.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="userControls\userControl_GetFollowing.Designer.cs">
       <DependentUpon>userControl_GetFollowing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControls\userControl_SearchParameterized.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControls\userControl_SearchParameterized.Designer.cs">
+      <DependentUpon>userControl_SearchParameterized.cs</DependentUpon>
     </Compile>
     <Compile Include="userControls\userControl_SearchTweet.cs">
       <SubType>UserControl</SubType>
@@ -115,6 +175,9 @@
     <Compile Include="userControls\userControl_TimeLine.Designer.cs">
       <DependentUpon>userControl_TimeLine.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmDados.resx">
+      <DependentUpon>frmDados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmTweetPeek.resx">
       <DependentUpon>frmTweetPeek.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,8 +190,35 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="userControls\algoritmos\userControl_Alg_BBST.resx">
+      <DependentUpon>userControl_Alg_BBST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControls\algoritmos\userControl_Alg_HPST.resx">
+      <DependentUpon>userControl_Alg_HPST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControls\algoritmos\userControl_Alg_ISBB.resx">
+      <DependentUpon>userControl_Alg_ISBB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControls\algoritmos\userControl_Alg_ISBL.resx">
+      <DependentUpon>userControl_Alg_ISBL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControls\algoritmos\userControl_Alg_MGST.resx">
+      <DependentUpon>userControl_Alg_MGST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControls\algoritmos\userControl_Alg_QSRM.resx">
+      <DependentUpon>userControl_Alg_QSRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControls\algoritmos\userControl_Alg_RMSD.resx">
+      <DependentUpon>userControl_Alg_RMSD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControls\algoritmos\userControl_Alg_SHST.resx">
+      <DependentUpon>userControl_Alg_SHST.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="userControls\userControl_GetFollowing.resx">
       <DependentUpon>userControl_GetFollowing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControls\userControl_SearchParameterized.resx">
+      <DependentUpon>userControl_SearchParameterized.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userControls\userControl_SearchTweet.resx">
       <DependentUpon>userControl_SearchTweet.cs</DependentUpon>
