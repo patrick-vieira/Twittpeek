@@ -58,33 +58,43 @@ namespace TwittPeek.userControls
 
         void salvarDataSet()
         {
-            string fileXML = "c:\\UFRGS\\Search100Resultados.xml";
-
-            DataTable oDataTable = new DataTable();
-            DataSet oDataSet = new DataSet();
-
-            oDataTable.TableName = "Search100Resultados";
-
-            foreach (DataGridViewColumn col in dataGridViewSearchTwieet.Columns)
+            FolderBrowserDialog oDialog = new FolderBrowserDialog();
+            oDialog.RootFolder = Environment.SpecialFolder.MyComputer;// = Directory.GetCurrentDirectory();
+            oDialog.SelectedPath = Directory.GetCurrentDirectory();
+            if (oDialog.ShowDialog() == DialogResult.OK)
             {
-                oDataTable.Columns.Add(col.HeaderText);
-            }
 
-            foreach (DataGridViewRow row in dataGridViewSearchTwieet.Rows)
-            {
-                DataRow dRow = oDataTable.NewRow();
+                //string fileXML = "c:\\UFRGS\\Search100Resultados.xml";
+                string fileXML = oDialog.SelectedPath;
 
-                foreach (DataGridViewCell cell in row.Cells)
+                DataTable oDataTable = new DataTable();
+                DataSet oDataSet = new DataSet();
+
+                oDataTable.TableName = "Search100Resultados";
+
+                foreach (DataGridViewColumn col in dataGridViewSearchTwieet.Columns)
                 {
-                    dRow[cell.ColumnIndex] = cell.Value;
+                    oDataTable.Columns.Add(col.HeaderText);
                 }
 
-                oDataTable.Rows.Add(dRow);
+                foreach (DataGridViewRow row in dataGridViewSearchTwieet.Rows)
+                {
+                    DataRow dRow = oDataTable.NewRow();
+
+                    foreach (DataGridViewCell cell in row.Cells)
+                    {
+                        dRow[cell.ColumnIndex] = cell.Value;
+                    }
+
+                    oDataTable.Rows.Add(dRow);
+                }
+
+                oDataSet.Tables.Add(oDataTable);
+
+                oDataSet.WriteXml(fileXML + "\\" + oDataTable.TableName + ".xml");
             }
 
-            oDataSet.Tables.Add(oDataTable);
 
-            oDataSet.WriteXml(fileXML);
             ///
         }
 
