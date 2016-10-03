@@ -53,6 +53,10 @@
             this.btnCarrega100 = new System.Windows.Forms.Button();
             this.btnCarrega1000 = new System.Windows.Forms.Button();
             this.btnCarrega10000 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblResultTime_Index = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.btnExecutar_Index = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDados)).BeginInit();
             this.SuspendLayout();
             // 
@@ -104,7 +108,7 @@
             // 
             // btnExecutar
             // 
-            this.btnExecutar.Location = new System.Drawing.Point(21, 124);
+            this.btnExecutar.Location = new System.Drawing.Point(26, 139);
             this.btnExecutar.Name = "btnExecutar";
             this.btnExecutar.Size = new System.Drawing.Size(73, 26);
             this.btnExecutar.TabIndex = 5;
@@ -126,7 +130,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 165);
+            this.label4.Location = new System.Drawing.Point(23, 168);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 13);
             this.label4.TabIndex = 11;
@@ -135,7 +139,7 @@
             // lblResultTime
             // 
             this.lblResultTime.AutoSize = true;
-            this.lblResultTime.Location = new System.Drawing.Point(67, 165);
+            this.lblResultTime.Location = new System.Drawing.Point(61, 168);
             this.lblResultTime.Name = "lblResultTime";
             this.lblResultTime.Size = new System.Drawing.Size(38, 13);
             this.lblResultTime.TabIndex = 12;
@@ -144,7 +148,7 @@
             // lblResultTime_ID
             // 
             this.lblResultTime_ID.AutoSize = true;
-            this.lblResultTime_ID.Location = new System.Drawing.Point(210, 165);
+            this.lblResultTime_ID.Location = new System.Drawing.Point(219, 168);
             this.lblResultTime_ID.Name = "lblResultTime_ID";
             this.lblResultTime_ID.Size = new System.Drawing.Size(38, 13);
             this.lblResultTime_ID.TabIndex = 15;
@@ -153,7 +157,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(161, 165);
+            this.label5.Location = new System.Drawing.Point(181, 167);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(43, 13);
             this.label5.TabIndex = 14;
@@ -161,7 +165,7 @@
             // 
             // btnExecutar_ID
             // 
-            this.btnExecutar_ID.Location = new System.Drawing.Point(164, 124);
+            this.btnExecutar_ID.Location = new System.Drawing.Point(184, 139);
             this.btnExecutar_ID.Name = "btnExecutar_ID";
             this.btnExecutar_ID.Size = new System.Drawing.Size(73, 26);
             this.btnExecutar_ID.TabIndex = 13;
@@ -172,7 +176,7 @@
             // lblResultTime_RetweetCount
             // 
             this.lblResultTime_RetweetCount.AutoSize = true;
-            this.lblResultTime_RetweetCount.Location = new System.Drawing.Point(350, 165);
+            this.lblResultTime_RetweetCount.Location = new System.Drawing.Point(297, 168);
             this.lblResultTime_RetweetCount.Name = "lblResultTime_RetweetCount";
             this.lblResultTime_RetweetCount.Size = new System.Drawing.Size(38, 13);
             this.lblResultTime_RetweetCount.TabIndex = 18;
@@ -181,7 +185,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(301, 165);
+            this.label7.Location = new System.Drawing.Point(260, 168);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(43, 13);
             this.label7.TabIndex = 17;
@@ -189,7 +193,7 @@
             // 
             // btnExecutar_RetweetCount
             // 
-            this.btnExecutar_RetweetCount.Location = new System.Drawing.Point(304, 124);
+            this.btnExecutar_RetweetCount.Location = new System.Drawing.Point(263, 139);
             this.btnExecutar_RetweetCount.Name = "btnExecutar_RetweetCount";
             this.btnExecutar_RetweetCount.Size = new System.Drawing.Size(73, 26);
             this.btnExecutar_RetweetCount.TabIndex = 16;
@@ -200,16 +204,16 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(12, 99);
+            this.label8.Location = new System.Drawing.Point(23, 123);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(116, 13);
+            this.label8.Size = new System.Drawing.Size(70, 13);
             this.label8.TabIndex = 19;
-            this.label8.Text = "PublishedTweetLength";
+            this.label8.Text = "TweetLength";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(186, 99);
+            this.label9.Location = new System.Drawing.Point(184, 123);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(18, 13);
             this.label9.TabIndex = 20;
@@ -218,7 +222,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(301, 99);
+            this.label10.Location = new System.Drawing.Point(260, 123);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(75, 13);
             this.label10.TabIndex = 21;
@@ -227,7 +231,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(429, 99);
+            this.label11.Location = new System.Drawing.Point(342, 123);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(73, 13);
             this.label11.TabIndex = 25;
@@ -236,7 +240,7 @@
             // lblResultTime_FavoriteCount
             // 
             this.lblResultTime_FavoriteCount.AutoSize = true;
-            this.lblResultTime_FavoriteCount.Location = new System.Drawing.Point(478, 165);
+            this.lblResultTime_FavoriteCount.Location = new System.Drawing.Point(377, 168);
             this.lblResultTime_FavoriteCount.Name = "lblResultTime_FavoriteCount";
             this.lblResultTime_FavoriteCount.Size = new System.Drawing.Size(38, 13);
             this.lblResultTime_FavoriteCount.TabIndex = 24;
@@ -245,7 +249,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(429, 165);
+            this.label13.Location = new System.Drawing.Point(339, 168);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(43, 13);
             this.label13.TabIndex = 23;
@@ -253,7 +257,7 @@
             // 
             // btnExecutar_FavoriteCount
             // 
-            this.btnExecutar_FavoriteCount.Location = new System.Drawing.Point(432, 124);
+            this.btnExecutar_FavoriteCount.Location = new System.Drawing.Point(342, 139);
             this.btnExecutar_FavoriteCount.Name = "btnExecutar_FavoriteCount";
             this.btnExecutar_FavoriteCount.Size = new System.Drawing.Size(73, 26);
             this.btnExecutar_FavoriteCount.TabIndex = 22;
@@ -291,10 +295,51 @@
             this.btnCarrega10000.UseVisualStyleBackColor = true;
             this.btnCarrega10000.Click += new System.EventHandler(this.btnCarrega10000_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(102, 123);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(33, 13);
+            this.label2.TabIndex = 32;
+            this.label2.Text = "Index";
+            // 
+            // lblResultTime_Index
+            // 
+            this.lblResultTime_Index.AutoSize = true;
+            this.lblResultTime_Index.Location = new System.Drawing.Point(140, 168);
+            this.lblResultTime_Index.Name = "lblResultTime_Index";
+            this.lblResultTime_Index.Size = new System.Drawing.Size(38, 13);
+            this.lblResultTime_Index.TabIndex = 31;
+            this.lblResultTime_Index.Text = "999ms";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(102, 168);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(43, 13);
+            this.label12.TabIndex = 30;
+            this.label12.Text = "Tempo:";
+            // 
+            // btnExecutar_Index
+            // 
+            this.btnExecutar_Index.Location = new System.Drawing.Point(105, 139);
+            this.btnExecutar_Index.Name = "btnExecutar_Index";
+            this.btnExecutar_Index.Size = new System.Drawing.Size(73, 26);
+            this.btnExecutar_Index.TabIndex = 29;
+            this.btnExecutar_Index.Text = "EXECUTAR";
+            this.btnExecutar_Index.UseVisualStyleBackColor = true;
+            this.btnExecutar_Index.Click += new System.EventHandler(this.btnExecutar_Index_Click);
+            // 
             // userControl_Alg_ISBL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblResultTime_Index);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.btnExecutar_Index);
             this.Controls.Add(this.btnCarrega10000);
             this.Controls.Add(this.btnCarrega1000);
             this.Controls.Add(this.btnCarrega100);
@@ -355,5 +400,9 @@
         private System.Windows.Forms.Button btnCarrega100;
         private System.Windows.Forms.Button btnCarrega1000;
         private System.Windows.Forms.Button btnCarrega10000;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblResultTime_Index;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button btnExecutar_Index;
     }
 }

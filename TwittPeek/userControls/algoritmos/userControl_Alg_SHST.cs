@@ -280,6 +280,39 @@ namespace TwittPeek.userControls.algoritmos
             mMostraDados();
         }
 
+        private void btnExecutar_Index_Click(object sender, EventArgs e)
+        {
+            long oStart = DateTime.Now.Ticks;
+
+            int i, j;
+            mainTwittPeek.Tweets value;
+
+            int gap = 1;
+            while (gap < oTweets.Length)
+            {
+                gap = 3 * gap + 1;
+            }
+            while (gap > 1)
+            {
+                gap /= 3;
+                for (i = gap; i < oTweets.Length; i++)
+                {
+                    value = oTweets[i];
+                    j = i - gap;
+                    while (j >= 0 && value.index < oTweets[j].index)
+                    {
+                        oTweets[j + gap] = oTweets[j];
+                        j -= gap;
+                    }
+                    oTweets[j + gap] = value;
+                }
+            }
+
+            lblResultTime_Index.Text = (DateTime.Now.Ticks - oStart).ToString();
+
+            mMostraDados();
+        }
+
         private void btnCarrega100_Click(object sender, EventArgs e)
         {
             oTweets = (mainTwittPeek.Tweets[])frmTweetPeek.frmDados.mGetDados(100);
@@ -297,5 +330,7 @@ namespace TwittPeek.userControls.algoritmos
             oTweets = (mainTwittPeek.Tweets[])frmTweetPeek.frmDados.mGetDados(10000);
             mMostraDados();
         }
+
+        
     }
 }

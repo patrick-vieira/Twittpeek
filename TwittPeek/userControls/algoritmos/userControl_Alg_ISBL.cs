@@ -266,5 +266,31 @@ namespace TwittPeek.userControls.algoritmos
             oTweets = (mainTwittPeek.Tweets[])frmTweetPeek.frmDados.mGetDados(10000);
             mMostraDados();
         }
+
+        private void btnExecutar_Index_Click(object sender, EventArgs e)
+        {
+            int i, j;
+            mainTwittPeek.Tweets chave;
+
+            long oStart = DateTime.Now.Ticks;
+
+            for (j = 1; j < oTweets.Length; j++)
+            {
+                chave = oTweets[j];
+
+                i = j - 1;
+
+                while ((i >= 0) && (oTweets[i].index) > chave.index)
+                {
+                    oTweets[i + 1] = oTweets[i];
+                    i--;
+                }
+                oTweets[i + 1] = chave;
+            }
+
+            lblResultTime_Index.Text = (DateTime.Now.Ticks - oStart).ToString();
+
+            mMostraDados();
+        }
     }
 }
