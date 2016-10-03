@@ -80,7 +80,6 @@ C:\Users\vieir\Documents\GitHub\Twittpeek\TwittPeek\bin\Debug\Microsoft.Threadin
 C:\Users\vieir\Documents\GitHub\Twittpeek\TwittPeek\bin\Debug\Newtonsoft.Json.xml
 C:\Users\vieir\Documents\GitHub\Twittpeek\TwittPeek\bin\Debug\System.Net.Http.Extensions.xml
 C:\Users\vieir\Documents\GitHub\Twittpeek\TwittPeek\bin\Debug\System.Net.Http.Primitives.xml
-C:\Users\vieir\Documents\GitHub\Twittpeek\TwittPeek\obj\Debug\TwittPeek.csprojResolveAssemblyReference.cache
 C:\Users\vieir\Documents\GitHub\Twittpeek\TwittPeek\obj\Debug\TwittPeek.frmDados.resources
 C:\Users\vieir\Documents\GitHub\Twittpeek\TwittPeek\obj\Debug\TwittPeek.frmTweetPeek.resources
 C:\Users\vieir\Documents\GitHub\Twittpeek\TwittPeek\obj\Debug\TwittPeek.Properties.Resources.resources
@@ -98,3 +97,4 @@ C:\Users\vieir\Documents\GitHub\Twittpeek\TwittPeek\obj\Debug\TwittPeek.userCont
 C:\Users\vieir\Documents\GitHub\Twittpeek\TwittPeek\obj\Debug\TwittPeek.userControls.userControl_SendTwitt.resources
 C:\Users\vieir\Documents\GitHub\Twittpeek\TwittPeek\obj\Debug\TwittPeek.userControls.userControl_TimeLine.resources
 C:\Users\vieir\Documents\GitHub\Twittpeek\TwittPeek\obj\Debug\TwittPeek.csproj.GenerateResource.Cache
+C:\Users\vieir\Documents\GitHub\Twittpeek\TwittPeek\obj\Debug\TwittPeek.csprojResolveAssemblyReference.cache

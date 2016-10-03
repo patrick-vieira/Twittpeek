@@ -13,10 +13,15 @@ namespace TwittPeek
 {
     public partial class frmDados : Form
     {
+
+        private DataSet oDataSetDados;
+        private mainTwittPeek oMainTwittPeek;
+
         public frmDados()
         {
             InitializeComponent();
-            //mPreencheColunas();
+            oMainTwittPeek = new mainTwittPeek();
+            carregarToolStripMenuItem_Click(null, null);
         }
 
         void mPreencheColunas()
@@ -74,13 +79,87 @@ namespace TwittPeek
 
         private void carregarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string fileXML = "c:\\UFRGS\\Search100Resultados.xml";
+            string fileXML = Directory.GetParent(Directory.GetCurrentDirectory()) + "\\Dados\\Search100Resultados.xml";
+        
+            oDataSetDados = new DataSet();
 
-            DataSet oDataSet = new DataSet();
-            
-            oDataSet.ReadXml(fileXML);
+            oDataSetDados.ReadXml(fileXML);
 
-            dataGridViewDados.DataSource = oDataSet.Tables["Search100Resultados"];
+            dataGridViewDados.DataSource = oDataSetDados.Tables["Search100Resultados"];
         }
+
+        public object mGetDados(int nSizeData)
+        {
+            mainTwittPeek.Tweets[] oTweets;
+
+            oTweets = mConverteParaArray(nSizeData);
+
+            return oTweets; 
+        }
+
+        private mainTwittPeek.Tweets[] mConverteParaArray(int nArraySize)
+        {
+            mainTwittPeek.Tweets[] oTweets = new mainTwittPeek.Tweets[nArraySize];
+
+            DataTable oTable = oDataSetDados.Tables["Search100Resultados"];
+
+            int index = 0;
+
+            int iTemp;
+            bool bTemp;
+            long lTemp;
+
+            foreach (DataRow oRow in oTable.Rows)
+            {
+                //o id vai ser o que vem depois da ultima barra da URL
+                Int64.TryParse(oRow["Url"].ToString().Split('/').Last(), out lTemp);
+                oTweets[index].ID = lTemp;
+
+                oTweets[index].CreatedAt = oRow["CreatedAt"].ToString();
+
+                oTweets[index].Text = oRow["Text"].ToString();
+
+                oTweets[index].FullText = oRow["FullText"].ToString();
+
+                oTweets[index].Source = oRow["Source"].ToString();
+
+                oTweets[index].CreatedBy = oRow["CreatedBy"].ToString();
+
+                Int32.TryParse(oRow["RetweetCount"].ToString(), out iTemp);
+                oTweets[index].RetweetCount = iTemp;
+
+                Boolean.TryParse(oRow["Favorited"].ToString(), out bTemp);
+                oTweets[index].Favorited = bTemp;
+
+                Int32.TryParse(oRow["FavoriteCount"].ToString(), out iTemp);
+                oTweets[index].FavoriteCount = iTemp;
+
+                Boolean.TryParse(oRow["Retweeted"].ToString(), out bTemp);
+                oTweets[index].Retweeted = bTemp;
+
+                oTweets[index].Language = oRow["Language"].ToString();
+
+                Int32.TryParse(oRow["PublishedTweetLength"].ToString(), out iTemp);
+                oTweets[index].PublishedTweetLength = iTemp;
+
+                oTweets[index].TweetLocalCreationDate = oRow["TweetLocalCreationDate"].ToString();
+
+                Boolean.TryParse(oRow["IsRetweet"].ToString(), out bTemp);
+                oTweets[index].IsRetweet = bTemp;
+
+                Boolean.TryParse(oRow["IsTweetPublished"].ToString(), out bTemp);
+                oTweets[index].IsTweetPublished = bTemp;
+
+                Boolean.TryParse(oRow["IsTweetDestroyed"].ToString(), out bTemp);
+                oTweets[index].IsTweetDestroyed = bTemp;
+
+                oTweets[index].Url = oRow["Url"].ToString();
+
+                index++;
+            }
+
+            return oTweets;
+        }
+
     }
 }
