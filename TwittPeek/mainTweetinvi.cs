@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Tweetinvi;
+using Tweetinvi.Streams;
+using Tweetinvi.Streaming;
 using Tweetinvi.Models;
 using Tweetinvi.Models.DTO;
 using Tweetinvi.Parameters;
@@ -144,6 +147,42 @@ namespace TwittPeek
         }
 
         /// <summary>
+        /// Faz uma com tamanho de entradas apartir de uma palavra
+        /// </summary>
+        /// <param name="sSearch"></param>
+        /// <returns>Array com 100 os ultimos twetts contendo a palavra</returns>
+        public List<ITweet> mSearchTweets(string sSearch, int size)
+        {
+            List<ITweet> matchingTweets = new List<ITweet>();
+
+            var stream = Tweetinvi.Stream.CreateFilteredStream();
+
+            // Filter by keywords and type of tweets using the AddTrack method
+            //Filter by location using the AddLocation method
+            //Filter by user using the AddFollow method
+
+            stream.AddTrack(sSearch);
+            //stream.AddTweetLanguageFilter(Language.Portuguese);
+            
+            //stream.AddLocation();
+
+
+            stream.MatchingTweetReceived += (sender, args) =>
+            {
+                // Do what you want with the Tweet.
+                //Console.WriteLine(args.Tweet);
+                matchingTweets.Add(args.Tweet);
+                if (matchingTweets.Count >= size)
+                    stream.StopStream();
+            };
+            stream.StartStreamMatchingAllConditions();
+            //stream.StartStreamMatchingAllConditionsAsync();
+            stream.ResumeStream();
+
+            return matchingTweets;
+        }
+
+        /// <summary>
         /// Pesquisa mais detalhada baseada em parametros
         /// </summary>
         /// <returns>array de tweets</returns>
@@ -177,7 +216,7 @@ namespace TwittPeek
 
         public void mFilteredStream(string sWord)
         {
-            var stream = Stream.CreateFilteredStream();
+            var stream = Tweetinvi.Stream.CreateFilteredStream();
             stream.AddTrack(sWord);
             stream.MatchingTweetReceived += (sender, args) =>
             {
@@ -196,7 +235,7 @@ namespace TwittPeek
         public void mStream(string sWord)
         {
 
-            var stream = Stream.CreateSampleStream();
+            var stream = Tweetinvi.Stream.CreateSampleStream();
             stream.TweetReceived += (sender, args) =>
             {
                 // Do what you want with the Tweet.
@@ -208,18 +247,65 @@ namespace TwittPeek
             stream.StartStream();
         }
 
+        void mTesteParametro(string sWord)
+        {
+            var fs = Tweetinvi.Stream.CreateFilteredStream();
+            fs.AddTrack("@userScreenName");
+
+
+            string b = fs.StreamState.ToString();
+            //fs.StartStreamMatchingAllConditions();
+
+            var stream = Tweetinvi.Stream.CreateSampleStream();
+            stream.TweetReceived += (sender, args) =>
+            {
+                // Do what you want with the Tweet.
+                Console.WriteLine(args.Tweet);
+
+                if(args.Tweet.PublishedTweetLength < 13)
+                    stream.StopStream();
+            };
+            stream.StartStream();
+
+        }
+
+        public void mReply()
+        {
+            var firstTweet = Tweet.PublishTweet("I love Tweetinvi!");
+
+            var reply = Tweet.PublishTweet("Tweetinvi loves you back", new PublishTweetOptionalParameters
+            {
+                InReplyToTweet = firstTweet
+            });
+
+        }
+
+        public void mPostImagem(string sPath)
+        {
+            
+
+            byte[] file1 = File.ReadAllBytes(sPath);
+            var media = Upload.UploadImage(file1);
+
+            var tweet = Tweet.PublishTweet("This is my awesome photo!", new PublishTweetOptionalParameters
+            {
+                Medias = new List<IMedia> { media }
+            });
+        }
+
         public void mTweetinvi_testes()
         {
             // Simple Search
-            var matchingTweets = Search.SearchTweets("fatima");
+            //var matchingTweets = Search.SearchTweets("fatima");
             //mStream("dilma");
-            
-            Thread workerThread = new Thread(DoWork);
 
-            workerThread.Start();
+            //Thread workerThread = new Thread(DoWork);
 
-            _shouldStop = !_shouldStop;
+            //workerThread.Start();
 
+            //shouldStop = !_shouldStop;
+
+            mTesteParametro("PSOL");
 
         }
         

@@ -22,7 +22,7 @@ namespace TwittPeek.userControls.algoritmos
             oClassMainTweetinvi = Tweetinvi;
 
             oTweets = (mainTwittPeek.Tweets[])frmTweetPeek.frmDados.mGetDados(100);
-
+            
             mMostraDados();
         }
         
@@ -72,15 +72,19 @@ namespace TwittPeek.userControls.algoritmos
                 }
                 oTweets[i + 1] = chave;
             }
-        }        
+        }
 
 
-        void mMostraDados()
+        bool mMostraDados()
         {
+
+            if (oTweets == null)
+                return false;
             DataTable oTable = new DataTable("ISBL100");
 
             //melhorar isso aqui tbm, da pra fazer em poucas linhas, assim ta muito feio
-                        
+
+            oTable.Columns.Add("index", typeof(int));
             oTable.Columns.Add("ID", typeof(long));
 
             oTable.Columns.Add("CreatedAt", typeof(string));
@@ -109,8 +113,9 @@ namespace TwittPeek.userControls.algoritmos
                 oTable.Rows.Add(oTweet.all);
             }
 
-            dataGridView1.DataSource = oTable;
+            dataGridViewDados.DataSource = oTable;
 
+            return true;
         }
 
 
@@ -122,6 +127,9 @@ namespace TwittPeek.userControls.algoritmos
 
         private void btnExecutar_ID_Click(object sender, EventArgs e)
         {
+            if (oTweets == null)
+                return;
+
             int i, j;
             mainTwittPeek.Tweets chave;
 
@@ -241,5 +249,22 @@ namespace TwittPeek.userControls.algoritmos
             }
         }
 
+        private void btnCarrega100_Click(object sender, EventArgs e)
+        {
+            oTweets = (mainTwittPeek.Tweets[])frmTweetPeek.frmDados.mGetDados(100);
+            mMostraDados();
+        }
+
+        private void btnCarrega1000_Click(object sender, EventArgs e)
+        {
+            oTweets = (mainTwittPeek.Tweets[])frmTweetPeek.frmDados.mGetDados(1000);
+            mMostraDados();
+        }
+
+        private void btnCarrega10000_Click(object sender, EventArgs e)
+        {
+            oTweets = (mainTwittPeek.Tweets[])frmTweetPeek.frmDados.mGetDados(10000);
+            mMostraDados();
+        }
     }
 }

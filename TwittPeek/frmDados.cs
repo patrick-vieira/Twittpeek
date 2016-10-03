@@ -77,22 +77,52 @@ namespace TwittPeek
             }
         }
 
+        bool mCarregaDados(string file)
+        {
+
+            string fileXML = Directory.GetParent(Directory.GetCurrentDirectory()) + "\\Dados\\" + file + ".xml";
+
+            if (File.Exists(fileXML))
+            {
+                oDataSetDados = new DataSet();
+
+                oDataSetDados.ReadXml(fileXML);
+
+                dataGridViewDados.DataSource = oDataSetDados.Tables[file];
+
+                return true;
+            }
+            else
+                return false;
+        }
+
         private void carregarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string fileXML = Directory.GetParent(Directory.GetCurrentDirectory()) + "\\Dados\\Search100Resultados.xml";
-        
-            oDataSetDados = new DataSet();
-
-            oDataSetDados.ReadXml(fileXML);
-
-            dataGridViewDados.DataSource = oDataSetDados.Tables["Search100Resultados"];
+            mCarregaDados("Search100Resultados");
         }
 
         public object mGetDados(int nSizeData)
         {
-            mainTwittPeek.Tweets[] oTweets;
+            mainTwittPeek.Tweets[] oTweets = null;
+            bool bDadosCarregados = false;
 
-            oTweets = mConverteParaArray(nSizeData);
+            switch (nSizeData)
+            {
+                case 100:
+                    bDadosCarregados = mCarregaDados("Search100Resultados");
+                    break;
+                case 1000:
+                    bDadosCarregados = mCarregaDados("Search1000Resultados"); 
+                    break;
+                case 10000:
+                    bDadosCarregados = mCarregaDados("Search10000Resultados");
+                    break;
+                default:
+                    break;
+            }
+
+            if(bDadosCarregados)
+                oTweets = mConverteParaArray(nSizeData);
 
             return oTweets; 
         }
@@ -101,7 +131,7 @@ namespace TwittPeek
         {
             mainTwittPeek.Tweets[] oTweets = new mainTwittPeek.Tweets[nArraySize];
 
-            DataTable oTable = oDataSetDados.Tables["Search100Resultados"];
+            DataTable oTable = oDataSetDados.Tables["Search" + nArraySize.ToString() + "Resultados"];
 
             int index = 0;
 
@@ -109,9 +139,14 @@ namespace TwittPeek
             bool bTemp;
             long lTemp;
 
-            foreach (DataRow oRow in oTable.Rows)
+            for(index = 0; index < nArraySize; index++)
             {
+                DataRow oRow = oTable.Rows[index];
+
                 //o id vai ser o que vem depois da ultima barra da URL
+                
+                oTweets[index].index = index;
+
                 Int64.TryParse(oRow["Url"].ToString().Split('/').Last(), out lTemp);
                 oTweets[index].ID = lTemp;
 
@@ -154,12 +189,19 @@ namespace TwittPeek
                 oTweets[index].IsTweetDestroyed = bTemp;
 
                 oTweets[index].Url = oRow["Url"].ToString();
-
-                index++;
             }
 
             return oTweets;
         }
 
+        private void carregarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            mCarregaDados("Search1000Resultados");
+        }
+
+        private void carregarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            mCarregaDados("Search10000Resultados");
+        }
     }
 }

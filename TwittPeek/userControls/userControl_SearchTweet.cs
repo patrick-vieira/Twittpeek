@@ -21,13 +21,20 @@ namespace TwittPeek.userControls
 
             txtKeyWord.KeyDown += new KeyEventHandler(txtKeyWord_KeyDown);
             oClassMainTweetinvi = Tweetinvi;
+
+            cmbSize.SelectedIndex = 1;
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-             dataGridViewSearchTwieet.DataSource = oClassMainTweetinvi.mSearchTweets(txtKeyWord.Text);
-        }        
-        
+            int size;
+
+            int.TryParse(cmbSize.SelectedItem.ToString(), out size);
+
+            //dataGridViewSearchTwieet.DataSource = oClassMainTweetinvi.mSearchTweets(txtKeyWord.Text);
+            dataGridViewSearchTwieet.DataSource = oClassMainTweetinvi.mSearchTweets(txtKeyWord.Text, size);
+        }
+
         private void txtKeyWord_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
@@ -61,33 +68,57 @@ namespace TwittPeek.userControls
             FolderBrowserDialog oDialog = new FolderBrowserDialog();
             oDialog.RootFolder = Environment.SpecialFolder.MyComputer;// = Directory.GetCurrentDirectory();
             oDialog.SelectedPath = Directory.GetParent(Directory.GetCurrentDirectory()) + "\\Dados";
-                
+
             if (oDialog.ShowDialog() == DialogResult.OK)
             {
-
-                //string fileXML = "c:\\UFRGS\\Search100Resultados.xml";
                 string fileXML = oDialog.SelectedPath;
 
                 DataTable oDataTable = new DataTable();
                 DataSet oDataSet = new DataSet();
+                DataGridViewRowCollection tweets = dataGridViewSearchTwieet.Rows;
 
-                oDataTable.TableName = "Search100Resultados";
+                oDataTable.TableName = "Search" + cmbSize.SelectedItem + "Resultados";
 
                 foreach (DataGridViewColumn col in dataGridViewSearchTwieet.Columns)
                 {
                     oDataTable.Columns.Add(col.HeaderText);
                 }
 
-                foreach (DataGridViewRow row in dataGridViewSearchTwieet.Rows)
-                {
-                    DataRow dRow = oDataTable.NewRow();
 
-                    foreach (DataGridViewCell cell in row.Cells)
+                //oDataTable.Rows = (DataGridViewColumn)dataGridViewSearchTwieet.Rows;
+
+                try
+                {
+                    
+                    foreach (DataGridViewRow row in tweets)
                     {
-                        dRow[cell.ColumnIndex] = cell.Value;
+                        DataRow dRow = oDataTable.NewRow();
+
+                        foreach (DataGridViewCell cell in row.Cells)
+                        {
+                            dRow[cell.ColumnIndex] = cell.Value;
+                        }
+
+                        oDataTable.Rows.Add(dRow);
                     }
 
-                    oDataTable.Rows.Add(dRow);
+
+                    /*foreach (DataGridViewRow row in dataGridViewSearchTwieet.Rows)
+                    {
+                        DataRow dRow = oDataTable.NewRow();
+
+
+                        foreach (DataGridViewCell cell in row.Cells)
+                        {
+                            dRow[cell.ColumnIndex] = cell.Value;
+                        }
+
+                        oDataTable.Rows.Add(dRow);
+                    }*/
+                }
+                catch (Exception e1)
+                {
+                    Console.WriteLine(e1.InnerException);
                 }
 
                 oDataSet.Tables.Add(oDataTable);

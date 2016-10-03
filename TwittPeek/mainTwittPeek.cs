@@ -13,6 +13,7 @@ namespace TwittPeek
         ///
         public struct Tweets
         {
+            public int index { get; set; }
             public long ID { get; set; }
             public string CreatedAt { get; set; }
             public string Text { get; set; }
@@ -33,26 +34,33 @@ namespace TwittPeek
 
             public object[] all
             {
-                get { return new object[] {
-                    ID,
-                    CreatedAt,
-                    Text,
-                    FullText,
-                    Source,
-                    CreatedBy,
-                    RetweetCount,
-                    Favorited,
-                    FavoriteCount,
-                    Retweeted,
-                    Language,
-                    PublishedTweetLength,
-                    TweetLocalCreationDate,
-                    IsRetweet,
-                    IsTweetPublished,
-                    IsTweetDestroyed,
-                    Url }; }
+                get
+                {
+                    return new object[] 
+                    {
+                        index,
+                        ID,
+                        CreatedAt,
+                        Text,
+                        FullText,
+                        Source,
+                        CreatedBy,
+                        RetweetCount,
+                        Favorited,
+                        FavoriteCount,
+                        Retweeted,
+                        Language,
+                        PublishedTweetLength,
+                        TweetLocalCreationDate,
+                        IsRetweet,
+                        IsTweetPublished,
+                        IsTweetDestroyed,
+                        Url
+                    };
+                }
                 set
                 {
+                    index = (int)value[17];
                     ID = (long)value[0];
                     CreatedAt = (string)value[1];
                     Text = (string)value[2];

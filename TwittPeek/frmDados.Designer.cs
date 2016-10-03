@@ -32,10 +32,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDados));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.carregarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aleatorioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.crescenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.decrescenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.carregarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.aleatórioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.crescenteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,6 +46,8 @@
             this.decrescenteToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlDados = new System.Windows.Forms.Panel();
             this.dataGridViewDados = new System.Windows.Forms.DataGridView();
+            this.carregarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.carregarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.pnlDados.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDados)).BeginInit();
@@ -74,6 +76,13 @@
             this.toolStripMenuItem1.Size = new System.Drawing.Size(37, 20);
             this.toolStripMenuItem1.Text = "100";
             // 
+            // carregarToolStripMenuItem
+            // 
+            this.carregarToolStripMenuItem.Name = "carregarToolStripMenuItem";
+            this.carregarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.carregarToolStripMenuItem.Text = "Carregar";
+            this.carregarToolStripMenuItem.Click += new System.EventHandler(this.carregarToolStripMenuItem_Click);
+            // 
             // aleatorioToolStripMenuItem
             // 
             this.aleatorioToolStripMenuItem.Name = "aleatorioToolStripMenuItem";
@@ -92,16 +101,10 @@
             this.decrescenteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.decrescenteToolStripMenuItem.Text = "Decrescente";
             // 
-            // carregarToolStripMenuItem
-            // 
-            this.carregarToolStripMenuItem.Name = "carregarToolStripMenuItem";
-            this.carregarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.carregarToolStripMenuItem.Text = "Carregar";
-            this.carregarToolStripMenuItem.Click += new System.EventHandler(this.carregarToolStripMenuItem_Click);
-            // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.carregarToolStripMenuItem1,
             this.aleatórioToolStripMenuItem,
             this.crescenteToolStripMenuItem1,
             this.decrescenteToolStripMenuItem1});
@@ -112,24 +115,25 @@
             // aleatórioToolStripMenuItem
             // 
             this.aleatórioToolStripMenuItem.Name = "aleatórioToolStripMenuItem";
-            this.aleatórioToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.aleatórioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.aleatórioToolStripMenuItem.Text = "Aleatório";
             // 
             // crescenteToolStripMenuItem1
             // 
             this.crescenteToolStripMenuItem1.Name = "crescenteToolStripMenuItem1";
-            this.crescenteToolStripMenuItem1.Size = new System.Drawing.Size(138, 22);
+            this.crescenteToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.crescenteToolStripMenuItem1.Text = "Crescente";
             // 
             // decrescenteToolStripMenuItem1
             // 
             this.decrescenteToolStripMenuItem1.Name = "decrescenteToolStripMenuItem1";
-            this.decrescenteToolStripMenuItem1.Size = new System.Drawing.Size(138, 22);
+            this.decrescenteToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.decrescenteToolStripMenuItem1.Text = "Decrescente";
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.carregarToolStripMenuItem2,
             this.aleatórioToolStripMenuItem1,
             this.crescenteToolStripMenuItem2,
             this.decrescenteToolStripMenuItem2});
@@ -140,19 +144,19 @@
             // aleatórioToolStripMenuItem1
             // 
             this.aleatórioToolStripMenuItem1.Name = "aleatórioToolStripMenuItem1";
-            this.aleatórioToolStripMenuItem1.Size = new System.Drawing.Size(138, 22);
+            this.aleatórioToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.aleatórioToolStripMenuItem1.Text = "Aleatório";
             // 
             // crescenteToolStripMenuItem2
             // 
             this.crescenteToolStripMenuItem2.Name = "crescenteToolStripMenuItem2";
-            this.crescenteToolStripMenuItem2.Size = new System.Drawing.Size(138, 22);
+            this.crescenteToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.crescenteToolStripMenuItem2.Text = "Crescente";
             // 
             // decrescenteToolStripMenuItem2
             // 
             this.decrescenteToolStripMenuItem2.Name = "decrescenteToolStripMenuItem2";
-            this.decrescenteToolStripMenuItem2.Size = new System.Drawing.Size(138, 22);
+            this.decrescenteToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.decrescenteToolStripMenuItem2.Text = "Decrescente";
             // 
             // pnlDados
@@ -172,6 +176,20 @@
             this.dataGridViewDados.Name = "dataGridViewDados";
             this.dataGridViewDados.Size = new System.Drawing.Size(742, 274);
             this.dataGridViewDados.TabIndex = 0;
+            // 
+            // carregarToolStripMenuItem1
+            // 
+            this.carregarToolStripMenuItem1.Name = "carregarToolStripMenuItem1";
+            this.carregarToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.carregarToolStripMenuItem1.Text = "Carregar";
+            this.carregarToolStripMenuItem1.Click += new System.EventHandler(this.carregarToolStripMenuItem1_Click);
+            // 
+            // carregarToolStripMenuItem2
+            // 
+            this.carregarToolStripMenuItem2.Name = "carregarToolStripMenuItem2";
+            this.carregarToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.carregarToolStripMenuItem2.Text = "Carregar";
+            this.carregarToolStripMenuItem2.Click += new System.EventHandler(this.carregarToolStripMenuItem2_Click);
             // 
             // frmDados
             // 
@@ -212,5 +230,7 @@
         private System.Windows.Forms.ToolStripMenuItem aleatórioToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem crescenteToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem decrescenteToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem carregarToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem carregarToolStripMenuItem2;
     }
 }

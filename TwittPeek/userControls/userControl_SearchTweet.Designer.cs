@@ -36,6 +36,7 @@
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnConcatenar = new System.Windows.Forms.Button();
+            this.cmbSize = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -60,6 +61,7 @@
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.cmbSize);
             this.splitContainer1.Panel1.Controls.Add(this.btnSearch);
             this.splitContainer1.Panel1.Controls.Add(this.txtKeyWord);
             // 
@@ -67,16 +69,15 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
             this.splitContainer1.Size = new System.Drawing.Size(274, 364);
-            this.splitContainer1.SplitterDistance = 69;
+            this.splitContainer1.SplitterDistance = 80;
             this.splitContainer1.TabIndex = 0;
             // 
             // btnSearch
             // 
-            this.btnSearch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(0, 31);
+            this.btnSearch.Location = new System.Drawing.Point(3, 37);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(274, 38);
+            this.btnSearch.Size = new System.Drawing.Size(177, 37);
             this.btnSearch.TabIndex = 1;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -84,14 +85,13 @@
             // 
             // txtKeyWord
             // 
-            this.txtKeyWord.Dock = System.Windows.Forms.DockStyle.Top;
             this.txtKeyWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtKeyWord.Location = new System.Drawing.Point(0, 0);
             this.txtKeyWord.MaxLength = 30;
             this.txtKeyWord.Name = "txtKeyWord";
             this.txtKeyWord.Size = new System.Drawing.Size(274, 31);
             this.txtKeyWord.TabIndex = 0;
-            this.txtKeyWord.Text = "12345678901234567890";
+            this.txtKeyWord.Text = "trump";
             this.txtKeyWord.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtKeyWord.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtKeyWord_KeyDown);
             // 
@@ -109,8 +109,8 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.splitContainer3);
-            this.splitContainer2.Size = new System.Drawing.Size(274, 291);
-            this.splitContainer2.SplitterDistance = 235;
+            this.splitContainer2.Size = new System.Drawing.Size(274, 280);
+            this.splitContainer2.SplitterDistance = 226;
             this.splitContainer2.TabIndex = 2;
             // 
             // dataGridViewSearchTwieet
@@ -119,7 +119,7 @@
             this.dataGridViewSearchTwieet.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewSearchTwieet.Location = new System.Drawing.Point(0, 0);
             this.dataGridViewSearchTwieet.Name = "dataGridViewSearchTwieet";
-            this.dataGridViewSearchTwieet.Size = new System.Drawing.Size(274, 235);
+            this.dataGridViewSearchTwieet.Size = new System.Drawing.Size(274, 226);
             this.dataGridViewSearchTwieet.TabIndex = 0;
             // 
             // splitContainer3
@@ -135,7 +135,7 @@
             // splitContainer3.Panel2
             // 
             this.splitContainer3.Panel2.Controls.Add(this.btnConcatenar);
-            this.splitContainer3.Size = new System.Drawing.Size(274, 52);
+            this.splitContainer3.Size = new System.Drawing.Size(274, 50);
             this.splitContainer3.SplitterDistance = 136;
             this.splitContainer3.TabIndex = 0;
             // 
@@ -144,7 +144,7 @@
             this.btnSalvar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnSalvar.Location = new System.Drawing.Point(0, 0);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(136, 52);
+            this.btnSalvar.Size = new System.Drawing.Size(136, 50);
             this.btnSalvar.TabIndex = 1;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
@@ -155,10 +155,24 @@
             this.btnConcatenar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnConcatenar.Location = new System.Drawing.Point(0, 0);
             this.btnConcatenar.Name = "btnConcatenar";
-            this.btnConcatenar.Size = new System.Drawing.Size(134, 52);
+            this.btnConcatenar.Size = new System.Drawing.Size(134, 50);
             this.btnConcatenar.TabIndex = 2;
             this.btnConcatenar.Text = "Concatenar";
             this.btnConcatenar.UseVisualStyleBackColor = true;
+            // 
+            // cmbSize
+            // 
+            this.cmbSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbSize.FormattingEnabled = true;
+            this.cmbSize.Items.AddRange(new object[] {
+            "100",
+            "1000",
+            "10000"});
+            this.cmbSize.Location = new System.Drawing.Point(186, 37);
+            this.cmbSize.Name = "cmbSize";
+            this.cmbSize.Size = new System.Drawing.Size(85, 32);
+            this.cmbSize.TabIndex = 2;
+            this.cmbSize.Text = "SIZE";
             // 
             // userControl_SearchTweet
             // 
@@ -195,5 +209,6 @@
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnConcatenar;
         private System.Windows.Forms.SplitContainer splitContainer3;
+        private System.Windows.Forms.ComboBox cmbSize;
     }
 }

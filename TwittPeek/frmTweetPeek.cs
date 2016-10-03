@@ -40,6 +40,11 @@ namespace TwittPeek
         {
             frmDados = new frmDados();
 
+            oUserControl_SearchTweet = new userControl_SearchTweet(oClassMainTweetinvi);
+            pnlMain.Controls.Add(oUserControl_SearchTweet);
+            oUserControl_SearchTweet.Dock = DockStyle.Fill;
+            oUserControl_SearchTweet.Hide();
+            
             oUserControl_SendTwitt = new userControl_SendTwitt(oClassMainTweetinvi);
             pnlMain.Controls.Add(oUserControl_SendTwitt);
             oUserControl_SendTwitt.Dock = DockStyle.Fill;
@@ -54,12 +59,6 @@ namespace TwittPeek
             pnlMain.Controls.Add(oUserControl_GetFollowing);
             oUserControl_GetFollowing.Dock = DockStyle.Fill;
             oUserControl_GetFollowing.Hide();
-
-            oUserControl_SearchTweet = new userControl_SearchTweet(oClassMainTweetinvi);
-            pnlMain.Controls.Add(oUserControl_SearchTweet);
-            oUserControl_SearchTweet.Dock = DockStyle.Fill;
-            oUserControl_SearchTweet.Hide();
-
 
             oUserControl_Alg_ISBL = new userControl_Alg_ISBL(oClassMainTweetinvi);
             pnlMain.Controls.Add(oUserControl_Alg_ISBL);
@@ -100,7 +99,6 @@ namespace TwittPeek
             pnlMain.Controls.Add(oUserControl_Alg_RMSD);
             oUserControl_Alg_RMSD.Dock = DockStyle.Fill;
             oUserControl_Alg_RMSD.Hide();
-
             
 
     }
@@ -199,6 +197,35 @@ namespace TwittPeek
         private void dadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmDados.Show();
+        }
+
+        private void imagemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //define as propriedades do controle 
+            //OpenFileDialog
+            this.openFileDialog1.Multiselect = true;
+            this.openFileDialog1.Title = "Selecionar Fotos";
+            openFileDialog1.InitialDirectory = @"C:\Users\macoratti\Pictures";
+            //filtra para exibir somente arquivos de imagens
+            openFileDialog1.Filter = "Images (*.BMP;*.JPG;*.GIF,*.PNG,*.TIFF)|*.BMP;*.JPG;*.GIF;*.PNG;*.TIFF|" + "All files (*.*)|*.*";
+            openFileDialog1.CheckFileExists = true;
+            openFileDialog1.CheckPathExists = true;
+            openFileDialog1.FilterIndex = 2;
+            openFileDialog1.RestoreDirectory = true;
+            openFileDialog1.ReadOnlyChecked = true;
+            openFileDialog1.ShowReadOnly = true;
+
+            DialogResult dr = this.openFileDialog1.ShowDialog();
+
+            if (dr == System.Windows.Forms.DialogResult.OK)
+            {
+                oClassMainTweetinvi.mPostImagem(openFileDialog1.FileName);
+            }
+        }
+
+        private void directToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
