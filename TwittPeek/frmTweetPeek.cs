@@ -20,7 +20,7 @@ namespace TwittPeek
 
         csMainTweetinvi oClassMainTweetinvi;
 
-        private static frmDados oDados;
+        public static frmDados frmDados;
 
         private static userControl_SendTwitt oUserControl_SendTwitt;
         private static userControl_TimeLine oUserControl_TimeLine;
@@ -38,7 +38,7 @@ namespace TwittPeek
 
         private void inicializaUserControls()
         {
-            oDados = new frmDados();
+            frmDados = new frmDados();
 
             oUserControl_SendTwitt = new userControl_SendTwitt(oClassMainTweetinvi);
             pnlMain.Controls.Add(oUserControl_SendTwitt);
@@ -198,7 +198,7 @@ namespace TwittPeek
 
         private void dadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            oDados.Show();
+            frmDados.Show();
         }
     }
 }

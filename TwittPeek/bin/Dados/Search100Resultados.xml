@@ -1,82 +1,248 @@
 <?xml version="1.0" standalone="yes"?>
 <NewDataSet>
   <Search100Resultados>
-    <CreatedAt>23/09/2016 10:28:43</CreatedAt>
-    <Text>12345678901234567890123456789
-12345678901234567890123456789
-12345678901234567890123456789
-1234567890123456789012345… https://t.co/t6HXix0UN6</Text>
-    <FullText>12345678901234567890123456789
-12345678901234567890123456789
-12345678901234567890123456789
-1234567890123456789012345… https://t.co/t6HXix0UN6</FullText>
-    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter My Closed Client&lt;/a&gt;</Source>
-    <Truncated>True</Truncated>
-    <CreatedBy>サイだよ</CreatedBy>
-    <RetweetCount>0</RetweetCount>
-    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
-    <Favorited>False</Favorited>
-    <FavoriteCount>0</FavoriteCount>
-    <Retweeted>False</Retweeted>
-    <PossiblySensitive>False</PossiblySensitive>
-    <Language>UN_NotReferenced</Language>
-    <WithheldCopyright>False</WithheldCopyright>
-    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
-    <PublishedTweetLength>140</PublishedTweetLength>
-    <TweetLocalCreationDate>24/09/2016 00:50:18</TweetLocalCreationDate>
-    <IsRetweet>False</IsRetweet>
-    <IsTweetPublished>True</IsTweetPublished>
-    <IsTweetDestroyed>False</IsTweetDestroyed>
-    <Url>https://twitter.com/RhinoJapan/status/779311533301993472</Url>
-  </Search100Resultados>
-  <Search100Resultados>
-    <CreatedAt>23/09/2016 09:18:12</CreatedAt>
-    <Text>12345678901234567890123456789
-12345678901234567890123456789
-12345678901234567890123456789
-1234567890123456789012345… https://t.co/66XBZHbEo9</Text>
-    <FullText>12345678901234567890123456789
-12345678901234567890123456789
-12345678901234567890123456789
-1234567890123456789012345… https://t.co/66XBZHbEo9</FullText>
-    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter My Closed Client&lt;/a&gt;</Source>
-    <Truncated>True</Truncated>
-    <CreatedBy>サイだよ</CreatedBy>
-    <RetweetCount>0</RetweetCount>
-    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
-    <Favorited>False</Favorited>
-    <FavoriteCount>0</FavoriteCount>
-    <Retweeted>False</Retweeted>
-    <PossiblySensitive>False</PossiblySensitive>
-    <Language>UN_NotReferenced</Language>
-    <WithheldCopyright>False</WithheldCopyright>
-    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
-    <PublishedTweetLength>140</PublishedTweetLength>
-    <TweetLocalCreationDate>24/09/2016 00:50:18</TweetLocalCreationDate>
-    <IsRetweet>False</IsRetweet>
-    <IsTweetPublished>True</IsTweetPublished>
-    <IsTweetDestroyed>False</IsTweetDestroyed>
-    <Url>https://twitter.com/RhinoJapan/status/779293787919003648</Url>
-  </Search100Resultados>
-  <Search100Resultados>
-    <CreatedAt>21/09/2016 15:08:45</CreatedAt>
-    <Text>12345678901234567890
-12345678901234567890
-12345678901234567890
-12345678901234567890
-12345678901234567890
-12345678901234567890
-12345678901234</Text>
-    <FullText>12345678901234567890
-12345678901234567890
-12345678901234567890
-12345678901234567890
-12345678901234567890
-12345678901234567890
-12345678901234</FullText>
+    <CreatedAt>02/10/2016 03:45:14</CreatedAt>
+    <Text>Estoy bien feliz porque Chvrches, Foals y TOP tocaron mis canciones favoritas ❤️ #LiveOut2016</Text>
+    <FullText>Estoy bien feliz porque Chvrches, Foals y TOP tocaron mis canciones favoritas ❤️ #LiveOut2016</FullText>
     <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
     <Truncated>False</Truncated>
-    <CreatedBy>うっち〜(Ucchy)</CreatedBy>
+    <CreatedBy>Elena Yareli</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>93</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/eyareligg/status/782471487752015872</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:43:20</CreatedAt>
+    <Text>RIP IPHONE, eres el que mas me había durado and now u r gone con mis snaps y mis videos de chvrches :(</Text>
+    <FullText>RIP IPHONE, eres el que mas me había durado and now u r gone con mis snaps y mis videos de chvrches :(</FullText>
+    <Source>&lt;a href="http://twitter.com" rel="nofollow"&gt;Twitter Web Client&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Vøltâ🍍</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>102</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/QueenBitchPro/status/782471006115893248</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:43:16</CreatedAt>
+    <Text>Oigan, ¿qué pedo con Chvrches? Está horrible.</Text>
+    <FullText>Oigan, ¿qué pedo con Chvrches? Está horrible.</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>J V X N</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>45</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/JuannM18/status/782470991066705920</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:42:51</CreatedAt>
+    <Text>@CHVRCHES 😍😍😍 uno de los mejores conciertos del #liveout , me encantó.</Text>
+    <FullText>@CHVRCHES 😍😍😍 uno de los mejores conciertos del #liveout , me encantó.</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <InReplyToUserId>438897828</InReplyToUserId>
+    <InReplyToUserIdStr>438897828</InReplyToUserIdStr>
+    <InReplyToScreenName>CHVRCHES</InReplyToScreenName>
+    <CreatedBy>Cindy Almaguer</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>70</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/AlmaguerCindy/status/782470886024622080</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:42:22</CreatedAt>
+    <Text>I love you @CHVRCHES ❤ https://t.co/BU2wSWIMqq</Text>
+    <FullText>I love you @CHVRCHES ❤ https://t.co/BU2wSWIMqq</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Jonathan</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>70</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/JoonaBernal/status/782470765044043776</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:41:36</CreatedAt>
+    <Text>CHVRCHES cantando Tether&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;</Text>
+    <FullText>CHVRCHES cantando Tether&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;</FullText>
+    <Source>&lt;a href="http://twitter.com" rel="nofollow"&gt;Twitter Web Client&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Vøltâ🍍</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>48</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/QueenBitchPro/status/782470570386399232</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:40:53</CreatedAt>
+    <Text>Mi oportunidad de ver a CHVRCHES y la desperdicié como el gran pendejo que soy.😢😭😩</Text>
+    <FullText>Mi oportunidad de ver a CHVRCHES y la desperdicié como el gran pendejo que soy.😢😭😩</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Javi</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>82</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/jartsand/status/782470392166227969</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:39:48</CreatedAt>
+    <Text>Lo mejor para mi: !!!, yacht y chvrches mil</Text>
+    <FullText>Lo mejor para mi: !!!, yacht y chvrches mil</FullText>
+    <Source>&lt;a href="http://twitter.com/#!/download/ipad" rel="nofollow"&gt;Twitter for iPad&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Omar Reyna</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>43</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/Trogonido/status/782470117464547332</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:38:10</CreatedAt>
+    <Text>lo mejor del live out fue TOP Y CHVRCHES</Text>
+    <FullText>lo mejor del live out fue TOP Y CHVRCHES</FullText>
+    <Source>&lt;a href="http://twitter.com" rel="nofollow"&gt;Twitter Web Client&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Vøltâ🍍</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>40</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/QueenBitchPro/status/782469705936179201</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:37:47</CreatedAt>
+    <Text>@CHVRCHES made me so happy tonight</Text>
+    <FullText>@CHVRCHES made me so happy tonight</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <InReplyToUserId>438897828</InReplyToUserId>
+    <InReplyToUserIdStr>438897828</InReplyToUserIdStr>
+    <InReplyToScreenName>CHVRCHES</InReplyToScreenName>
+    <CreatedBy>anavictoria</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>1</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>34</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/anavickydlsr/status/782469609123262464</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:37:10</CreatedAt>
+    <Text>🎶❤️ #LiveOut2016 @CHVRCHES https://t.co/kjzBVPzYNL</Text>
+    <FullText>🎶❤️ #LiveOut2016 @CHVRCHES https://t.co/kjzBVPzYNL</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Val Guerra</CreatedBy>
     <RetweetCount>0</RetweetCount>
     <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
     <Favorited>False</Favorited>
@@ -86,28 +252,1406 @@
     <Language>UN_NotReferenced</Language>
     <WithheldCopyright>False</WithheldCopyright>
     <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
-    <PublishedTweetLength>140</PublishedTweetLength>
-    <TweetLocalCreationDate>24/09/2016 00:50:18</TweetLocalCreationDate>
+    <PublishedTweetLength>74</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
     <IsRetweet>False</IsRetweet>
     <IsTweetPublished>True</IsTweetPublished>
     <IsTweetDestroyed>False</IsTweetDestroyed>
-    <Url>https://twitter.com/sou160u/status/778657232095318016</Url>
+    <Url>https://twitter.com/ValeriaGuerra_/status/782469454496092160</Url>
   </Search100Resultados>
   <Search100Resultados>
-    <CreatedAt>21/09/2016 01:07:04</CreatedAt>
-    <Text>12345678901234567890123456789
-12345678901234567890123456789
-12345678901234567890123456789
-12345678901234567890123456789
-12345678901234567890</Text>
-    <FullText>12345678901234567890123456789
-12345678901234567890123456789
-12345678901234567890123456789
-12345678901234567890123456789
-12345678901234567890</FullText>
+    <CreatedAt>02/10/2016 03:35:27</CreatedAt>
+    <Text>RT @Dramalan: Nunca había escuchado a @CHVRCHES hasta hoy y en verdad me encantaron! 💖 #LiveOut #LiveOut2016 https://t.co/d8RaNGP45H</Text>
+    <FullText>RT @Dramalan: Nunca había escuchado a @CHVRCHES hasta hoy y en verdad me encantaron! 💖 #LiveOut #LiveOut2016 https://t.co/d8RaNGP45H</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Mariana Vega Mty.</CreatedBy>
+    <RetweetCount>2</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>156</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>Nunca había escuchado a @CHVRCHES hasta hoy y en verdad me encantaron! 💖 #LiveOut #LiveOut2016 https://t.co/d8RaNGP45H</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/MarianaVegaMty/status/782469025565585409</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:35:08</CreatedAt>
+    <Text>tan cerca y tan lejos de ver a chvrches...</Text>
+    <FullText>tan cerca y tan lejos de ver a chvrches...</FullText>
+    <Source>&lt;a href="http://twitter.com/#!/download/ipad" rel="nofollow"&gt;Twitter for iPad&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>JINJOO ME SONRIÓ</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>42</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/brokelinsxn/status/782468943206244352</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:34:47</CreatedAt>
+    <Text>RT @BeHypeMx: 'The Mother We Share' cerró el concierto de @CHVRCHES en #LiveOut2016. https://t.co/jylJNglQM0</Text>
+    <FullText>RT @BeHypeMx: 'The Mother We Share' cerró el concierto de @CHVRCHES en #LiveOut2016. https://t.co/jylJNglQM0</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Kevin Kretsch</CreatedBy>
+    <RetweetCount>4</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>132</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>'The Mother We Share' cerró el concierto de @CHVRCHES en #LiveOut2016. https://t.co/jylJNglQM0</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/keevinkretsch/status/782468855910105089</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:34:45</CreatedAt>
+    <Text>RT @Dramalan: Nunca había escuchado a @CHVRCHES hasta hoy y en verdad me encantaron! 💖 #LiveOut #LiveOut2016 https://t.co/d8RaNGP45H</Text>
+    <FullText>RT @Dramalan: Nunca había escuchado a @CHVRCHES hasta hoy y en verdad me encantaron! 💖 #LiveOut #LiveOut2016 https://t.co/d8RaNGP45H</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Alan Yeudiel</CreatedBy>
+    <RetweetCount>2</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>156</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>Nunca había escuchado a @CHVRCHES hasta hoy y en verdad me encantaron! 💖 #LiveOut #LiveOut2016 https://t.co/d8RaNGP45H</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/AlanYeudiel_/status/782468846305239040</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:34:32</CreatedAt>
+    <Text>RT @CHVRCHES: Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</Text>
+    <FullText>RT @CHVRCHES: Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Karla Ojeda</CreatedBy>
+    <RetweetCount>159</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>146</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/karojh17/status/782468794488729600</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:34:11</CreatedAt>
+    <Text>RT @liveoutoficial: @CHVRCHES deleitando al publico del #LiveOutStage https://t.co/QCTIxapi7o</Text>
+    <FullText>RT @liveoutoficial: @CHVRCHES deleitando al publico del #LiveOutStage https://t.co/QCTIxapi7o</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Kevin Kretsch</CreatedBy>
+    <RetweetCount>29</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>117</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>@CHVRCHES deleitando al publico del #LiveOutStage https://t.co/QCTIxapi7o</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/keevinkretsch/status/782468703489105920</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:34:06</CreatedAt>
+    <Text>RT @ivanezzu: @laurenevemay "tell me, tell me, you'll meet me Will you meet me more than halfway up?."So this lady deligtht to Mexico @CHVR…</Text>
+    <FullText>RT @ivanezzu: @laurenevemay "tell me, tell me, you'll meet me Will you meet me more than halfway up?."So this lady deligtht to Mexico @CHVR…</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Kevin Kretsch</CreatedBy>
+    <RetweetCount>11</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>140</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>@laurenevemay "tell me, tell me, you'll meet me Will you meet me more than halfway up?."So this lady deligtht to Me… https://t.co/9rAUC9hqFw</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/keevinkretsch/status/782468684115611648</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:33:26</CreatedAt>
+    <Text>RT @CHVRCHES: Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</Text>
+    <FullText>RT @CHVRCHES: Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Kevin Kretsch</CreatedBy>
+    <RetweetCount>159</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>146</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/keevinkretsch/status/782468517010415616</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:30:42</CreatedAt>
+    <Text>@CHVRCHES today was the first time that I knew we. Your music and show  is the best! Now  I'm your fan!</Text>
+    <FullText>@CHVRCHES today was the first time that I knew we. Your music and show  is the best! Now  I'm your fan!</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <InReplyToUserId>438897828</InReplyToUserId>
+    <InReplyToUserIdStr>438897828</InReplyToUserIdStr>
+    <InReplyToScreenName>CHVRCHES</InReplyToScreenName>
+    <CreatedBy>Alan Ovalle</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>103</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/Dramalan/status/782467826879651840</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:29:59</CreatedAt>
+    <Text>chvrches is one of my favourite bands, but they're worth nothing without lauren's vocals</Text>
+    <FullText>chvrches is one of my favourite bands, but they're worth nothing without lauren's vocals</FullText>
     <Source>&lt;a href="http://twitter.com" rel="nofollow"&gt;Twitter Web Client&lt;/a&gt;</Source>
     <Truncated>False</Truncated>
-    <CreatedBy>すむーずぷりん🍮</CreatedBy>
+    <CreatedBy>HashbrownUnderBlade</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>1</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>88</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/_KS_AO_HUB_/status/782467646755176448</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:29:25</CreatedAt>
+    <Text>ummm... tøp fans suck, confirmed. they were so fucking disrespectfu to chvrches, MUERANSENNN</Text>
+    <FullText>ummm... tøp fans suck, confirmed. they were so fucking disrespectfu to chvrches, MUERANSENNN</FullText>
+    <Source>&lt;a href="http://twitter.com" rel="nofollow"&gt;Twitter Web Client&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>-</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>1</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>92</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/liquidharma/status/782467503532355584</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:29:00</CreatedAt>
+    <Text>Pues lo mejor del #LiveOut2016 fue @twentyonepilots y @CHVRCHES</Text>
+    <FullText>Pues lo mejor del #LiveOut2016 fue @twentyonepilots y @CHVRCHES</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>|Danny Rand|</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>63</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/rdma95/status/782467399882715136</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:28:53</CreatedAt>
+    <Text>Such a dream seeing CHVRCHES thank you @liveoutoficial @ Fundidora Park https://t.co/ke9we494WA</Text>
+    <FullText>Such a dream seeing CHVRCHES thank you @liveoutoficial @ Fundidora Park https://t.co/ke9we494WA</FullText>
+    <Coordinates>Tweetinvi.Logic.DTO.CoordinatesDTO</Coordinates>
+    <Source>&lt;a href="http://instagram.com" rel="nofollow"&gt;Instagram&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Mustang Kid</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <Place>Tweetinvi.Logic.Model.Place</Place>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>95</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/CallHimDaniel/status/782467373152468992</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:28:37</CreatedAt>
+    <Text>RT @liveoutoficial: @CHVRCHES deleitando al publico del #LiveOutStage https://t.co/QCTIxapi7o</Text>
+    <FullText>RT @liveoutoficial: @CHVRCHES deleitando al publico del #LiveOutStage https://t.co/QCTIxapi7o</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Amabely Rubio</CreatedBy>
+    <RetweetCount>29</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>117</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>@CHVRCHES deleitando al publico del #LiveOutStage https://t.co/QCTIxapi7o</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/amabelyrubio/status/782467302809673728</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:28:24</CreatedAt>
+    <Text>RT @HeyFierro: 'Bury It' de @CHVRCHES sonando en el #LiveOut2016 // cobertura @QuarterPress https://t.co/TgGwgc7aPP</Text>
+    <FullText>RT @HeyFierro: 'Bury It' de @CHVRCHES sonando en el #LiveOut2016 // cobertura @QuarterPress https://t.co/TgGwgc7aPP</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>karen</CreatedBy>
+    <RetweetCount>8</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>139</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>'Bury It' de @CHVRCHES sonando en el #LiveOut2016 // cobertura @QuarterPress https://t.co/TgGwgc7aPP</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/Karenontop/status/782467251471462404</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:27:50</CreatedAt>
+    <Text>@ibloomblaum @foals Ya se, le hubieran quitado esa media hora a chvrches o KOL y se la hubieran dado a foals. :(</Text>
+    <FullText>@ibloomblaum @foals Ya se, le hubieran quitado esa media hora a chvrches o KOL y se la hubieran dado a foals. :(</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <InReplyToStatusId>782466742366801921</InReplyToStatusId>
+    <InReplyToStatusIdStr>782466742366801921</InReplyToStatusIdStr>
+    <InReplyToUserId>26870197</InReplyToUserId>
+    <InReplyToUserIdStr>26870197</InReplyToUserIdStr>
+    <InReplyToScreenName>ibloomblaum</InReplyToScreenName>
+    <CreatedBy>ＩＬＯＹ</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>112</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/_street_spirit_/status/782467108869316608</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:27:01</CreatedAt>
+    <Text>@aenlle_mayra @CHVRCHES pinche liveout estuvo cabron</Text>
+    <FullText>@aenlle_mayra @CHVRCHES pinche liveout estuvo cabron</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <InReplyToStatusId>782407711170322432</InReplyToStatusId>
+    <InReplyToStatusIdStr>782407711170322432</InReplyToStatusIdStr>
+    <InReplyToUserId>747485790</InReplyToUserId>
+    <InReplyToUserIdStr>747485790</InReplyToUserIdStr>
+    <InReplyToScreenName>aenlle_mayra</InReplyToScreenName>
+    <CreatedBy>luis perezoso</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>52</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/robiperez99/status/782466903511937024</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:25:58</CreatedAt>
+    <Text>En los 30 minutos después de Chvrches cuando la gente estaba como loca empujando solo podía pensar en todo lo que invertí para ese concierto</Text>
+    <FullText>En los 30 minutos después de Chvrches cuando la gente estaba como loca empujando solo podía pensar en todo lo que invertí para ese concierto</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Thalassophile</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>1</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>140</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/sofia_robledo98/status/782466636414541825</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:25:21</CreatedAt>
+    <Text>RT @liveoutoficial: @CHVRCHES deleitando al publico del #LiveOutStage https://t.co/QCTIxapi7o</Text>
+    <FullText>RT @liveoutoficial: @CHVRCHES deleitando al publico del #LiveOutStage https://t.co/QCTIxapi7o</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>shania</CreatedBy>
+    <RetweetCount>29</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>117</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>@CHVRCHES deleitando al publico del #LiveOutStage https://t.co/QCTIxapi7o</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/ShaniaSofia/status/782466483431493633</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:25:04</CreatedAt>
+    <Text>@ibloomblaum @foals Exacto, quiero verlos solamente a ellos en un concierto aparte, @CHVRCHES hasta repitió rolas. 🙊</Text>
+    <FullText>@ibloomblaum @foals Exacto, quiero verlos solamente a ellos en un concierto aparte, @CHVRCHES hasta repitió rolas. 🙊</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <InReplyToStatusId>782465916395151360</InReplyToStatusId>
+    <InReplyToStatusIdStr>782465916395151360</InReplyToStatusIdStr>
+    <InReplyToUserId>26870197</InReplyToUserId>
+    <InReplyToUserIdStr>26870197</InReplyToUserIdStr>
+    <InReplyToScreenName>ibloomblaum</InReplyToScreenName>
+    <CreatedBy>ＩＬＯＹ</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>1</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>116</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/_street_spirit_/status/782466411461382144</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:24:21</CreatedAt>
+    <Text>Nunca había escuchado a @CHVRCHES hasta hoy y en verdad me encantaron! 💖 #LiveOut #LiveOut2016 https://t.co/d8RaNGP45H</Text>
+    <FullText>Nunca había escuchado a @CHVRCHES hasta hoy y en verdad me encantaron! 💖 #LiveOut #LiveOut2016 https://t.co/d8RaNGP45H</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Alan Ovalle</CreatedBy>
+    <RetweetCount>2</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>4</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>142</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/Dramalan/status/782466230892408832</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:24:14</CreatedAt>
+    <Text>RT @CHVRCHES: Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</Text>
+    <FullText>RT @CHVRCHES: Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Viri OM ♥</CreatedBy>
+    <RetweetCount>159</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>146</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/ViriOMRusher/status/782466200223690752</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:24:13</CreatedAt>
+    <Text>Chvrches y Foals outstanding y Twenty One Pilots RIFÓ con su show. Kings Of Leon just ok. [2/2]</Text>
+    <FullText>Chvrches y Foals outstanding y Twenty One Pilots RIFÓ con su show. Kings Of Leon just ok. [2/2]</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Ferdie Balderas</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>95</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/indieferdie/status/782466197065338880</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:24:00</CreatedAt>
+    <Text>@CHVRCHES as my brother says "It's Rocktubre" 😎 oh yeah! Hope you have an amazing performance at the #LiveOut2016 ps. My Bro was there!</Text>
+    <FullText>@CHVRCHES as my brother says "It's Rocktubre" 😎 oh yeah! Hope you have an amazing performance at the #LiveOut2016 ps. My Bro was there!</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <InReplyToUserId>438897828</InReplyToUserId>
+    <InReplyToUserIdStr>438897828</InReplyToUserIdStr>
+    <InReplyToScreenName>CHVRCHES</InReplyToScreenName>
+    <CreatedBy>Viri OM ♥</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>135</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/ViriOMRusher/status/782466141851492352</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:23:10</CreatedAt>
+    <Text>RT @CHVRCHES: Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</Text>
+    <FullText>RT @CHVRCHES: Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Tabata Salas</CreatedBy>
+    <RetweetCount>159</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>146</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/tabatasalas/status/782465932547403776</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:22:33</CreatedAt>
+    <Text>Y bueno, lo único bueno fue haber visto a chvrches demasiado cerca😍</Text>
+    <FullText>Y bueno, lo único bueno fue haber visto a chvrches demasiado cerca😍</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>shania</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>67</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/ShaniaSofia/status/782465776401862657</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:21:39</CreatedAt>
+    <Text>Yacht y CHVRCHES, los amo. 💕 #LiveOut2016</Text>
+    <FullText>Yacht y CHVRCHES, los amo. 💕 #LiveOut2016</FullText>
+    <Source>&lt;a href="http://tapbots.com/tweetbot" rel="nofollow"&gt;Tweetbot for iΟS&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>R△</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>41</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/rrichhh/status/782465551654281217</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:20:48</CreatedAt>
+    <Text>Sigo sin superar que vi a Chvrches 😭😭😭😭😭😭</Text>
+    <FullText>Sigo sin superar que vi a Chvrches 😭😭😭😭😭😭</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Park</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>41</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/_MrKev/status/782465337962835968</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:20:23</CreatedAt>
+    <Text>RT @5SOSMexicoCity_: Ya es muy tarde pero no puedo dormir, ¿están escuchando algo? Díganme que, yo escucho Chvrches 😂 -S https://t.co/IWXqO…</Text>
+    <FullText>RT @5SOSMexicoCity_: Ya es muy tarde pero no puedo dormir, ¿están escuchando algo? Díganme que, yo escucho Chvrches 😂 -S https://t.co/IWXqO…</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>|❤Maff|TWFanmily❤|</CreatedBy>
+    <RetweetCount>3</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>145</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>Ya es muy tarde pero no puedo dormir, ¿están escuchando algo? Díganme que, yo escucho Chvrches 😂 -S https://t.co/IWXqOgxkt2</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/MaFeGleekTW/status/782465231830122497</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:18:57</CreatedAt>
+    <Text>A chvrches los vi solo</Text>
+    <FullText>A chvrches los vi solo</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Mr. November</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>22</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/milo_malo/status/782464873200427008</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:18:57</CreatedAt>
+    <Text>Muerto y con un dolor de garganta impresionante. Pero la gritada en CHVRCHES nadie me la quitará. ❤️</Text>
+    <FullText>Muerto y con un dolor de garganta impresionante. Pero la gritada en CHVRCHES nadie me la quitará. ❤️</FullText>
+    <Source>&lt;a href="http://tapbots.com/tweetbot" rel="nofollow"&gt;Tweetbot for iΟS&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>R△</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>100</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/rrichhh/status/782464871107432448</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:18:29</CreatedAt>
+    <Text>RT @Bonmaxima: #Maxima1067  #LiveOut2016 @CHVRCHES  #mty  #ParqueFundidora https://t.co/kYJ7d2sjrV</Text>
+    <FullText>RT @Bonmaxima: #Maxima1067  #LiveOut2016 @CHVRCHES  #mty  #ParqueFundidora https://t.co/kYJ7d2sjrV</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>MÁXIMA 106.7 FM</CreatedBy>
+    <RetweetCount>5</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>UN_NotReferenced</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>122</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>#Maxima1067  #LiveOut2016 @CHVRCHES  #mty  #ParqueFundidora https://t.co/kYJ7d2sjrV</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/MAXIMA1067FM/status/782464754476388353</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:17:22</CreatedAt>
+    <Text>RT @liveoutoficial: @CHVRCHES deleitando al publico del #LiveOutStage https://t.co/QCTIxapi7o</Text>
+    <FullText>RT @liveoutoficial: @CHVRCHES deleitando al publico del #LiveOutStage https://t.co/QCTIxapi7o</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Eunice</CreatedBy>
+    <RetweetCount>29</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>117</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>@CHVRCHES deleitando al publico del #LiveOutStage https://t.co/QCTIxapi7o</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/Casablancas_E/status/782464472371703808</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:16:25</CreatedAt>
+    <Text>RT @CHVRCHES: Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</Text>
+    <FullText>RT @CHVRCHES: Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Alan Ovalle</CreatedBy>
+    <RetweetCount>159</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>146</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/Dramalan/status/782464234739240960</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:15:24</CreatedAt>
+    <Text>RT @CHVRCHES: Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</Text>
+    <FullText>RT @CHVRCHES: Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Eunice</CreatedBy>
+    <RetweetCount>159</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>146</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/Casablancas_E/status/782463976273645568</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:15:04</CreatedAt>
+    <Text>He utilizado Shazam para descubrir Bury It de CHVRCHES Feat. Hayley Williams. https://t.co/8NXPViHrUq</Text>
+    <FullText>He utilizado Shazam para descubrir Bury It de CHVRCHES Feat. Hayley Williams. https://t.co/8NXPViHrUq</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Luis</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <Place>Tweetinvi.Logic.Model.Place</Place>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>101</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/LENB_/status/782463895193608193</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:14:28</CreatedAt>
+    <Text>RT @liveoutoficial: @CHVRCHES deleitando al publico del #LiveOutStage https://t.co/QCTIxapi7o</Text>
+    <FullText>RT @liveoutoficial: @CHVRCHES deleitando al publico del #LiveOutStage https://t.co/QCTIxapi7o</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Marissa⚡️</CreatedBy>
+    <RetweetCount>29</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>117</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>@CHVRCHES deleitando al publico del #LiveOutStage https://t.co/QCTIxapi7o</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/MarissaRdzR/status/782463743309455360</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:14:28</CreatedAt>
+    <Text>😭😢 https://t.co/Pgg3hsj7zL</Text>
+    <FullText>😭😢 https://t.co/Pgg3hsj7zL</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>▲. Sánchez</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>UN_NotReferenced</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>26</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <QuotedStatusId>782360562004992001</QuotedStatusId>
+    <QuotedStatusIdStr>782360562004992001</QuotedStatusIdStr>
+    <QuotedTweet>Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</QuotedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/JAbrahamSr/status/782463741812088833</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:14:05</CreatedAt>
+    <Text>RT @5SOSMexicoCity_: Ya es muy tarde pero no puedo dormir, ¿están escuchando algo? Díganme que, yo escucho Chvrches 😂 -S https://t.co/IWXqO…</Text>
+    <FullText>RT @5SOSMexicoCity_: Ya es muy tarde pero no puedo dormir, ¿están escuchando algo? Díganme que, yo escucho Chvrches 😂 -S https://t.co/IWXqO…</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>#DondeEstaMimi</CreatedBy>
+    <RetweetCount>3</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>145</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>Ya es muy tarde pero no puedo dormir, ¿están escuchando algo? Díganme que, yo escucho Chvrches 😂 -S https://t.co/IWXqOgxkt2</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/X_phanmuke_X/status/782463648459526144</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:13:56</CreatedAt>
+    <Text>RT @CHVRCHES: Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</Text>
+    <FullText>RT @CHVRCHES: Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>jj 🦄</CreatedBy>
+    <RetweetCount>159</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>146</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/JimenaDavis/status/782463608810639360</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:13:02</CreatedAt>
+    <Text>RT @5SOSMexicoCity_: Ya es muy tarde pero no puedo dormir, ¿están escuchando algo? Díganme que, yo escucho Chvrches 😂 -S https://t.co/IWXqO…</Text>
+    <FullText>RT @5SOSMexicoCity_: Ya es muy tarde pero no puedo dormir, ¿están escuchando algo? Díganme que, yo escucho Chvrches 😂 -S https://t.co/IWXqO…</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>youWould_5sos</CreatedBy>
+    <RetweetCount>3</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>145</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>Ya es muy tarde pero no puedo dormir, ¿están escuchando algo? Díganme que, yo escucho Chvrches 😂 -S https://t.co/IWXqOgxkt2</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/SandraM5sos/status/782463384398606336</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:12:44</CreatedAt>
+    <Text>Ya es muy tarde pero no puedo dormir, ¿están escuchando algo? Díganme que, yo escucho Chvrches 😂 -S https://t.co/IWXqOgxkt2</Text>
+    <FullText>Ya es muy tarde pero no puedo dormir, ¿están escuchando algo? Díganme que, yo escucho Chvrches 😂 -S https://t.co/IWXqOgxkt2</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>5SOS Mexico City</CreatedBy>
+    <RetweetCount>3</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>16</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>123</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/5SOSMexicoCity_/status/782463305721843715</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:11:48</CreatedAt>
+    <Text>RT @CHVRCHES: Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</Text>
+    <FullText>RT @CHVRCHES: Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>OBI-WAAN (1) CORONA</CreatedBy>
+    <RetweetCount>159</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>146</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/Abracadavid/status/782463073214803968</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:11:44</CreatedAt>
+    <Text>RT @CHVRCHES: Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</Text>
+    <FullText>RT @CHVRCHES: Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Arnoldo</CreatedBy>
+    <RetweetCount>159</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>146</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/ArnoldoVenzor/status/782463055577747456</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:11:10</CreatedAt>
+    <Text>@CHVRCHES though it's a lovely place, don't do drugs there. #mexico</Text>
+    <FullText>@CHVRCHES though it's a lovely place, don't do drugs there. #mexico</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <InReplyToUserId>438897828</InReplyToUserId>
+    <InReplyToUserIdStr>438897828</InReplyToUserIdStr>
+    <InReplyToScreenName>CHVRCHES</InReplyToScreenName>
+    <CreatedBy>Manuel</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>67</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/kemic9858/status/782462912531009536</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:07:11</CreatedAt>
+    <Text>#Foals #Chvrches  #JakeBugg  y Noruega se hicieron presentes increíble el #LiveOut2016  #Mty #fundidorapark https://t.co/KN64MPQ7Sl</Text>
+    <FullText>#Foals #Chvrches  #JakeBugg  y Noruega se hicieron presentes increíble el #LiveOut2016  #Mty #fundidorapark https://t.co/KN64MPQ7Sl</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>✨</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>155</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/amvrockss/status/782461909681307648</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:07:09</CreatedAt>
+    <Text>@CHVRCHES 💕 beauty in the mountains @liveoutoficial . https://t.co/y9nyVXo7TQ</Text>
+    <FullText>@CHVRCHES 💕 beauty in the mountains @liveoutoficial . https://t.co/y9nyVXo7TQ</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <InReplyToUserId>438897828</InReplyToUserId>
+    <InReplyToUserIdStr>438897828</InReplyToUserIdStr>
+    <InReplyToScreenName>CHVRCHES</InReplyToScreenName>
+    <CreatedBy>Vegeta.</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>101</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/ilovepauu/status/782461902764937216</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:06:35</CreatedAt>
+    <Text>RT @CHVRCHES: The deadline to REGISTER TO VOTE is soon. Visit @HeadCountOrg to register online or by text: https://t.co/vn26QbgpgT #VoterRe…</Text>
+    <FullText>RT @CHVRCHES: The deadline to REGISTER TO VOTE is soon. Visit @HeadCountOrg to register online or by text: https://t.co/vn26QbgpgT #VoterRe…</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Hugo SD</CreatedBy>
+    <RetweetCount>93</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>140</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>The deadline to REGISTER TO VOTE is soon. Visit @HeadCountOrg to register online or by text:… https://t.co/h2vNSsvGe0</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/black_omen85/status/782461760733257728</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:05:45</CreatedAt>
+    <Text>@CHVRCHES thanks guys, that was AWESOME!!! #LiveOut2016</Text>
+    <FullText>@CHVRCHES thanks guys, that was AWESOME!!! #LiveOut2016</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <InReplyToUserId>438897828</InReplyToUserId>
+    <InReplyToUserIdStr>438897828</InReplyToUserIdStr>
+    <InReplyToScreenName>CHVRCHES</InReplyToScreenName>
+    <CreatedBy>Hugo SD</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>55</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/black_omen85/status/782461549390667776</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:02:42</CreatedAt>
+    <Text>RT @CHVRCHES: Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</Text>
+    <FullText>RT @CHVRCHES: Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</FullText>
+    <Source>&lt;a href="http://twitter.com/#!/download/ipad" rel="nofollow"&gt;Twitter for iPad&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Astrid Reyna</CreatedBy>
+    <RetweetCount>159</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>146</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/astriid_reyna/status/782460780339802112</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:02:41</CreatedAt>
+    <Text>@olobersucks estaba Chvrches y estabas medio adelante pero no se si eras tuuu</Text>
+    <FullText>@olobersucks estaba Chvrches y estabas medio adelante pero no se si eras tuuu</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <InReplyToStatusId>782460459114913792</InReplyToStatusId>
+    <InReplyToStatusIdStr>782460459114913792</InReplyToStatusIdStr>
+    <InReplyToUserId>135646749</InReplyToUserId>
+    <InReplyToUserIdStr>135646749</InReplyToUserIdStr>
+    <InReplyToScreenName>olobersucks</InReplyToScreenName>
+    <CreatedBy>Andrea.</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>77</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/andy_escamillaa/status/782460779345825792</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:01:12</CreatedAt>
+    <Text>Lies | CHVRCHES ✨🎧</Text>
+    <FullText>Lies | CHVRCHES ✨🎧</FullText>
+    <Source>&lt;a href="http://twitter.com" rel="nofollow"&gt;Twitter Web Client&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Alexis☁️</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>UN_NotReferenced</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>18</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/ialexdelrey/status/782460405675204608</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 03:00:01</CreatedAt>
+    <Text>Forbidden  love(chvrches)
+https://t.co/JcL74phD1C</Text>
+    <FullText>Forbidden  love(chvrches)
+https://t.co/JcL74phD1C</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>警察、消防アカウント</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>UN_NotReferenced</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>49</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/C4pcmLAl22cmVAF/status/782460107363721216</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 02:57:53</CreatedAt>
+    <Text>RT @luisegzzg: Sigo emocionado, gracias por todo amigos @CHVRCHES https://t.co/fpwo4jZ68G</Text>
+    <FullText>RT @luisegzzg: Sigo emocionado, gracias por todo amigos @CHVRCHES https://t.co/fpwo4jZ68G</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Lauren Mayberry Fans</CreatedBy>
+    <RetweetCount>1</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>113</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>Sigo emocionado, gracias por todo amigos @CHVRCHES https://t.co/fpwo4jZ68G</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/LaurenMayberryF/status/782459571252060161</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 02:57:13</CreatedAt>
+    <Text>Forbidden  love(chvrches)
+https://t.co/cVKCknaWdR</Text>
+    <FullText>Forbidden  love(chvrches)
+https://t.co/cVKCknaWdR</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>飛び森専用アカウント</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>UN_NotReferenced</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>49</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/JoSkRHYGrttrlWP/status/782459401374314496</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 02:56:49</CreatedAt>
+    <Text>Pase casualmente por enfrente de fundidora y estaba cantando chvrches en el live out, los escuche hasta afuera, llo… https://t.co/Y4CGY57ApL</Text>
+    <FullText>Pase casualmente por enfrente de fundidora y estaba cantando chvrches en el live out, los escuche hasta afuera, llo… https://t.co/Y4CGY57ApL</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>True</Truncated>
+    <CreatedBy>Stargazer</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>140</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/jairwildfire/status/782459301021388800</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 02:55:46</CreatedAt>
+    <Text>RT @FMTUOnLine: Ya esta @chvrches en el escenario de #liveout2016 👏🏻👏🏻👏🏻😍😍😍 https://t.co/2ydwgaz9hm</Text>
+    <FullText>RT @FMTUOnLine: Ya esta @chvrches en el escenario de #liveout2016 👏🏻👏🏻👏🏻😍😍😍 https://t.co/2ydwgaz9hm</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>STBN UGH!</CreatedBy>
+    <RetweetCount>5</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>123</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>Ya esta @chvrches en el escenario de #liveout2016 👏🏻👏🏻👏🏻😍😍😍 https://t.co/2ydwgaz9hm</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/Haru_Steb/status/782459037623476228</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 02:54:49</CreatedAt>
+    <Text>@lilooble @yelhellyeah @John_dlp @haleyalexx us during chvrches https://t.co/bm90PHMijD</Text>
+    <FullText>@lilooble @yelhellyeah @John_dlp @haleyalexx us during chvrches https://t.co/bm90PHMijD</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <InReplyToUserId>118581334</InReplyToUserId>
+    <InReplyToUserIdStr>118581334</InReplyToUserIdStr>
+    <InReplyToScreenName>lilooble</InReplyToScreenName>
+    <CreatedBy>Corn</CreatedBy>
     <RetweetCount>0</RetweetCount>
     <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
     <Favorited>False</Favorited>
@@ -115,554 +1659,761 @@
     <Retweeted>False</Retweeted>
     <PossiblySensitive>False</PossiblySensitive>
     <Language>UN_NotReferenced</Language>
-    <WithheldCopyright>False</WithheldCopyright>
-    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
-    <PublishedTweetLength>140</PublishedTweetLength>
-    <TweetLocalCreationDate>24/09/2016 00:50:18</TweetLocalCreationDate>
-    <IsRetweet>False</IsRetweet>
-    <IsTweetPublished>True</IsTweetPublished>
-    <IsTweetDestroyed>False</IsTweetDestroyed>
-    <Url>https://twitter.com/mat_der_D/status/778445415498719232</Url>
-  </Search100Resultados>
-  <Search100Resultados>
-    <CreatedAt>20/09/2016 19:08:33</CreatedAt>
-    <Text>12345678901234567890</Text>
-    <FullText>12345678901234567890</FullText>
-    <Source>&lt;a href="http://www.cloudhopper.com/" rel="nofollow"&gt;Cloudhopper&lt;/a&gt;</Source>
-    <Truncated>False</Truncated>
-    <CreatedBy>Hi</CreatedBy>
-    <RetweetCount>0</RetweetCount>
-    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
-    <Favorited>False</Favorited>
-    <FavoriteCount>0</FavoriteCount>
-    <Retweeted>False</Retweeted>
-    <PossiblySensitive>False</PossiblySensitive>
-    <Language>UN_NotReferenced</Language>
-    <WithheldCopyright>False</WithheldCopyright>
-    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
-    <PublishedTweetLength>20</PublishedTweetLength>
-    <TweetLocalCreationDate>24/09/2016 00:50:18</TweetLocalCreationDate>
-    <IsRetweet>False</IsRetweet>
-    <IsTweetPublished>True</IsTweetPublished>
-    <IsTweetDestroyed>False</IsTweetDestroyed>
-    <Url>https://twitter.com/Hi09866958/status/778355193490452480</Url>
-  </Search100Resultados>
-  <Search100Resultados>
-    <CreatedAt>20/09/2016 08:51:09</CreatedAt>
-    <Text>123456781 123456782 123456783 123456784 123456785 123456786 123456787 1234567880
-https://t.co/5PaWyR7gcP… https://t.co/cmW7slBQvo</Text>
-    <FullText>123456781 123456782 123456783 123456784 123456785 123456786 123456787 1234567880
-https://t.co/5PaWyR7gcP… https://t.co/cmW7slBQvo</FullText>
-    <Source>&lt;a href="https://straw-test-app.azurewebsites.net/" rel="nofollow"&gt;straw-test-app&lt;/a&gt;</Source>
-    <Truncated>True</Truncated>
-    <CreatedBy>Tester</CreatedBy>
-    <RetweetCount>0</RetweetCount>
-    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
-    <Favorited>False</Favorited>
-    <FavoriteCount>0</FavoriteCount>
-    <Retweeted>False</Retweeted>
-    <PossiblySensitive>False</PossiblySensitive>
-    <Language>UN_NotReferenced</Language>
-    <WithheldCopyright>False</WithheldCopyright>
-    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
-    <PublishedTweetLength>129</PublishedTweetLength>
-    <TweetLocalCreationDate>24/09/2016 00:50:18</TweetLocalCreationDate>
-    <IsRetweet>False</IsRetweet>
-    <IsTweetPublished>True</IsTweetPublished>
-    <IsTweetDestroyed>False</IsTweetDestroyed>
-    <Url>https://twitter.com/tester1qaz/status/778199818539667457</Url>
-  </Search100Resultados>
-  <Search100Resultados>
-    <CreatedAt>19/09/2016 18:31:02</CreatedAt>
-    <Text>12345678901234567890 https://t.co/KCAvh0rpHI</Text>
-    <FullText>12345678901234567890 https://t.co/KCAvh0rpHI</FullText>
-    <Source>&lt;a href="http://twitter.com" rel="nofollow"&gt;Twitter Web Client&lt;/a&gt;</Source>
-    <Truncated>False</Truncated>
-    <CreatedBy>Smile Mchen</CreatedBy>
-    <RetweetCount>0</RetweetCount>
-    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
-    <Favorited>False</Favorited>
-    <FavoriteCount>0</FavoriteCount>
-    <Retweeted>False</Retweeted>
-    <PossiblySensitive>True</PossiblySensitive>
-    <Language>UN_NotReferenced</Language>
     <Place>Tweetinvi.Logic.Model.Place</Place>
     <WithheldCopyright>False</WithheldCopyright>
     <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
-    <PublishedTweetLength>68</PublishedTweetLength>
-    <TweetLocalCreationDate>24/09/2016 00:50:18</TweetLocalCreationDate>
+    <PublishedTweetLength>87</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <QuotedStatusId>778410580612747264</QuotedStatusId>
+    <QuotedStatusIdStr>778410580612747264</QuotedStatusIdStr>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/Hey_Six/status/782458797717610496</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 02:54:23</CreatedAt>
+    <Text>RT @toastteapoetry: Domino's pizza and CHVRCHES, what a time to be alive.</Text>
+    <FullText>RT @toastteapoetry: Domino's pizza and CHVRCHES, what a time to be alive.</FullText>
+    <Source>&lt;a href="http://twitter.com" rel="nofollow"&gt;Twitter Web Client&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Karen Clark</CreatedBy>
+    <RetweetCount>2</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>73</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>Domino's pizza and CHVRCHES, what a time to be alive.</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/knoxko3423/status/782458688615374848</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 02:53:53</CreatedAt>
+    <Text>RT @CHVRCHES: Happy first birthday 🌸🌺🌸 https://t.co/a9gDgVrZQT</Text>
+    <FullText>RT @CHVRCHES: Happy first birthday 🌸🌺🌸 https://t.co/a9gDgVrZQT</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>André Mtz.</CreatedBy>
+    <RetweetCount>605</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>86</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>Happy first birthday 🌸🌺🌸 https://t.co/a9gDgVrZQT</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/andreemtz29/status/782458562224074752</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 02:53:26</CreatedAt>
+    <Text>RT @Bonmaxima: #Maxima1067  #LiveOut2016 @CHVRCHES  #mty  #ParqueFundidora https://t.co/kYJ7d2sjrV</Text>
+    <FullText>RT @Bonmaxima: #Maxima1067  #LiveOut2016 @CHVRCHES  #mty  #ParqueFundidora https://t.co/kYJ7d2sjrV</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>STBN UGH!</CreatedBy>
+    <RetweetCount>5</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>UN_NotReferenced</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>122</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>#Maxima1067  #LiveOut2016 @CHVRCHES  #mty  #ParqueFundidora https://t.co/kYJ7d2sjrV</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/Haru_Steb/status/782458449405874176</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 02:50:45</CreatedAt>
+    <Text>Now playing on @RadioBDC: "Recover" by Chvrches (from The Bones of What You Believe)</Text>
+    <FullText>Now playing on @RadioBDC: "Recover" by Chvrches (from The Bones of What You Believe)</FullText>
+    <Source>&lt;a href="http://boston.com" rel="nofollow"&gt;Boston.com Tweets&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>RadioBDC Playlist</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>84</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
     <IsRetweet>False</IsRetweet>
     <IsTweetPublished>True</IsTweetPublished>
     <IsTweetDestroyed>False</IsTweetDestroyed>
-    <Url>https://twitter.com/smile_mchen1234/status/777983361226674176</Url>
+    <Url>https://twitter.com/RadioBDCMusic/status/782457776647856129</Url>
   </Search100Resultados>
   <Search100Resultados>
-    <CreatedAt>19/09/2016 13:49:30</CreatedAt>
-    <Text>ひま✖︎12345678901234567890</Text>
-    <FullText>ひま✖︎12345678901234567890</FullText>
+    <CreatedAt>02/10/2016 02:50:24</CreatedAt>
+    <Text>RT @BeHypeMx: Parte de lo que @CHVRCHES entregó durante su fulminante show en #LiveOut2016. https://t.co/CC4JWhJwqq</Text>
+    <FullText>RT @BeHypeMx: Parte de lo que @CHVRCHES entregó durante su fulminante show en #LiveOut2016. https://t.co/CC4JWhJwqq</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>STBN UGH!</CreatedBy>
+    <RetweetCount>5</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>139</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>Parte de lo que @CHVRCHES entregó durante su fulminante show en #LiveOut2016. https://t.co/CC4JWhJwqq</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/Haru_Steb/status/782457688353538048</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 02:48:33</CreatedAt>
+    <Text>La morra de chvrches es una reina</Text>
+    <FullText>La morra de chvrches es una reina</FullText>
     <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
     <Truncated>False</Truncated>
-    <CreatedBy>ゆーや</CreatedBy>
+    <CreatedBy>C</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <Place>Tweetinvi.Logic.Model.Place</Place>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>33</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/Selkie_Meaow/status/782457221372186625</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 02:46:21</CreatedAt>
+    <Text>RT @CHVRCHES: Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</Text>
+    <FullText>RT @CHVRCHES: Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Itzel Ortiz</CreatedBy>
+    <RetweetCount>159</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>146</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/soyitzel/status/782456667111698432</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 02:45:51</CreatedAt>
+    <Text>RT @CHVRCHES: Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</Text>
+    <FullText>RT @CHVRCHES: Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</FullText>
+    <Source>&lt;a href="http://twitter.com/#!/download/ipad" rel="nofollow"&gt;Twitter for iPad&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Alejandro Becerra G.</CreatedBy>
+    <RetweetCount>159</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>146</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/rio985/status/782456539697119232</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 02:45:37</CreatedAt>
+    <Text>RT @CHVRCHES: Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</Text>
+    <FullText>RT @CHVRCHES: Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Elvia</CreatedBy>
+    <RetweetCount>159</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>146</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/freakhades/status/782456484214902784</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 02:44:57</CreatedAt>
+    <Text>@ZareekGalvan no de verdad estaba sofocante yo en chvrches aun estaba cerca del barandal pero cuando se acabo... vi la luz</Text>
+    <FullText>@ZareekGalvan no de verdad estaba sofocante yo en chvrches aun estaba cerca del barandal pero cuando se acabo... vi la luz</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <InReplyToStatusId>782455938175205376</InReplyToStatusId>
+    <InReplyToStatusIdStr>782455938175205376</InReplyToStatusIdStr>
+    <InReplyToUserId>86830355</InReplyToUserId>
+    <InReplyToUserIdStr>86830355</InReplyToUserIdStr>
+    <InReplyToScreenName>ZareekGalvan</InReplyToScreenName>
+    <CreatedBy>annie elozano|-/</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>122</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/AnnieElozano/status/782456313749975040</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 02:43:32</CreatedAt>
+    <Text>RT @ivanezzu: @laurenevemay "tell me, tell me, you'll meet me Will you meet me more than halfway up?."So this lady deligtht to Mexico @CHVR…</Text>
+    <FullText>RT @ivanezzu: @laurenevemay "tell me, tell me, you'll meet me Will you meet me more than halfway up?."So this lady deligtht to Mexico @CHVR…</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Itzel Ortiz</CreatedBy>
+    <RetweetCount>11</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>140</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>@laurenevemay "tell me, tell me, you'll meet me Will you meet me more than halfway up?."So this lady deligtht to Me… https://t.co/9rAUC9hqFw</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/soyitzel/status/782455959859765248</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 02:39:37</CreatedAt>
+    <Text>Nu op Virtual Radio: Chvrches - Leave a trace ♬</Text>
+    <FullText>Nu op Virtual Radio: Chvrches - Leave a trace ♬</FullText>
+    <Source>&lt;a href="http://macinmind.com/Radiologik" rel="nofollow"&gt;Radiologik DJ&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Virtual Radio</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>UN_NotReferenced</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>47</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/VirtualRadioNL/status/782454971623145472</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 02:39:29</CreatedAt>
+    <Text>RT @Carcortiz: #liveout #chvrches https://t.co/pHAh7J1ffW</Text>
+    <FullText>RT @Carcortiz: #liveout #chvrches https://t.co/pHAh7J1ffW</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>じょなさん</CreatedBy>
+    <RetweetCount>3</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>UN_NotReferenced</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>81</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>#liveout #chvrches https://t.co/pHAh7J1ffW</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/jonasan1973/status/782454940006350848</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 02:39:14</CreatedAt>
+    <Text>RT @Heineken_MX: Una vez que vives #Heineken #LiveOut2016, siempre vas a querer un festival así. #chvrches #MrOrchestra, descomunales. http…</Text>
+    <FullText>RT @Heineken_MX: Una vez que vives #Heineken #LiveOut2016, siempre vas a querer un festival así. #chvrches #MrOrchestra, descomunales. http…</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>GleamWaves</CreatedBy>
+    <RetweetCount>44</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>140</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>Una vez que vives #Heineken #LiveOut2016, siempre vas a querer un festival así. #chvrches #MrOrchestra, descomunale… https://t.co/d4uOlUoRTm</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/Gleamwaves/status/782454878043987969</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 02:38:42</CreatedAt>
+    <Text>Que tristeza es no haber ido a Live Out a ver a Foals, CHVRCHES y a los demás😞😢</Text>
+    <FullText>Que tristeza es no haber ido a Live Out a ver a Foals, CHVRCHES y a los demás😞😢</FullText>
+    <Source>&lt;a href="http://twitter.com" rel="nofollow"&gt;Twitter Web Client&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Alexis☁️</CreatedBy>
     <RetweetCount>0</RetweetCount>
     <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
     <Favorited>False</Favorited>
     <FavoriteCount>3</FavoriteCount>
     <Retweeted>False</Retweeted>
     <PossiblySensitive>False</PossiblySensitive>
-    <Language>Japanese</Language>
-    <WithheldCopyright>False</WithheldCopyright>
-    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
-    <PublishedTweetLength>24</PublishedTweetLength>
-    <TweetLocalCreationDate>24/09/2016 00:50:18</TweetLocalCreationDate>
-    <IsRetweet>False</IsRetweet>
-    <IsTweetPublished>True</IsTweetPublished>
-    <IsTweetDestroyed>False</IsTweetDestroyed>
-    <Url>https://twitter.com/A2TU5Uld57cUr1M/status/777912511899185152</Url>
-  </Search100Resultados>
-  <Search100Resultados>
-    <CreatedAt>19/09/2016 05:56:55</CreatedAt>
-    <Text>o q achas da beatriz matos ? — Não tenho comentários  https://t.co/yftGKJL2PC</Text>
-    <FullText>o q achas da beatriz matos ? — Não tenho comentários  https://t.co/yftGKJL2PC</FullText>
-    <Source>&lt;a href="http://curiouscat.me" rel="nofollow"&gt;Curious Cat&lt;/a&gt;</Source>
-    <Truncated>False</Truncated>
-    <CreatedBy>Sarinha 🔥</CreatedBy>
-    <RetweetCount>0</RetweetCount>
-    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
-    <Favorited>False</Favorited>
-    <FavoriteCount>0</FavoriteCount>
-    <Retweeted>False</Retweeted>
-    <PossiblySensitive>False</PossiblySensitive>
-    <Language>Portuguese</Language>
-    <WithheldCopyright>False</WithheldCopyright>
-    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
-    <PublishedTweetLength>77</PublishedTweetLength>
-    <TweetLocalCreationDate>24/09/2016 00:50:18</TweetLocalCreationDate>
-    <IsRetweet>False</IsRetweet>
-    <IsTweetPublished>True</IsTweetPublished>
-    <IsTweetDestroyed>False</IsTweetDestroyed>
-    <Url>https://twitter.com/Sara_Passos_/status/777793583822741504</Url>
-  </Search100Resultados>
-  <Search100Resultados>
-    <CreatedAt>18/09/2016 21:14:00</CreatedAt>
-    <Text>Qual é coisa qual é ela que cai no chão e fica verm... — Não sei '-' https://t.co/DHd1oF4fVS</Text>
-    <FullText>Qual é coisa qual é ela que cai no chão e fica verm... — Não sei '-' https://t.co/DHd1oF4fVS</FullText>
-    <Source>&lt;a href="http://curiouscat.me" rel="nofollow"&gt;Curious Cat&lt;/a&gt;</Source>
-    <Truncated>False</Truncated>
-    <CreatedBy>Sarinha 🔥</CreatedBy>
-    <RetweetCount>0</RetweetCount>
-    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
-    <Favorited>False</Favorited>
-    <FavoriteCount>0</FavoriteCount>
-    <Retweeted>False</Retweeted>
-    <PossiblySensitive>False</PossiblySensitive>
-    <Language>Portuguese</Language>
-    <WithheldCopyright>False</WithheldCopyright>
-    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
-    <PublishedTweetLength>92</PublishedTweetLength>
-    <TweetLocalCreationDate>24/09/2016 00:50:18</TweetLocalCreationDate>
-    <IsRetweet>False</IsRetweet>
-    <IsTweetPublished>True</IsTweetPublished>
-    <IsTweetDestroyed>False</IsTweetDestroyed>
-    <Url>https://twitter.com/Sara_Passos_/status/777661988537106432</Url>
-  </Search100Resultados>
-  <Search100Resultados>
-    <CreatedAt>18/09/2016 21:12:18</CreatedAt>
-    <Text>Tua almofada faz cu doce — Achas mesmo 
-Que me dera 😂😂😂 https://t.co/0KBDksglfA</Text>
-    <FullText>Tua almofada faz cu doce — Achas mesmo 
-Que me dera 😂😂😂 https://t.co/0KBDksglfA</FullText>
-    <Source>&lt;a href="http://curiouscat.me" rel="nofollow"&gt;Curious Cat&lt;/a&gt;</Source>
-    <Truncated>False</Truncated>
-    <CreatedBy>Sarinha 🔥</CreatedBy>
-    <RetweetCount>0</RetweetCount>
-    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
-    <Favorited>False</Favorited>
-    <FavoriteCount>0</FavoriteCount>
-    <Retweeted>False</Retweeted>
-    <PossiblySensitive>False</PossiblySensitive>
-    <Language>Portuguese</Language>
+    <Language>Spanish</Language>
     <WithheldCopyright>False</WithheldCopyright>
     <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
     <PublishedTweetLength>79</PublishedTweetLength>
-    <TweetLocalCreationDate>24/09/2016 00:50:18</TweetLocalCreationDate>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
     <IsRetweet>False</IsRetweet>
     <IsTweetPublished>True</IsTweetPublished>
     <IsTweetDestroyed>False</IsTweetDestroyed>
-    <Url>https://twitter.com/Sara_Passos_/status/777661560546222080</Url>
+    <Url>https://twitter.com/ialexdelrey/status/782454740349091840</Url>
   </Search100Resultados>
   <Search100Resultados>
-    <CreatedAt>18/09/2016 21:12:03</CreatedAt>
-    <Text>oiiie pus açúcar no cu fiquei c cu doce — Podes fazer pudim 😂😂😂 https://t.co/XVU6HAwytH</Text>
-    <FullText>oiiie pus açúcar no cu fiquei c cu doce — Podes fazer pudim 😂😂😂 https://t.co/XVU6HAwytH</FullText>
-    <Source>&lt;a href="http://curiouscat.me" rel="nofollow"&gt;Curious Cat&lt;/a&gt;</Source>
-    <Truncated>False</Truncated>
-    <CreatedBy>Sarinha 🔥</CreatedBy>
-    <RetweetCount>0</RetweetCount>
-    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
-    <Favorited>False</Favorited>
-    <FavoriteCount>0</FavoriteCount>
-    <Retweeted>False</Retweeted>
-    <PossiblySensitive>False</PossiblySensitive>
-    <Language>Portuguese</Language>
-    <WithheldCopyright>False</WithheldCopyright>
-    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
-    <PublishedTweetLength>87</PublishedTweetLength>
-    <TweetLocalCreationDate>24/09/2016 00:50:18</TweetLocalCreationDate>
-    <IsRetweet>False</IsRetweet>
-    <IsTweetPublished>True</IsTweetPublished>
-    <IsTweetDestroyed>False</IsTweetDestroyed>
-    <Url>https://twitter.com/Sara_Passos_/status/777661496834793472</Url>
-  </Search100Resultados>
-  <Search100Resultados>
-    <CreatedAt>18/09/2016 21:11:22</CreatedAt>
-    <Text>Teu caracol me ilumina — Meu cabelo não tem luz '-'  https://t.co/7kil8Gea6V</Text>
-    <FullText>Teu caracol me ilumina — Meu cabelo não tem luz '-'  https://t.co/7kil8Gea6V</FullText>
-    <Source>&lt;a href="http://curiouscat.me" rel="nofollow"&gt;Curious Cat&lt;/a&gt;</Source>
-    <Truncated>False</Truncated>
-    <CreatedBy>Sarinha 🔥</CreatedBy>
-    <RetweetCount>0</RetweetCount>
-    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
-    <Favorited>False</Favorited>
-    <FavoriteCount>0</FavoriteCount>
-    <Retweeted>False</Retweeted>
-    <PossiblySensitive>False</PossiblySensitive>
-    <Language>Portuguese</Language>
-    <WithheldCopyright>False</WithheldCopyright>
-    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
-    <PublishedTweetLength>76</PublishedTweetLength>
-    <TweetLocalCreationDate>24/09/2016 00:50:18</TweetLocalCreationDate>
-    <IsRetweet>False</IsRetweet>
-    <IsTweetPublished>True</IsTweetPublished>
-    <IsTweetDestroyed>False</IsTweetDestroyed>
-    <Url>https://twitter.com/Sara_Passos_/status/777661322058170368</Url>
-  </Search100Resultados>
-  <Search100Resultados>
-    <CreatedAt>18/09/2016 21:05:57</CreatedAt>
-    <Text>Me responde como cheira teu peido bom — Não vou responder isso '-' https://t.co/ulu0AxaoiP</Text>
-    <FullText>Me responde como cheira teu peido bom — Não vou responder isso '-' https://t.co/ulu0AxaoiP</FullText>
-    <Source>&lt;a href="http://curiouscat.me" rel="nofollow"&gt;Curious Cat&lt;/a&gt;</Source>
-    <Truncated>False</Truncated>
-    <CreatedBy>Sarinha 🔥</CreatedBy>
-    <RetweetCount>0</RetweetCount>
-    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
-    <Favorited>False</Favorited>
-    <FavoriteCount>0</FavoriteCount>
-    <Retweeted>False</Retweeted>
-    <PossiblySensitive>False</PossiblySensitive>
-    <Language>Portuguese</Language>
-    <WithheldCopyright>False</WithheldCopyright>
-    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
-    <PublishedTweetLength>90</PublishedTweetLength>
-    <TweetLocalCreationDate>24/09/2016 00:50:18</TweetLocalCreationDate>
-    <IsRetweet>False</IsRetweet>
-    <IsTweetPublished>True</IsTweetPublished>
-    <IsTweetDestroyed>False</IsTweetDestroyed>
-    <Url>https://twitter.com/Sara_Passos_/status/777659961044193281</Url>
-  </Search100Resultados>
-  <Search100Resultados>
-    <CreatedAt>18/09/2016 21:05:39</CreatedAt>
-    <Text>oi vi te no alegro és boa como ò milho — Me viste quando? https://t.co/WRbPrr2KmG</Text>
-    <FullText>oi vi te no alegro és boa como ò milho — Me viste quando? https://t.co/WRbPrr2KmG</FullText>
-    <Source>&lt;a href="http://curiouscat.me" rel="nofollow"&gt;Curious Cat&lt;/a&gt;</Source>
-    <Truncated>False</Truncated>
-    <CreatedBy>Sarinha 🔥</CreatedBy>
-    <RetweetCount>0</RetweetCount>
-    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
-    <Favorited>False</Favorited>
-    <FavoriteCount>0</FavoriteCount>
-    <Retweeted>False</Retweeted>
-    <PossiblySensitive>False</PossiblySensitive>
-    <Language>Portuguese</Language>
-    <WithheldCopyright>False</WithheldCopyright>
-    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
-    <PublishedTweetLength>81</PublishedTweetLength>
-    <TweetLocalCreationDate>24/09/2016 00:50:18</TweetLocalCreationDate>
-    <IsRetweet>False</IsRetweet>
-    <IsTweetPublished>True</IsTweetPublished>
-    <IsTweetDestroyed>False</IsTweetDestroyed>
-    <Url>https://twitter.com/Sara_Passos_/status/777659885014048773</Url>
-  </Search100Resultados>
-  <Search100Resultados>
-    <CreatedAt>18/09/2016 21:05:04</CreatedAt>
-    <Text>teu cabelo e liso ne ? Tu q metes rolos todos os di... — Não 
-Ele é encaracolado natural  https://t.co/hNjDYxKMi0</Text>
-    <FullText>teu cabelo e liso ne ? Tu q metes rolos todos os di... — Não 
-Ele é encaracolado natural  https://t.co/hNjDYxKMi0</FullText>
-    <Source>&lt;a href="http://curiouscat.me" rel="nofollow"&gt;Curious Cat&lt;/a&gt;</Source>
-    <Truncated>False</Truncated>
-    <CreatedBy>Sarinha 🔥</CreatedBy>
-    <RetweetCount>0</RetweetCount>
-    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
-    <Favorited>False</Favorited>
-    <FavoriteCount>0</FavoriteCount>
-    <Retweeted>False</Retweeted>
-    <PossiblySensitive>False</PossiblySensitive>
-    <Language>Portuguese</Language>
-    <WithheldCopyright>False</WithheldCopyright>
-    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
-    <PublishedTweetLength>113</PublishedTweetLength>
-    <TweetLocalCreationDate>24/09/2016 00:50:18</TweetLocalCreationDate>
-    <IsRetweet>False</IsRetweet>
-    <IsTweetPublished>True</IsTweetPublished>
-    <IsTweetDestroyed>False</IsTweetDestroyed>
-    <Url>https://twitter.com/Sara_Passos_/status/777659736758030338</Url>
-  </Search100Resultados>
-  <Search100Resultados>
-    <CreatedAt>18/09/2016 21:03:29</CreatedAt>
-    <Text>Já não te faço mais perguntas adiós , hasta lá vist... — Te amo 😏😂😂 https://t.co/T5UXl0MhwF</Text>
-    <FullText>Já não te faço mais perguntas adiós , hasta lá vist... — Te amo 😏😂😂 https://t.co/T5UXl0MhwF</FullText>
-    <Source>&lt;a href="http://curiouscat.me" rel="nofollow"&gt;Curious Cat&lt;/a&gt;</Source>
-    <Truncated>False</Truncated>
-    <CreatedBy>Sarinha 🔥</CreatedBy>
-    <RetweetCount>0</RetweetCount>
-    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
-    <Favorited>False</Favorited>
-    <FavoriteCount>0</FavoriteCount>
-    <Retweeted>False</Retweeted>
-    <PossiblySensitive>False</PossiblySensitive>
-    <Language>Portuguese</Language>
-    <WithheldCopyright>False</WithheldCopyright>
-    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
-    <PublishedTweetLength>91</PublishedTweetLength>
-    <TweetLocalCreationDate>24/09/2016 00:50:18</TweetLocalCreationDate>
-    <IsRetweet>False</IsRetweet>
-    <IsTweetPublished>True</IsTweetPublished>
-    <IsTweetDestroyed>False</IsTweetDestroyed>
-    <Url>https://twitter.com/Sara_Passos_/status/777659339238629377</Url>
-  </Search100Resultados>
-  <Search100Resultados>
-    <CreatedAt>18/09/2016 21:02:30</CreatedAt>
-    <Text>Cale-se e respeite sua mãe. — Sou mais velha que tu '-' 😂😂 https://t.co/bZ74vlt1uZ</Text>
-    <FullText>Cale-se e respeite sua mãe. — Sou mais velha que tu '-' 😂😂 https://t.co/bZ74vlt1uZ</FullText>
-    <Source>&lt;a href="http://curiouscat.me" rel="nofollow"&gt;Curious Cat&lt;/a&gt;</Source>
-    <Truncated>False</Truncated>
-    <CreatedBy>Sarinha 🔥</CreatedBy>
-    <RetweetCount>0</RetweetCount>
-    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
-    <Favorited>False</Favorited>
-    <FavoriteCount>0</FavoriteCount>
-    <Retweeted>False</Retweeted>
-    <PossiblySensitive>False</PossiblySensitive>
-    <Language>Portuguese</Language>
-    <WithheldCopyright>False</WithheldCopyright>
-    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
-    <PublishedTweetLength>82</PublishedTweetLength>
-    <TweetLocalCreationDate>24/09/2016 00:50:18</TweetLocalCreationDate>
-    <IsRetweet>False</IsRetweet>
-    <IsTweetPublished>True</IsTweetPublished>
-    <IsTweetDestroyed>False</IsTweetDestroyed>
-    <Url>https://twitter.com/Sara_Passos_/status/777659091543916544</Url>
-  </Search100Resultados>
-  <Search100Resultados>
-    <CreatedAt>18/09/2016 21:02:16</CreatedAt>
-    <Text>Pena metes tu dentussas — Nossa okok 😂😂😂 https://t.co/fz6d1VkGUF</Text>
-    <FullText>Pena metes tu dentussas — Nossa okok 😂😂😂 https://t.co/fz6d1VkGUF</FullText>
-    <Source>&lt;a href="http://curiouscat.me" rel="nofollow"&gt;Curious Cat&lt;/a&gt;</Source>
-    <Truncated>False</Truncated>
-    <CreatedBy>Sarinha 🔥</CreatedBy>
-    <RetweetCount>0</RetweetCount>
-    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
-    <Favorited>False</Favorited>
-    <FavoriteCount>0</FavoriteCount>
-    <Retweeted>False</Retweeted>
-    <PossiblySensitive>False</PossiblySensitive>
-    <Language>Portuguese</Language>
-    <WithheldCopyright>False</WithheldCopyright>
-    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
-    <PublishedTweetLength>64</PublishedTweetLength>
-    <TweetLocalCreationDate>24/09/2016 00:50:18</TweetLocalCreationDate>
-    <IsRetweet>False</IsRetweet>
-    <IsTweetPublished>True</IsTweetPublished>
-    <IsTweetDestroyed>False</IsTweetDestroyed>
-    <Url>https://twitter.com/Sara_Passos_/status/777659033956257792</Url>
-  </Search100Resultados>
-  <Search100Resultados>
-    <CreatedAt>18/09/2016 21:02:02</CreatedAt>
-    <Text>EU N PROCURO NGM SUA GALDÉRIA KKKKKK ! — NÃO MINTAS 
-GENTE ELA PROCURA UM BOM RAPAZ QUE SEJ... https://t.co/iK58lhvhU0</Text>
-    <FullText>EU N PROCURO NGM SUA GALDÉRIA KKKKKK ! — NÃO MINTAS 
-GENTE ELA PROCURA UM BOM RAPAZ QUE SEJ... https://t.co/iK58lhvhU0</FullText>
-    <Source>&lt;a href="http://curiouscat.me" rel="nofollow"&gt;Curious Cat&lt;/a&gt;</Source>
-    <Truncated>False</Truncated>
-    <CreatedBy>Sarinha 🔥</CreatedBy>
-    <RetweetCount>0</RetweetCount>
-    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
-    <Favorited>False</Favorited>
-    <FavoriteCount>0</FavoriteCount>
-    <Retweeted>False</Retweeted>
-    <PossiblySensitive>False</PossiblySensitive>
-    <Language>Portuguese</Language>
-    <WithheldCopyright>False</WithheldCopyright>
-    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
-    <PublishedTweetLength>118</PublishedTweetLength>
-    <TweetLocalCreationDate>24/09/2016 00:50:18</TweetLocalCreationDate>
-    <IsRetweet>False</IsRetweet>
-    <IsTweetPublished>True</IsTweetPublished>
-    <IsTweetDestroyed>False</IsTweetDestroyed>
-    <Url>https://twitter.com/Sara_Passos_/status/777658975957426177</Url>
-  </Search100Resultados>
-  <Search100Resultados>
-    <CreatedAt>18/09/2016 21:00:49</CreatedAt>
-    <Text>Sara tou te a fazer perguntas tbm tens que me fazer... — Bby não metas pena 😂😂😂 https://t.co/nSDgN3B8kw</Text>
-    <FullText>Sara tou te a fazer perguntas tbm tens que me fazer... — Bby não metas pena 😂😂😂 https://t.co/nSDgN3B8kw</FullText>
-    <Source>&lt;a href="http://curiouscat.me" rel="nofollow"&gt;Curious Cat&lt;/a&gt;</Source>
-    <Truncated>False</Truncated>
-    <CreatedBy>Sarinha 🔥</CreatedBy>
-    <RetweetCount>0</RetweetCount>
-    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
-    <Favorited>False</Favorited>
-    <FavoriteCount>0</FavoriteCount>
-    <Retweeted>False</Retweeted>
-    <PossiblySensitive>False</PossiblySensitive>
-    <Language>Portuguese</Language>
-    <WithheldCopyright>False</WithheldCopyright>
-    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
-    <PublishedTweetLength>103</PublishedTweetLength>
-    <TweetLocalCreationDate>24/09/2016 00:50:18</TweetLocalCreationDate>
-    <IsRetweet>False</IsRetweet>
-    <IsTweetPublished>True</IsTweetPublished>
-    <IsTweetDestroyed>False</IsTweetDestroyed>
-    <Url>https://twitter.com/Sara_Passos_/status/777658668095377408</Url>
-  </Search100Resultados>
-  <Search100Resultados>
-    <CreatedAt>18/09/2016 21:00:05</CreatedAt>
-    <Text>Oi galera. Oi sara. Fala d mim 😎 — Olá '-' 
-Boa pessoa, me fizeste falta, uma bitch, ... https://t.co/6urUxLzWNc</Text>
-    <FullText>Oi galera. Oi sara. Fala d mim 😎 — Olá '-' 
-Boa pessoa, me fizeste falta, uma bitch, ... https://t.co/6urUxLzWNc</FullText>
-    <Source>&lt;a href="http://curiouscat.me" rel="nofollow"&gt;Curious Cat&lt;/a&gt;</Source>
-    <Truncated>False</Truncated>
-    <CreatedBy>Sarinha 🔥</CreatedBy>
-    <RetweetCount>0</RetweetCount>
-    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
-    <Favorited>False</Favorited>
-    <FavoriteCount>0</FavoriteCount>
-    <Retweeted>False</Retweeted>
-    <PossiblySensitive>False</PossiblySensitive>
-    <Language>Portuguese</Language>
-    <WithheldCopyright>False</WithheldCopyright>
-    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
-    <PublishedTweetLength>112</PublishedTweetLength>
-    <TweetLocalCreationDate>24/09/2016 00:50:18</TweetLocalCreationDate>
-    <IsRetweet>False</IsRetweet>
-    <IsTweetPublished>True</IsTweetPublished>
-    <IsTweetDestroyed>False</IsTweetDestroyed>
-    <Url>https://twitter.com/Sara_Passos_/status/777658482208026624</Url>
-  </Search100Resultados>
-  <Search100Resultados>
-    <CreatedAt>18/09/2016 20:59:09</CreatedAt>
-    <Text>KKKKKKKKKKKKKKKK — Kkkkkkk '-' https://t.co/L9bBYm3rdV</Text>
-    <FullText>KKKKKKKKKKKKKKKK — Kkkkkkk '-' https://t.co/L9bBYm3rdV</FullText>
-    <Source>&lt;a href="http://curiouscat.me" rel="nofollow"&gt;Curious Cat&lt;/a&gt;</Source>
-    <Truncated>False</Truncated>
-    <CreatedBy>Sarinha 🔥</CreatedBy>
-    <RetweetCount>0</RetweetCount>
-    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
-    <Favorited>False</Favorited>
-    <FavoriteCount>0</FavoriteCount>
-    <Retweeted>False</Retweeted>
-    <PossiblySensitive>False</PossiblySensitive>
-    <Language>UN_NotReferenced</Language>
-    <WithheldCopyright>False</WithheldCopyright>
-    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
-    <PublishedTweetLength>54</PublishedTweetLength>
-    <TweetLocalCreationDate>24/09/2016 00:50:18</TweetLocalCreationDate>
-    <IsRetweet>False</IsRetweet>
-    <IsTweetPublished>True</IsTweetPublished>
-    <IsTweetDestroyed>False</IsTweetDestroyed>
-    <Url>https://twitter.com/Sara_Passos_/status/777658250313347072</Url>
-  </Search100Resultados>
-  <Search100Resultados>
-    <CreatedAt>18/09/2016 20:58:58</CreatedAt>
-    <Text>Fala do teu rabo — Português???????? https://t.co/eFle79Lnmn</Text>
-    <FullText>Fala do teu rabo — Português???????? https://t.co/eFle79Lnmn</FullText>
-    <Source>&lt;a href="http://curiouscat.me" rel="nofollow"&gt;Curious Cat&lt;/a&gt;</Source>
-    <Truncated>False</Truncated>
-    <CreatedBy>Sarinha 🔥</CreatedBy>
-    <RetweetCount>0</RetweetCount>
-    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
-    <Favorited>False</Favorited>
-    <FavoriteCount>0</FavoriteCount>
-    <Retweeted>False</Retweeted>
-    <PossiblySensitive>False</PossiblySensitive>
-    <Language>Portuguese</Language>
-    <WithheldCopyright>False</WithheldCopyright>
-    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
-    <PublishedTweetLength>60</PublishedTweetLength>
-    <TweetLocalCreationDate>24/09/2016 00:50:18</TweetLocalCreationDate>
-    <IsRetweet>False</IsRetweet>
-    <IsTweetPublished>True</IsTweetPublished>
-    <IsTweetDestroyed>False</IsTweetDestroyed>
-    <Url>https://twitter.com/Sara_Passos_/status/777658202309525504</Url>
-  </Search100Resultados>
-  <Search100Resultados>
-    <CreatedAt>18/09/2016 20:05:07</CreatedAt>
-    <Text>12345678901234567890</Text>
-    <FullText>12345678901234567890</FullText>
+    <CreatedAt>02/10/2016 02:38:26</CreatedAt>
+    <Text>Sigo emocionado, gracias por todo amigos @CHVRCHES https://t.co/fpwo4jZ68G</Text>
+    <FullText>Sigo emocionado, gracias por todo amigos @CHVRCHES https://t.co/fpwo4jZ68G</FullText>
     <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
     <Truncated>False</Truncated>
-    <CreatedBy>Cabaas</CreatedBy>
-    <RetweetCount>0</RetweetCount>
+    <CreatedBy>Luis González</CreatedBy>
+    <RetweetCount>1</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>4</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>98</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/luisegzzg/status/782454675295514624</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 02:38:10</CreatedAt>
+    <Text>RT @Heineken_MX: Una vez que vives #Heineken #LiveOut2016, siempre vas a querer un festival así. #chvrches #MrOrchestra, descomunales. http…</Text>
+    <FullText>RT @Heineken_MX: Una vez que vives #Heineken #LiveOut2016, siempre vas a querer un festival así. #chvrches #MrOrchestra, descomunales. http…</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>TG⛳️</CreatedBy>
+    <RetweetCount>44</RetweetCount>
     <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
     <Favorited>False</Favorited>
     <FavoriteCount>0</FavoriteCount>
     <Retweeted>False</Retweeted>
     <PossiblySensitive>False</PossiblySensitive>
-    <Language>UN_NotReferenced</Language>
+    <Language>Spanish</Language>
     <WithheldCopyright>False</WithheldCopyright>
     <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
-    <PublishedTweetLength>20</PublishedTweetLength>
-    <TweetLocalCreationDate>24/09/2016 00:50:18</TweetLocalCreationDate>
-    <IsRetweet>False</IsRetweet>
+    <PublishedTweetLength>140</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>Una vez que vives #Heineken #LiveOut2016, siempre vas a querer un festival así. #chvrches #MrOrchestra, descomunale… https://t.co/d4uOlUoRTm</RetweetedTweet>
     <IsTweetPublished>True</IsTweetPublished>
     <IsTweetDestroyed>False</IsTweetDestroyed>
-    <Url>https://twitter.com/Ghh45gghhCabaas/status/777644653487194113</Url>
+    <Url>https://twitter.com/TonyGalindoA/status/782454609126133760</Url>
   </Search100Resultados>
   <Search100Resultados>
-    <CreatedAt>17/09/2016 16:27:10</CreatedAt>
-    <Text>Vote 12345678901234567890</Text>
-    <FullText>Vote 12345678901234567890</FullText>
-    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <CreatedAt>02/10/2016 02:37:40</CreatedAt>
+    <Text>CHVRCHES</Text>
+    <FullText>CHVRCHES</FullText>
+    <Source>&lt;a href="http://twitter.com/#!/download/ipad" rel="nofollow"&gt;Twitter for iPad&lt;/a&gt;</Source>
     <Truncated>False</Truncated>
-    <CreatedBy>joão</CreatedBy>
+    <CreatedBy>obliviate</CreatedBy>
     <RetweetCount>0</RetweetCount>
     <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
     <Favorited>False</Favorited>
     <FavoriteCount>1</FavoriteCount>
     <Retweeted>False</Retweeted>
     <PossiblySensitive>False</PossiblySensitive>
-    <Language>French</Language>
+    <Language>UN_NotReferenced</Language>
     <WithheldCopyright>False</WithheldCopyright>
     <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
-    <PublishedTweetLength>25</PublishedTweetLength>
-    <TweetLocalCreationDate>24/09/2016 00:50:18</TweetLocalCreationDate>
+    <PublishedTweetLength>8</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
     <IsRetweet>False</IsRetweet>
     <IsTweetPublished>True</IsTweetPublished>
     <IsTweetDestroyed>False</IsTweetDestroyed>
-    <Url>https://twitter.com/JoaoPau90415008/status/777227414061608960</Url>
+    <Url>https://twitter.com/Osuna00/status/782454484072960000</Url>
   </Search100Resultados>
   <Search100Resultados>
-    <CreatedAt>16/09/2016 19:40:08</CreatedAt>
-    <Text>Posting from @apigee's API test console. It's like a command line for the Twitter API!12345678901234567890 #apitools https://t.co/eWkDt0X3Yl</Text>
-    <FullText>Posting from @apigee's API test console. It's like a command line for the Twitter API!12345678901234567890 #apitools https://t.co/eWkDt0X3Yl</FullText>
+    <CreatedAt>02/10/2016 02:37:29</CreatedAt>
+    <Text>RT @Heineken_MX: Una vez que vives #Heineken #LiveOut2016, siempre vas a querer un festival así. #chvrches #MrOrchestra, descomunales. http…</Text>
+    <FullText>RT @Heineken_MX: Una vez que vives #Heineken #LiveOut2016, siempre vas a querer un festival así. #chvrches #MrOrchestra, descomunales. http…</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>666</CreatedBy>
+    <RetweetCount>44</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>140</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>Una vez que vives #Heineken #LiveOut2016, siempre vas a querer un festival así. #chvrches #MrOrchestra, descomunale… https://t.co/d4uOlUoRTm</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/CeciiSykes/status/782454437012836352</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 02:37:25</CreatedAt>
+    <Text>#NowPlaying Bury It de CHVRCHES ♫ https://t.co/o0t6qkueLo</Text>
+    <FullText>#NowPlaying Bury It de CHVRCHES ♫ https://t.co/o0t6qkueLo</FullText>
+    <Source>&lt;a href="http://spotify.com" rel="nofollow"&gt;Spotify&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Albricias</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>1</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>UN_NotReferenced</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>57</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/RaistClaster/status/782454419640184833</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 02:37:19</CreatedAt>
+    <Text>RT @Heineken_MX: Una vez que vives #Heineken #LiveOut2016, siempre vas a querer un festival así. #chvrches #MrOrchestra, descomunales. http…</Text>
+    <FullText>RT @Heineken_MX: Una vez que vives #Heineken #LiveOut2016, siempre vas a querer un festival así. #chvrches #MrOrchestra, descomunales. http…</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Ruben Alcocer.⛤</CreatedBy>
+    <RetweetCount>44</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>140</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>Una vez que vives #Heineken #LiveOut2016, siempre vas a querer un festival así. #chvrches #MrOrchestra, descomunale… https://t.co/d4uOlUoRTm</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/rubensalcocer93/status/782454393442402304</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 02:35:32</CreatedAt>
+    <Text>Todo era risas y diversión hasta que vi los vídeos de CHVRCHES en El Plaza Condesa, y faltan los de Twenty One Pilots.😓</Text>
+    <FullText>Todo era risas y diversión hasta que vi los vídeos de CHVRCHES en El Plaza Condesa, y faltan los de Twenty One Pilots.😓</FullText>
     <Source>&lt;a href="http://twitter.com" rel="nofollow"&gt;Twitter Web Client&lt;/a&gt;</Source>
     <Truncated>False</Truncated>
-    <CreatedBy>Smile Mchen</CreatedBy>
+    <CreatedBy>Sharon</CreatedBy>
     <RetweetCount>0</RetweetCount>
     <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
     <Favorited>False</Favorited>
     <FavoriteCount>0</FavoriteCount>
     <Retweeted>False</Retweeted>
-    <PossiblySensitive>True</PossiblySensitive>
-    <Language>English</Language>
-    <Place>Tweetinvi.Logic.Model.Place</Place>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
     <WithheldCopyright>False</WithheldCopyright>
     <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
-    <PublishedTweetLength>164</PublishedTweetLength>
-    <TweetLocalCreationDate>24/09/2016 00:50:18</TweetLocalCreationDate>
+    <PublishedTweetLength>119</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
     <IsRetweet>False</IsRetweet>
     <IsTweetPublished>True</IsTweetPublished>
     <IsTweetDestroyed>False</IsTweetDestroyed>
-    <Url>https://twitter.com/smile_mchen1234/status/776913587482701824</Url>
+    <Url>https://twitter.com/Sharon_Amairany/status/782453945713111041</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 02:34:35</CreatedAt>
+    <Text>Se mamaron @CHVRCHES 🔥🔥🔥🔥</Text>
+    <FullText>Se mamaron @CHVRCHES 🔥🔥🔥🔥</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Luis González</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>25</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/luisegzzg/status/782453707589820416</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 02:33:25</CreatedAt>
+    <Text>RT @Heineken_MX: Una vez que vives #Heineken #LiveOut2016, siempre vas a querer un festival así. #chvrches #MrOrchestra, descomunales. http…</Text>
+    <FullText>RT @Heineken_MX: Una vez que vives #Heineken #LiveOut2016, siempre vas a querer un festival así. #chvrches #MrOrchestra, descomunales. http…</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>The blackest day ϟ†△</CreatedBy>
+    <RetweetCount>44</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>Spanish</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>140</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>Una vez que vives #Heineken #LiveOut2016, siempre vas a querer un festival así. #chvrches #MrOrchestra, descomunale… https://t.co/d4uOlUoRTm</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/marCoosalonz/status/782453413984411648</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 02:33:13</CreatedAt>
+    <Text>RT @PIH_Canada: On the #StayingPower playlist? Haitian &amp;amp; @plus1org tunes: https://t.co/O4i0hE2J4r cc. @arkellsmusic, @CHVRCHES, @arcadefire…</Text>
+    <FullText>RT @PIH_Canada: On the #StayingPower playlist? Haitian &amp;amp; @plus1org tunes: https://t.co/O4i0hE2J4r cc. @arkellsmusic, @CHVRCHES, @arcadefire…</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Plus One</CreatedBy>
+    <RetweetCount>4</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>144</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>On the #StayingPower playlist? Haitian &amp;amp; @plus1org tunes: https://t.co/O4i0hE2J4r cc. @arkellsmusic, @CHVRCHES, @arcadefire, @youarestars</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/plus1org/status/782453363833176064</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 02:32:55</CreatedAt>
+    <Text>@CHVRCHES Your show was truly amazing!Thank you so freaking much for coming to Monterrey!!One of the best shows I have seen if not the best!</Text>
+    <FullText>@CHVRCHES Your show was truly amazing!Thank you so freaking much for coming to Monterrey!!One of the best shows I have seen if not the best!</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <InReplyToUserId>438897828</InReplyToUserId>
+    <InReplyToUserIdStr>438897828</InReplyToUserIdStr>
+    <InReplyToScreenName>CHVRCHES</InReplyToScreenName>
+    <CreatedBy>White Wolf</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>1</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>140</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/hazardmonkey/status/782453285605089280</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 02:31:37</CreatedAt>
+    <Text>@CHVRCHES Laurence why you don't ever  smile????? PLEASE TELL ME</Text>
+    <FullText>@CHVRCHES Laurence why you don't ever  smile????? PLEASE TELL ME</FullText>
+    <Source>&lt;a href="http://twitter.com/download/android" rel="nofollow"&gt;Twitter for Android&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <InReplyToUserId>438897828</InReplyToUserId>
+    <InReplyToUserIdStr>438897828</InReplyToUserIdStr>
+    <InReplyToScreenName>CHVRCHES</InReplyToScreenName>
+    <CreatedBy>Lorena A</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>64</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/lorenaguil/status/782452957753118721</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 02:31:27</CreatedAt>
+    <Text>remember that period of like three weeks when I was really into chvrches?? that was weird</Text>
+    <FullText>remember that period of like three weeks when I was really into chvrches?? that was weird</FullText>
+    <Source>&lt;a href="http://twitter.com" rel="nofollow"&gt;Twitter Web Client&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>megan 💀 Kees</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>1</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>89</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/keeskeren/status/782452918263816192</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 02:30:08</CreatedAt>
+    <Text>#NP CHVRCHES- Empty Treat
+
+#SST</Text>
+    <FullText>#NP CHVRCHES- Empty Treat
+
+#SST</FullText>
+    <Source>&lt;a href="https://about.twitter.com/products/tweetdeck" rel="nofollow"&gt;TweetDeck&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Radio Masdha Jogja</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>UN_NotReferenced</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>31</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/masdhafm/status/782452584665665536</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 02:29:29</CreatedAt>
+    <Text>Chvrches are rad, I can't wait to see em in two days!</Text>
+    <FullText>Chvrches are rad, I can't wait to see em in two days!</FullText>
+    <Source>&lt;a href="http://twitter.com/download/iphone" rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>LINA</CreatedBy>
+    <RetweetCount>0</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>2</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>53</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>False</IsRetweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/gimmehxlf/status/782452422484430848</Url>
+  </Search100Resultados>
+  <Search100Resultados>
+    <CreatedAt>02/10/2016 02:28:54</CreatedAt>
+    <Text>RT @CHVRCHES: Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</Text>
+    <FullText>RT @CHVRCHES: Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</FullText>
+    <Source>&lt;a href="http://akanews.org/fe/" rel="nofollow"&gt;mtappronp920&lt;/a&gt;</Source>
+    <Truncated>False</Truncated>
+    <CreatedBy>Tuningfork</CreatedBy>
+    <RetweetCount>159</RetweetCount>
+    <Entities>Tweetinvi.Logic.TwitterEntities.TweetEntities</Entities>
+    <Favorited>False</Favorited>
+    <FavoriteCount>0</FavoriteCount>
+    <Retweeted>False</Retweeted>
+    <PossiblySensitive>False</PossiblySensitive>
+    <Language>English</Language>
+    <WithheldCopyright>False</WithheldCopyright>
+    <TweetDTO>Tweetinvi.Logic.DTO.TweetWithSearchMetadataDTO</TweetDTO>
+    <PublishedTweetLength>146</PublishedTweetLength>
+    <TweetLocalCreationDate>02/10/2016 03:45:47</TweetLocalCreationDate>
+    <IsRetweet>True</IsRetweet>
+    <RetweetedTweet>Today is our last day in Mexico! We play @liveoutoficial at 8.30pm. https://t.co/jpp8jdJIpI</RetweetedTweet>
+    <IsTweetPublished>True</IsTweetPublished>
+    <IsTweetDestroyed>False</IsTweetDestroyed>
+    <Url>https://twitter.com/tuningforkk/status/782452274958172160</Url>
   </Search100Resultados>
 </NewDataSet>

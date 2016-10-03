@@ -60,7 +60,8 @@ namespace TwittPeek.userControls
         {
             FolderBrowserDialog oDialog = new FolderBrowserDialog();
             oDialog.RootFolder = Environment.SpecialFolder.MyComputer;// = Directory.GetCurrentDirectory();
-            oDialog.SelectedPath = Directory.GetCurrentDirectory();
+            oDialog.SelectedPath = Directory.GetParent(Directory.GetCurrentDirectory()) + "\\Dados";
+                
             if (oDialog.ShowDialog() == DialogResult.OK)
             {
 
