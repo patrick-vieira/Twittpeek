@@ -81,6 +81,33 @@ namespace TwittPeek
                 }
             }
 
+            public object getField(string field_name)
+            {
+                object oReturn = null;
+
+                switch(field_name)
+                {
+                    case "index":
+                        return index;
+
+                    case "ID":
+                        return ID;
+
+                    case "PublishedTweetLength":
+                        return PublishedTweetLength;
+
+                    case "RetweetCount":
+                        return RetweetCount;
+
+                    case "FavoriteCount":
+                        return FavoriteCount;
+
+                    default:
+                        return oReturn;
+
+                };
+
+            }
         }
 
     }
