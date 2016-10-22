@@ -104,6 +104,7 @@
             this.btnExecutar_Index.TabIndex = 94;
             this.btnExecutar_Index.Text = "EXECUTAR";
             this.btnExecutar_Index.UseVisualStyleBackColor = true;
+            this.btnExecutar_Index.Click += new System.EventHandler(this.btnExecutar_Index_Click);
             // 
             // label11
             // 
@@ -140,6 +141,7 @@
             this.btnExecutar_FavoriteCount.TabIndex = 90;
             this.btnExecutar_FavoriteCount.Text = "EXECUTAR";
             this.btnExecutar_FavoriteCount.UseVisualStyleBackColor = true;
+            this.btnExecutar_FavoriteCount.Click += new System.EventHandler(this.btnExecutar_FavoriteCount_Click);
             // 
             // label10
             // 
@@ -194,6 +196,7 @@
             this.btnExecutar_RetweetCount.TabIndex = 84;
             this.btnExecutar_RetweetCount.Text = "EXECUTAR";
             this.btnExecutar_RetweetCount.UseVisualStyleBackColor = true;
+            this.btnExecutar_RetweetCount.Click += new System.EventHandler(this.btnExecutar_RetweetCount_Click);
             // 
             // lblResultTime_ID
             // 
@@ -221,6 +224,7 @@
             this.btnExecutar_ID.TabIndex = 81;
             this.btnExecutar_ID.Text = "EXECUTAR";
             this.btnExecutar_ID.UseVisualStyleBackColor = true;
+            this.btnExecutar_ID.Click += new System.EventHandler(this.btnExecutar_ID_Click);
             // 
             // lblResultTime
             // 
@@ -248,6 +252,7 @@
             this.btnExecutar.TabIndex = 78;
             this.btnExecutar.Text = "EXECUTAR";
             this.btnExecutar.UseVisualStyleBackColor = true;
+            this.btnExecutar.Click += new System.EventHandler(this.btnExecutar_Click);
             // 
             // btnCarrega10000
             // 
@@ -257,6 +262,7 @@
             this.btnCarrega10000.TabIndex = 77;
             this.btnCarrega10000.Text = "10000";
             this.btnCarrega10000.UseVisualStyleBackColor = true;
+            this.btnCarrega10000.Click += new System.EventHandler(this.btnCarrega10000_Click);
             // 
             // btnCarrega1000
             // 
@@ -266,6 +272,7 @@
             this.btnCarrega1000.TabIndex = 76;
             this.btnCarrega1000.Text = "1000";
             this.btnCarrega1000.UseVisualStyleBackColor = true;
+            this.btnCarrega1000.Click += new System.EventHandler(this.btnCarrega1000_Click);
             // 
             // btnCarrega100
             // 
@@ -275,6 +282,7 @@
             this.btnCarrega100.TabIndex = 75;
             this.btnCarrega100.Text = "100";
             this.btnCarrega100.UseVisualStyleBackColor = true;
+            this.btnCarrega100.Click += new System.EventHandler(this.btnCarrega100_Click);
             // 
             // dataGridViewDados
             // 

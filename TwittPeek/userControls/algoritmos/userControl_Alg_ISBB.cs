@@ -28,7 +28,22 @@ namespace TwittPeek.userControls.algoritmos
 
         private void btnTeste_Click(object sender, EventArgs e)
         {
+            /*
+            int[] a = {37, 23, 0, 17, 12, 72, 31,
+              46, 100, 88, 54};
+
+            int n = a.Length;
+            int i;
+
+            insertionSort(a, a.Length);
+
+            lblArrayTeste.Text = "Sorted array:";
+            for (i = 0; i < n; i++)
+                lblArrayTeste.Text += a[i] + " ";
+            */
+
             int[] arrArrayTeste = new int[10];
+
             int cont = 0, temp;
 
             foreach (char cChar in lblArrayTeste.Text)
@@ -40,31 +55,91 @@ namespace TwittPeek.userControls.algoritmos
             
             lblArrayTesteResultado.Text = "";
 
+            insertionSort(arrArrayTeste, arrArrayTeste.Length);
+
             foreach (int iInterger in arrArrayTeste)
             {
                 lblArrayTesteResultado.Text += iInterger.ToString();
             }
         }
-        
 
-
-        void insercao_direta_busca_binaria(mainTwittPeek.Tweets[] oTweets)
+        int binarySearch(int[] a, int item, int low, int high)
         {
-            int i, j;
-            mainTwittPeek.Tweets chave;
-            for (j = 1; j < oTweets.Length; j++)
-            {
-                chave = oTweets[j];
+            if (high <= low)
+                return (item > a[low]) ? (low + 1) : low;
 
-                i = j - 1;
-                //ver como pegar o campo da struct dinamicamente tipo oTweets[i]["ID"] assim podemos ordenar por qualquer campo usando o mesmo algoritmo
-                while ((i >= 0) && (oTweets[i].PublishedTweetLength) > chave.PublishedTweetLength)
+            int mid = (low + high) / 2;
+
+            if (item == a[mid])
+                return mid + 1;
+
+            if (item > a[mid])
+                return binarySearch(a, item, mid + 1, high);
+            return binarySearch(a, item, low, mid - 1);
+        }
+
+
+        // Function to sort an array a[] of size 'n'
+        void insertionSort(int[] a, int n)
+        {
+            int i, loc, j, selected;
+
+            for (i = 1; i < n; ++i)
+            {
+                j = i - 1;
+                selected = a[i];
+
+                // find location where selected sould be inseretd
+                loc = binarySearch(a, selected, 0, j);
+
+                // Move all elements after location to create space
+                while (j >= loc)
                 {
-                    oTweets[i + 1] = oTweets[i];
-                    i--;
+                    a[j + 1] = a[j];
+                    j--;
                 }
-                oTweets[i + 1] = chave;
+                a[j + 1] = selected;
             }
+        }
+
+        int binarySearch(mainTwittPeek.Tweets[] oTweets, mainTwittPeek.Tweets item, int low, int high, string sChave)
+        {
+            if (high <= low)
+                return ((int)item.getField(sChave) > (int)oTweets[low].getField(sChave)) ? (low + 1) : low;
+
+            int mid = (low + high) / 2;
+
+            if (item.getField(sChave) == oTweets[mid].getField(sChave))
+                return mid + 1;
+
+            if ((int)item.getField(sChave) > (int)oTweets[mid].getField(sChave))
+                return binarySearch(oTweets, item, mid + 1, high, sChave);
+            return binarySearch(oTweets, item, low, mid - 1, sChave);
+        }
+
+        void insercao_direta_busca_binaria(mainTwittPeek.Tweets[] oTweets, string sChave)
+        {
+            int i, loc, j;
+
+            mainTwittPeek.Tweets selected;
+
+            for (i = 1; i < oTweets.Length; ++i)
+            {
+                j = i - 1;
+                selected = oTweets[i];
+
+                // find location where selected sould be inseretd
+                loc = binarySearch(oTweets, selected, 0, j, sChave);
+
+                // Move all elements after location to create space
+                while (j >= loc)
+                {
+                    oTweets[j + 1] = oTweets[j];
+                    j--;
+                }
+                oTweets[j + 1] = selected;
+            }
+                        
         }
 
 
@@ -110,6 +185,51 @@ namespace TwittPeek.userControls.algoritmos
             dataGridViewDados.DataSource = oTable;
 
             return true;
+        }
+
+        private void btnExecutar_Click(object sender, EventArgs e)
+        {
+           
+
+            
+            long oStart = DateTime.Now.Ticks;
+            insercao_direta_busca_binaria(oTweets, "PublishedTweetLength");
+            lblResultTime.Text = (DateTime.Now.Ticks - oStart).ToString();
+            mMostraDados();
+
+
+        }
+
+        private void btnExecutar_Index_Click(object sender, EventArgs e)
+        {
+            long oStart = DateTime.Now.Ticks;
+            insercao_direta_busca_binaria(oTweets, "index");
+            lblResultTime_Index.Text = (DateTime.Now.Ticks - oStart).ToString();
+            mMostraDados();
+        }
+
+        private void btnExecutar_ID_Click(object sender, EventArgs e)
+        {
+            long oStart = DateTime.Now.Ticks;
+            insercao_direta_busca_binaria(oTweets, "ID");
+            lblResultTime_ID.Text = (DateTime.Now.Ticks - oStart).ToString();
+            mMostraDados();
+        }
+
+        private void btnExecutar_RetweetCount_Click(object sender, EventArgs e)
+        {
+            long oStart = DateTime.Now.Ticks;
+            insercao_direta_busca_binaria(oTweets, "RetweetCount");
+            lblResultTime_RetweetCount.Text = (DateTime.Now.Ticks - oStart).ToString();
+            mMostraDados();
+        }
+
+        private void btnExecutar_FavoriteCount_Click(object sender, EventArgs e)
+        {
+            long oStart = DateTime.Now.Ticks;
+            insercao_direta_busca_binaria(oTweets, "FavoriteCount");
+            lblResultTime_FavoriteCount.Text = (DateTime.Now.Ticks - oStart).ToString();
+            mMostraDados();
         }
     }
 }
