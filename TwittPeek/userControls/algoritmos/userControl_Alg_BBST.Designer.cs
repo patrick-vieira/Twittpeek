@@ -218,6 +218,7 @@
             // 
             // btnExecutar_ID
             // 
+            this.btnExecutar_ID.Enabled = false;
             this.btnExecutar_ID.Location = new System.Drawing.Point(190, 154);
             this.btnExecutar_ID.Name = "btnExecutar_ID";
             this.btnExecutar_ID.Size = new System.Drawing.Size(73, 26);
@@ -367,6 +368,7 @@
             this.Controls.Add(this.label1);
             this.Name = "userControl_Alg_BBST";
             this.Size = new System.Drawing.Size(655, 495);
+            this.Load += new System.EventHandler(this.userControl_Alg_BBST_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

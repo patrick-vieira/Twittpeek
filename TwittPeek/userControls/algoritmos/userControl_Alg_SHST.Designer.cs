@@ -296,6 +296,7 @@
             // 
             // btnExecutar_ID
             // 
+            this.btnExecutar_ID.Enabled = false;
             this.btnExecutar_ID.Location = new System.Drawing.Point(186, 152);
             this.btnExecutar_ID.Name = "btnExecutar_ID";
             this.btnExecutar_ID.Size = new System.Drawing.Size(73, 26);

@@ -16,11 +16,13 @@ namespace TwittPeek
 
         private DataSet oDataSetDados;
         private mainTwittPeek oMainTwittPeek;
-
+        
         public frmDados()
         {
             InitializeComponent();
+
             oMainTwittPeek = new mainTwittPeek();
+            
             carregarToolStripMenuItem_Click(null, null);
         }
 

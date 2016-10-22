@@ -143,48 +143,9 @@ namespace TwittPeek.userControls.algoritmos
         }
 
 
-        bool mMostraDados()
-        {
-
-            if (oTweets == null)
-                return false;
-
-            DataTable oTable = new DataTable("ISBL100");
-
-            //melhorar isso aqui tbm, da pra fazer em poucas linhas, assim ta muito feio
-
-            oTable.Columns.Add("index", typeof(int));
-            oTable.Columns.Add("ID", typeof(long));
-
-            oTable.Columns.Add("CreatedAt", typeof(string));
-            oTable.Columns.Add("Text", typeof(string));
-            oTable.Columns.Add("FullText", typeof(string));
-            oTable.Columns.Add("Source", typeof(string));
-            oTable.Columns.Add("CreatedBy", typeof(string));
-
-            oTable.Columns.Add("RetweetCount", typeof(int));
-            oTable.Columns.Add("Favorited", typeof(bool));
-            oTable.Columns.Add("FavoriteCount", typeof(int));
-            oTable.Columns.Add("Retweeted", typeof(bool));
-
-            oTable.Columns.Add("Language", typeof(string));
-
-            oTable.Columns.Add("PublishedTweetLength", typeof(int));
-            oTable.Columns.Add("TweetLocalCreationDate", typeof(string));
-            oTable.Columns.Add("IsRetweet", typeof(bool));
-            oTable.Columns.Add("IsTweetPublished", typeof(bool));
-            oTable.Columns.Add("IsTweetDestroyed", typeof(bool));
-            oTable.Columns.Add("Url", typeof(string));
-
-
-            foreach (mainTwittPeek.Tweets oTweet in oTweets)
-            {
-                oTable.Rows.Add(oTweet.all);
-            }
-
-            dataGridViewDados.DataSource = oTable;
-
-            return true;
+        void mMostraDados()
+        {           
+            //dataGridViewDados.DataSource = mainTwittPeek.preencheGrid(oTweets);    
         }
 
         private void btnExecutar_Click(object sender, EventArgs e)
@@ -229,6 +190,24 @@ namespace TwittPeek.userControls.algoritmos
             long oStart = DateTime.Now.Ticks;
             insercao_direta_busca_binaria(oTweets, "FavoriteCount");
             lblResultTime_FavoriteCount.Text = (DateTime.Now.Ticks - oStart).ToString();
+            mMostraDados();
+        }
+
+        private void btnCarrega100_Click(object sender, EventArgs e)
+        {
+            oTweets = (mainTwittPeek.Tweets[])frmTweetPeek.frmDados.mGetDados(100);
+            mMostraDados();
+        }
+
+        private void btnCarrega1000_Click(object sender, EventArgs e)
+        {
+            oTweets = (mainTwittPeek.Tweets[])frmTweetPeek.frmDados.mGetDados(1000);
+            mMostraDados();
+        }
+
+        private void btnCarrega10000_Click(object sender, EventArgs e)
+        {
+            oTweets = (mainTwittPeek.Tweets[])frmTweetPeek.frmDados.mGetDados(10000);
             mMostraDados();
         }
     }

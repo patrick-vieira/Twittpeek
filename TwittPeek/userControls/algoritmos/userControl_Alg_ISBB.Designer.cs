@@ -54,6 +54,9 @@
             this.lblResultTime = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnExecutar = new System.Windows.Forms.Button();
+            this.btnCarrega10000 = new System.Windows.Forms.Button();
+            this.btnCarrega1000 = new System.Windows.Forms.Button();
+            this.btnCarrega100 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDados)).BeginInit();
             this.SuspendLayout();
             // 
@@ -263,6 +266,7 @@
             // 
             // btnExecutar_ID
             // 
+            this.btnExecutar_ID.Enabled = false;
             this.btnExecutar_ID.Location = new System.Drawing.Point(172, 148);
             this.btnExecutar_ID.Name = "btnExecutar_ID";
             this.btnExecutar_ID.Size = new System.Drawing.Size(73, 26);
@@ -299,10 +303,43 @@
             this.btnExecutar.UseVisualStyleBackColor = true;
             this.btnExecutar.Click += new System.EventHandler(this.btnExecutar_Click);
             // 
+            // btnCarrega10000
+            // 
+            this.btnCarrega10000.Location = new System.Drawing.Point(572, 15);
+            this.btnCarrega10000.Name = "btnCarrega10000";
+            this.btnCarrega10000.Size = new System.Drawing.Size(50, 26);
+            this.btnCarrega10000.TabIndex = 92;
+            this.btnCarrega10000.Text = "10000";
+            this.btnCarrega10000.UseVisualStyleBackColor = true;
+            this.btnCarrega10000.Click += new System.EventHandler(this.btnCarrega10000_Click);
+            // 
+            // btnCarrega1000
+            // 
+            this.btnCarrega1000.Location = new System.Drawing.Point(516, 15);
+            this.btnCarrega1000.Name = "btnCarrega1000";
+            this.btnCarrega1000.Size = new System.Drawing.Size(50, 26);
+            this.btnCarrega1000.TabIndex = 91;
+            this.btnCarrega1000.Text = "1000";
+            this.btnCarrega1000.UseVisualStyleBackColor = true;
+            this.btnCarrega1000.Click += new System.EventHandler(this.btnCarrega1000_Click);
+            // 
+            // btnCarrega100
+            // 
+            this.btnCarrega100.Location = new System.Drawing.Point(460, 15);
+            this.btnCarrega100.Name = "btnCarrega100";
+            this.btnCarrega100.Size = new System.Drawing.Size(50, 26);
+            this.btnCarrega100.TabIndex = 90;
+            this.btnCarrega100.Text = "100";
+            this.btnCarrega100.UseVisualStyleBackColor = true;
+            this.btnCarrega100.Click += new System.EventHandler(this.btnCarrega100_Click);
+            // 
             // userControl_Alg_ISBB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnCarrega10000);
+            this.Controls.Add(this.btnCarrega1000);
+            this.Controls.Add(this.btnCarrega100);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblResultTime_Index);
             this.Controls.Add(this.label12);
@@ -365,5 +402,8 @@
         private System.Windows.Forms.Label lblResultTime;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnExecutar;
+        private System.Windows.Forms.Button btnCarrega10000;
+        private System.Windows.Forms.Button btnCarrega1000;
+        private System.Windows.Forms.Button btnCarrega100;
     }
 }

@@ -17,10 +17,10 @@ namespace TwittPeek
     //Cpd2016/2 Senha email twittpeek@mail.com
     public partial class frmTweetPeek : Form
     {
-
+        static public frmDados frmDados;
         csMainTweetinvi oClassMainTweetinvi;
 
-        public static frmDados frmDados;
+        public mainTwittPeek oMainTwittPeek;
 
         private static userControl_SendTwitt oUserControl_SendTwitt;
         private static userControl_TimeLine oUserControl_TimeLine;
@@ -39,6 +39,7 @@ namespace TwittPeek
         private void inicializaUserControls()
         {
             frmDados = new frmDados();
+            oMainTwittPeek = new mainTwittPeek();
 
             oUserControl_SearchTweet = new userControl_SearchTweet(oClassMainTweetinvi);
             pnlMain.Controls.Add(oUserControl_SearchTweet);
@@ -60,7 +61,7 @@ namespace TwittPeek
             oUserControl_GetFollowing.Dock = DockStyle.Fill;
             oUserControl_GetFollowing.Hide();
 
-            oUserControl_Alg_ISBL = new userControl_Alg_ISBL(oClassMainTweetinvi);
+            oUserControl_Alg_ISBL = new userControl_Alg_ISBL(oMainTwittPeek);
             pnlMain.Controls.Add(oUserControl_Alg_ISBL);
             oUserControl_Alg_ISBL.Dock = DockStyle.Fill;
             oUserControl_Alg_ISBL.Hide();
