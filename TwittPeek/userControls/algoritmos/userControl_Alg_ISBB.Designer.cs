@@ -149,6 +149,7 @@
             this.btnExecutar_Index.TabIndex = 86;
             this.btnExecutar_Index.Text = "EXECUTAR";
             this.btnExecutar_Index.UseVisualStyleBackColor = true;
+            this.btnExecutar_Index.Click += new System.EventHandler(this.btnExecutar_Index_Click);
             // 
             // label11
             // 
@@ -185,6 +186,7 @@
             this.btnExecutar_FavoriteCount.TabIndex = 82;
             this.btnExecutar_FavoriteCount.Text = "EXECUTAR";
             this.btnExecutar_FavoriteCount.UseVisualStyleBackColor = true;
+            this.btnExecutar_FavoriteCount.Click += new System.EventHandler(this.btnExecutar_FavoriteCount_Click);
             // 
             // label10
             // 
@@ -239,6 +241,7 @@
             this.btnExecutar_RetweetCount.TabIndex = 76;
             this.btnExecutar_RetweetCount.Text = "EXECUTAR";
             this.btnExecutar_RetweetCount.UseVisualStyleBackColor = true;
+            this.btnExecutar_RetweetCount.Click += new System.EventHandler(this.btnExecutar_RetweetCount_Click);
             // 
             // lblResultTime_ID
             // 
@@ -266,6 +269,7 @@
             this.btnExecutar_ID.TabIndex = 73;
             this.btnExecutar_ID.Text = "EXECUTAR";
             this.btnExecutar_ID.UseVisualStyleBackColor = true;
+            this.btnExecutar_ID.Click += new System.EventHandler(this.btnExecutar_ID_Click);
             // 
             // lblResultTime
             // 
@@ -293,6 +297,7 @@
             this.btnExecutar.TabIndex = 70;
             this.btnExecutar.Text = "EXECUTAR";
             this.btnExecutar.UseVisualStyleBackColor = true;
+            this.btnExecutar.Click += new System.EventHandler(this.btnExecutar_Click);
             // 
             // userControl_Alg_ISBB
             // 

@@ -247,7 +247,24 @@ namespace TwittPeek.userControls.algoritmos
                 }
                 C[i + 1] = chave;
             }
+
+            int a = binarySearch(C, 3, C[1], C[C.Length - 1]);
         }
+        int binarySearch(int[] a, int item, int low, int high)
+        {
+            if (high <= low)
+                return (item > a[low]) ? (low + 1) : low;
+
+            int mid = (low + high) / 2;
+
+            if (item == a[mid])
+                return mid + 1;
+
+            if (item > a[mid])
+                return binarySearch(a, item, mid + 1, high);//faz o corte para cima [56789]
+            return binarySearch(a, item, low, mid - 1); //faz o corte para baixo [01234]
+        }
+
 
         private void btnCarrega100_Click(object sender, EventArgs e)
         {
