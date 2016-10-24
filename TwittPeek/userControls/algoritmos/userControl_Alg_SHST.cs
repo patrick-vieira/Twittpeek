@@ -12,41 +12,42 @@ namespace TwittPeek.userControls.algoritmos
 {
     public partial class userControl_Alg_SHST : UserControl
     {
-        csMainTweetinvi oClassMainTweetinvi;
-        mainTwittPeek.Tweets[] oTweets;
+        mainTwittPeek oMainTwittpeek;
 
-        public userControl_Alg_SHST(csMainTweetinvi Tweetinvi)
+        public userControl_Alg_SHST(mainTwittPeek oTwittpeek)
         {
             InitializeComponent();
 
-            oClassMainTweetinvi = Tweetinvi;
+            oMainTwittpeek = oTwittpeek;
 
-            oTweets = (mainTwittPeek.Tweets[])frmTweetPeek.frmDados.mGetDados(100);
-            
             mMostraDados();
         }
 
 
-        void insercao_direta(mainTwittPeek.Tweets[] oTweets)
+        void mMostraDados()
         {
-            int i, j;
-            mainTwittPeek.Tweets chave;
-            for (j = 1; j < oTweets.Length; j++)
-            {
-                chave = oTweets[j];
-
-                i = j - 1;
-                //ver como pegar o campo da struct dinamicamente tipo oTweets[i]["ID"] assim podemos ordenar por qualquer campo usando o mesmo algoritmo
-                while ((i >= 0) && (oTweets[i].PublishedTweetLength) > chave.PublishedTweetLength)
-                {
-                    oTweets[i + 1] = oTweets[i];
-                    i--;
-                }
-                oTweets[i + 1] = chave;
-            }
+            dataGridViewDados.ClearSelection();
+            dataGridViewDados.DataSource = oMainTwittpeek.preencheGrid(oMainTwittpeek.arrTweets);
         }
 
-        void shellSort(mainTwittPeek.Tweets[] oTweets)
+        /// <summary>
+        /// executa o ordenamento e retorna o tempo gasto em ticks
+        /// </summary>
+        /// <param name="sCampo">Campo da struct que deseja usar como chave</param>
+        /// <param name="nSize">quantidade de elementos 100, 1000 ou 10000</param>
+        /// <returns>ticks de um DateTime</returns>
+        public long executar(string sCampo, int nSize)
+        {
+            oMainTwittpeek.mCarregaDados(nSize);
+
+            long oStart = DateTime.Now.Ticks;
+
+            shellSort(oMainTwittpeek.arrTweets, sCampo);
+
+            return DateTime.Now.Ticks - oStart;
+        }
+
+        void shellSort(mainTwittPeek.Tweets[] oTweets, string sChave)
         {
             int i, j;
             mainTwittPeek.Tweets value;
@@ -63,7 +64,7 @@ namespace TwittPeek.userControls.algoritmos
                 {
                     value = oTweets[i];
                     j = i - gap;
-                    while (j >= 0 && value.PublishedTweetLength < oTweets[j].PublishedTweetLength)
+                    while (j >= 0 && (int)value.getField(sChave) < (int)oTweets[j].getField(sChave))
                     {
                         oTweets[j + gap] = oTweets[j];
                         j -= gap;
@@ -72,6 +73,85 @@ namespace TwittPeek.userControls.algoritmos
                 }
             }
         }
+
+        private void btnExecutar_Click(object sender, EventArgs e)
+        {     
+            long oStart = DateTime.Now.Ticks;
+
+            shellSort(oMainTwittpeek.arrTweets, "PublishedTweetLength");
+
+            lblResultTime.Text = (DateTime.Now.Ticks - oStart).ToString();
+
+            mMostraDados();
+            
+        }
+
+        private void btnExecutar_ID_Click(object sender, EventArgs e)
+        {
+
+            long oStart = DateTime.Now.Ticks;
+
+            shellSort(oMainTwittpeek.arrTweets, "ID");
+
+            lblResultTime_ID.Text = (DateTime.Now.Ticks - oStart).ToString();
+
+            mMostraDados();
+        }
+
+        private void btnExecutar_RetweetCount_Click(object sender, EventArgs e)
+        {
+
+            long oStart = DateTime.Now.Ticks;
+
+            shellSort(oMainTwittpeek.arrTweets, "RetweetCount");
+
+            lblResultTime_RetweetCount.Text = (DateTime.Now.Ticks - oStart).ToString();
+
+            mMostraDados();
+        }
+
+        private void btnExecutar_FavoriteCount_Click(object sender, EventArgs e)
+        {
+
+            long oStart = DateTime.Now.Ticks;
+
+            shellSort(oMainTwittpeek.arrTweets, "FavoriteCount");
+
+            lblResultTime_FavoriteCount.Text = (DateTime.Now.Ticks - oStart).ToString();
+
+            mMostraDados();
+        }
+
+        private void btnExecutar_Index_Click(object sender, EventArgs e)
+        {
+            long oStart = DateTime.Now.Ticks;
+            
+            shellSort(oMainTwittpeek.arrTweets, "index");
+
+            lblResultTime_Index.Text = (DateTime.Now.Ticks - oStart).ToString();
+
+            mMostraDados();
+        }
+
+        private void btnCarrega100_Click(object sender, EventArgs e)
+        {
+            oMainTwittpeek.mCarregaDados(100);
+            mMostraDados();
+        }
+
+        private void btnCarrega1000_Click(object sender, EventArgs e)
+        {
+            oMainTwittpeek.mCarregaDados(1000);
+            mMostraDados(); 
+        }
+
+        private void btnCarrega10000_Click(object sender, EventArgs e)
+        {
+            oMainTwittpeek.mCarregaDados(10000);
+            mMostraDados();
+        }
+
+
 
         void shellSort(int[] vet, int size)
         {
@@ -120,178 +200,5 @@ namespace TwittPeek.userControls.algoritmos
             }
         }
 
-
-        void mMostraDados()
-        {
-            //dataGridViewDados.DataSource = mainTwittPeek.preencheGrid(oTweets);
-        }
-
-        private void btnExecutar_Click(object sender, EventArgs e)
-        {     
-
-            long oStart = DateTime.Now.Ticks;
-
-            shellSort(oTweets);
-
-            lblResultTime.Text = (DateTime.Now.Ticks - oStart).ToString();
-
-            mMostraDados();
-            
-        }
-
-        private void btnExecutar_ID_Click(object sender, EventArgs e)
-        {
-
-            long oStart = DateTime.Now.Ticks;
-
-            int i, j;
-            mainTwittPeek.Tweets value;
-
-            int gap = 1;
-            while (gap < oTweets.Length)
-            {
-                gap = 3 * gap + 1;
-            }
-            while (gap > 1)
-            {
-                gap /= 3;
-                for (i = gap; i < oTweets.Length; i++)
-                {
-                    value = oTweets[i];
-                    j = i - gap;
-                    while (j >= 0 && value.ID < oTweets[j].ID)
-                    {
-                        oTweets[j + gap] = oTweets[j];
-                        j -= gap;
-                    }
-                    oTweets[j + gap] = value;
-                }
-            }
-
-            lblResultTime_ID.Text = (DateTime.Now.Ticks - oStart).ToString();
-
-            mMostraDados();
-        }
-
-        private void btnExecutar_RetweetCount_Click(object sender, EventArgs e)
-        {
-
-            long oStart = DateTime.Now.Ticks;
-
-            int i, j;
-            mainTwittPeek.Tweets value;
-
-            int gap = 1;
-            while (gap < oTweets.Length)
-            {
-                gap = 3 * gap + 1;
-            }
-            while (gap > 1)
-            {
-                gap /= 3;
-                for (i = gap; i < oTweets.Length; i++)
-                {
-                    value = oTweets[i];
-                    j = i - gap;
-                    while (j >= 0 && value.RetweetCount < oTweets[j].RetweetCount)
-                    {
-                        oTweets[j + gap] = oTweets[j];
-                        j -= gap;
-                    }
-                    oTweets[j + gap] = value;
-                }
-            }
-
-            lblResultTime_RetweetCount.Text = (DateTime.Now.Ticks - oStart).ToString();
-
-            mMostraDados();
-        }
-
-        private void btnExecutar_FavoriteCount_Click(object sender, EventArgs e)
-        {
-
-            long oStart = DateTime.Now.Ticks;
-
-            int i, j;
-            mainTwittPeek.Tweets value;
-
-            int gap = 1;
-            while (gap < oTweets.Length)
-            {
-                gap = 3 * gap + 1;
-            }
-            while (gap > 1)
-            {
-                gap /= 3;
-                for (i = gap; i < oTweets.Length; i++)
-                {
-                    value = oTweets[i];
-                    j = i - gap;
-                    while (j >= 0 && value.FavoriteCount < oTweets[j].FavoriteCount)
-                    {
-                        oTweets[j + gap] = oTweets[j];
-                        j -= gap;
-                    }
-                    oTweets[j + gap] = value;
-                }
-            }
-
-            lblResultTime_FavoriteCount.Text = (DateTime.Now.Ticks - oStart).ToString();
-
-            mMostraDados();
-        }
-
-        private void btnExecutar_Index_Click(object sender, EventArgs e)
-        {
-            long oStart = DateTime.Now.Ticks;
-
-            int i, j;
-            mainTwittPeek.Tweets value;
-
-            int gap = 1;
-            while (gap < oTweets.Length)
-            {
-                gap = 3 * gap + 1;
-            }
-            while (gap > 1)
-            {
-                gap /= 3;
-                for (i = gap; i < oTweets.Length; i++)
-                {
-                    value = oTweets[i];
-                    j = i - gap;
-                    while (j >= 0 && value.index < oTweets[j].index)
-                    {
-                        oTweets[j + gap] = oTweets[j];
-                        j -= gap;
-                    }
-                    oTweets[j + gap] = value;
-                }
-            }
-
-            lblResultTime_Index.Text = (DateTime.Now.Ticks - oStart).ToString();
-
-            mMostraDados();
-        }
-
-        private void btnCarrega100_Click(object sender, EventArgs e)
-        {
-            oTweets = (mainTwittPeek.Tweets[])frmTweetPeek.frmDados.mGetDados(100);
-            mMostraDados();
-        }
-
-        private void btnCarrega1000_Click(object sender, EventArgs e)
-        {
-            oTweets = (mainTwittPeek.Tweets[])frmTweetPeek.frmDados.mGetDados(1000);
-            mMostraDados();
-        }
-
-        private void btnCarrega10000_Click(object sender, EventArgs e)
-        {
-            oTweets = (mainTwittPeek.Tweets[])frmTweetPeek.frmDados.mGetDados(10000);
-            mMostraDados();
-        }
-
-        
     }
 }

@@ -29,6 +29,23 @@ namespace TwittPeek.userControls.algoritmos
             dataGridViewDados.DataSource = oMainTwittpeek.preencheGrid(oMainTwittpeek.arrTweets);
         }
 
+        /// <summary>
+        /// executa o ordenamento e retorna o tempo gasto em ticks
+        /// </summary>
+        /// <param name="sCampo">Campo da struct que deseja usar como chave</param>
+        /// <param name="nSize">quantidade de elementos 100, 1000 ou 10000</param>
+        /// <returns>ticks de um DateTime</returns>
+        public long executar(string sCampo, int nSize)
+        {
+            oMainTwittpeek.mCarregaDados(nSize);
+
+            long oStart = DateTime.Now.Ticks;
+
+            insercao_direta(oMainTwittpeek.arrTweets, sCampo);
+
+            return DateTime.Now.Ticks - oStart;
+        }
+
         void insercao_direta(mainTwittPeek.Tweets[] oTweets, string sChave)
         {
             int i, j;

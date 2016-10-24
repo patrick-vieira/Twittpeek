@@ -12,19 +12,141 @@ namespace TwittPeek.userControls.algoritmos
 {
     public partial class userControl_Alg_ISBB : UserControl
     {
-        csMainTweetinvi oClassMainTweetinvi;
-        mainTwittPeek.Tweets[] oTweets;
+        mainTwittPeek oMainTwittpeek;
 
-        public userControl_Alg_ISBB(csMainTweetinvi Tweetinvi)
+        public userControl_Alg_ISBB(mainTwittPeek oTwittpeek)
         {
             InitializeComponent();
 
-            oClassMainTweetinvi = Tweetinvi;
-
-            oTweets = (mainTwittPeek.Tweets[])frmTweetPeek.frmDados.mGetDados(100);
-            
+            oMainTwittpeek = oTwittpeek;
+                        
             mMostraDados();
         }
+        
+        void mMostraDados()
+        {
+            dataGridViewDados.ClearSelection();
+            dataGridViewDados.DataSource = oMainTwittpeek.preencheGrid(oMainTwittpeek.arrTweets);
+        }
+        /// <summary>
+        /// executa o ordenamento e retorna o tempo gasto em ticks
+        /// </summary>
+        /// <param name="sCampo">Campo da struct que deseja usar como chave</param>
+        /// <param name="nSize">quantidade de elementos 100, 1000 ou 10000</param>
+        /// <returns>ticks de um DateTime</returns>
+        public long executar(string sCampo, int nSize)
+        {
+            oMainTwittpeek.mCarregaDados(nSize);
+
+            long oStart = DateTime.Now.Ticks;
+
+            insercao_direta_busca_binaria(oMainTwittpeek.arrTweets, sCampo);
+
+            return DateTime.Now.Ticks - oStart;
+        }
+
+
+        void insercao_direta_busca_binaria(mainTwittPeek.Tweets[] oTweets, string sChave)
+        {
+            int i, loc, j;
+
+            mainTwittPeek.Tweets selected;
+
+            for (i = 1; i < oTweets.Length; ++i)
+            {
+                j = i - 1;
+                selected = oTweets[i];
+
+                // find location where selected sould be inseretd
+                loc = busca_binaria(oTweets, selected, 0, j, sChave);
+
+                // Move all elements after location to create space
+                while (j >= loc)
+                {
+                    oTweets[j + 1] = oTweets[j];
+                    j--;
+                }
+                oTweets[j + 1] = selected;
+            }
+
+        }
+
+        int busca_binaria(mainTwittPeek.Tweets[] oTweets, mainTwittPeek.Tweets item, int low, int high, string sChave)
+        {
+            if (high <= low)
+                return ((int)item.getField(sChave) > (int)oTweets[low].getField(sChave)) ? (low + 1) : low;
+
+            int mid = (low + high) / 2;
+
+            if (item.getField(sChave) == oTweets[mid].getField(sChave))
+                return mid + 1;
+
+            if ((int)item.getField(sChave) > (int)oTweets[mid].getField(sChave))
+                return busca_binaria(oTweets, item, mid + 1, high, sChave);
+            return busca_binaria(oTweets, item, low, mid - 1, sChave);
+        }
+        
+
+        private void btnExecutar_Click(object sender, EventArgs e)
+        {   
+            long oStart = DateTime.Now.Ticks;
+            insercao_direta_busca_binaria(oMainTwittpeek.arrTweets, "PublishedTweetLength");
+            lblResultTime.Text = (DateTime.Now.Ticks - oStart).ToString();
+            mMostraDados();
+            
+        }
+
+        private void btnExecutar_Index_Click(object sender, EventArgs e)
+        {
+            long oStart = DateTime.Now.Ticks;
+            insercao_direta_busca_binaria(oMainTwittpeek.arrTweets, "index");
+            lblResultTime_Index.Text = (DateTime.Now.Ticks - oStart).ToString();
+            mMostraDados();
+        }
+
+        private void btnExecutar_ID_Click(object sender, EventArgs e)
+        {
+            long oStart = DateTime.Now.Ticks;
+            insercao_direta_busca_binaria(oMainTwittpeek.arrTweets, "ID");
+            lblResultTime_ID.Text = (DateTime.Now.Ticks - oStart).ToString();
+            mMostraDados();
+        }
+
+        private void btnExecutar_RetweetCount_Click(object sender, EventArgs e)
+        {
+            long oStart = DateTime.Now.Ticks;
+            insercao_direta_busca_binaria(oMainTwittpeek.arrTweets, "RetweetCount");
+            lblResultTime_RetweetCount.Text = (DateTime.Now.Ticks - oStart).ToString();
+            mMostraDados();
+        }
+
+        private void btnExecutar_FavoriteCount_Click(object sender, EventArgs e)
+        {
+            long oStart = DateTime.Now.Ticks;
+            insercao_direta_busca_binaria(oMainTwittpeek.arrTweets, "FavoriteCount");
+            lblResultTime_FavoriteCount.Text = (DateTime.Now.Ticks - oStart).ToString();
+            mMostraDados();
+        }
+
+        private void btnCarrega100_Click(object sender, EventArgs e)
+        {
+            oMainTwittpeek.mCarregaDados(100);
+            mMostraDados();
+        }
+
+        private void btnCarrega1000_Click(object sender, EventArgs e)
+        {
+            oMainTwittpeek.mCarregaDados(1000);
+            mMostraDados();
+        }
+
+        private void btnCarrega10000_Click(object sender, EventArgs e)
+        {
+            oMainTwittpeek.mCarregaDados(10000);
+            mMostraDados();
+        }
+
+
 
         private void btnTeste_Click(object sender, EventArgs e)
         {
@@ -52,7 +174,7 @@ namespace TwittPeek.userControls.algoritmos
                 arrArrayTeste[cont] = temp;
                 cont++;
             }
-            
+
             lblArrayTesteResultado.Text = "";
 
             insertionSort(arrArrayTeste, arrArrayTeste.Length);
@@ -100,115 +222,6 @@ namespace TwittPeek.userControls.algoritmos
                 }
                 a[j + 1] = selected;
             }
-        }
-
-        int binarySearch(mainTwittPeek.Tweets[] oTweets, mainTwittPeek.Tweets item, int low, int high, string sChave)
-        {
-            if (high <= low)
-                return ((int)item.getField(sChave) > (int)oTweets[low].getField(sChave)) ? (low + 1) : low;
-
-            int mid = (low + high) / 2;
-
-            if (item.getField(sChave) == oTweets[mid].getField(sChave))
-                return mid + 1;
-
-            if ((int)item.getField(sChave) > (int)oTweets[mid].getField(sChave))
-                return binarySearch(oTweets, item, mid + 1, high, sChave);
-            return binarySearch(oTweets, item, low, mid - 1, sChave);
-        }
-
-        void insercao_direta_busca_binaria(mainTwittPeek.Tweets[] oTweets, string sChave)
-        {
-            int i, loc, j;
-
-            mainTwittPeek.Tweets selected;
-
-            for (i = 1; i < oTweets.Length; ++i)
-            {
-                j = i - 1;
-                selected = oTweets[i];
-
-                // find location where selected sould be inseretd
-                loc = binarySearch(oTweets, selected, 0, j, sChave);
-
-                // Move all elements after location to create space
-                while (j >= loc)
-                {
-                    oTweets[j + 1] = oTweets[j];
-                    j--;
-                }
-                oTweets[j + 1] = selected;
-            }
-                        
-        }
-
-
-        void mMostraDados()
-        {           
-            //dataGridViewDados.DataSource = mainTwittPeek.preencheGrid(oTweets);    
-        }
-
-        private void btnExecutar_Click(object sender, EventArgs e)
-        {
-           
-
-            
-            long oStart = DateTime.Now.Ticks;
-            insercao_direta_busca_binaria(oTweets, "PublishedTweetLength");
-            lblResultTime.Text = (DateTime.Now.Ticks - oStart).ToString();
-            mMostraDados();
-
-
-        }
-
-        private void btnExecutar_Index_Click(object sender, EventArgs e)
-        {
-            long oStart = DateTime.Now.Ticks;
-            insercao_direta_busca_binaria(oTweets, "index");
-            lblResultTime_Index.Text = (DateTime.Now.Ticks - oStart).ToString();
-            mMostraDados();
-        }
-
-        private void btnExecutar_ID_Click(object sender, EventArgs e)
-        {
-            long oStart = DateTime.Now.Ticks;
-            insercao_direta_busca_binaria(oTweets, "ID");
-            lblResultTime_ID.Text = (DateTime.Now.Ticks - oStart).ToString();
-            mMostraDados();
-        }
-
-        private void btnExecutar_RetweetCount_Click(object sender, EventArgs e)
-        {
-            long oStart = DateTime.Now.Ticks;
-            insercao_direta_busca_binaria(oTweets, "RetweetCount");
-            lblResultTime_RetweetCount.Text = (DateTime.Now.Ticks - oStart).ToString();
-            mMostraDados();
-        }
-
-        private void btnExecutar_FavoriteCount_Click(object sender, EventArgs e)
-        {
-            long oStart = DateTime.Now.Ticks;
-            insercao_direta_busca_binaria(oTweets, "FavoriteCount");
-            lblResultTime_FavoriteCount.Text = (DateTime.Now.Ticks - oStart).ToString();
-            mMostraDados();
-        }
-
-        private void btnCarrega100_Click(object sender, EventArgs e)
-        {
-            oTweets = (mainTwittPeek.Tweets[])frmTweetPeek.frmDados.mGetDados(100);
-            mMostraDados();
-        }
-
-        private void btnCarrega1000_Click(object sender, EventArgs e)
-        {
-            oTweets = (mainTwittPeek.Tweets[])frmTweetPeek.frmDados.mGetDados(1000);
-            mMostraDados();
-        }
-
-        private void btnCarrega10000_Click(object sender, EventArgs e)
-        {
-            oTweets = (mainTwittPeek.Tweets[])frmTweetPeek.frmDados.mGetDados(10000);
-            mMostraDados();
         }
     }
 }

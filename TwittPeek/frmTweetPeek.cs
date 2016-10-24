@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -66,37 +67,37 @@ namespace TwittPeek
             oUserControl_Alg_ISBL.Dock = DockStyle.Fill;
             oUserControl_Alg_ISBL.Hide();
 
-            oUserControl_Alg_ISBB = new userControl_Alg_ISBB(oClassMainTweetinvi);
+            oUserControl_Alg_ISBB = new userControl_Alg_ISBB(oMainTwittPeek);
             pnlMain.Controls.Add(oUserControl_Alg_ISBB);
             oUserControl_Alg_ISBB.Dock = DockStyle.Fill;
             oUserControl_Alg_ISBB.Hide();
 
-            oUserControl_Alg_SHST = new userControl_Alg_SHST(oClassMainTweetinvi);
+            oUserControl_Alg_SHST = new userControl_Alg_SHST(oMainTwittPeek);
             pnlMain.Controls.Add(oUserControl_Alg_SHST);
             oUserControl_Alg_SHST.Dock = DockStyle.Fill;
             oUserControl_Alg_SHST.Hide();
 
-            oUserControl_Alg_QSRM = new userControl_Alg_QSRM(oClassMainTweetinvi);
+            oUserControl_Alg_QSRM = new userControl_Alg_QSRM(oMainTwittPeek);
             pnlMain.Controls.Add(oUserControl_Alg_QSRM);
             oUserControl_Alg_QSRM.Dock = DockStyle.Fill;
             oUserControl_Alg_QSRM.Hide();
 
-            oUserControl_Alg_BBST = new userControl_Alg_BBST(oClassMainTweetinvi);
+            oUserControl_Alg_BBST = new userControl_Alg_BBST(oMainTwittPeek);
             pnlMain.Controls.Add(oUserControl_Alg_BBST);
             oUserControl_Alg_BBST.Dock = DockStyle.Fill;
             oUserControl_Alg_BBST.Hide();
 
-            oUserControl_Alg_MGST = new userControl_Alg_MGST(oClassMainTweetinvi);
+            oUserControl_Alg_MGST = new userControl_Alg_MGST(oMainTwittPeek);
             pnlMain.Controls.Add(oUserControl_Alg_MGST);
             oUserControl_Alg_MGST.Dock = DockStyle.Fill;
             oUserControl_Alg_MGST.Hide();
 
-            oUserControl_Alg_HPST = new userControl_Alg_HPST(oClassMainTweetinvi);
+            oUserControl_Alg_HPST = new userControl_Alg_HPST(oMainTwittPeek);
             pnlMain.Controls.Add(oUserControl_Alg_HPST);
             oUserControl_Alg_HPST.Dock = DockStyle.Fill;
             oUserControl_Alg_HPST.Hide();
 
-            oUserControl_Alg_RMSD = new userControl_Alg_RMSD(oClassMainTweetinvi);
+            oUserControl_Alg_RMSD = new userControl_Alg_RMSD(oMainTwittPeek);
             pnlMain.Controls.Add(oUserControl_Alg_RMSD);
             oUserControl_Alg_RMSD.Dock = DockStyle.Fill;
             oUserControl_Alg_RMSD.Hide();
@@ -227,6 +228,69 @@ namespace TwittPeek
         private void directToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void rELATORIOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // executa todos os algoritmos e cria um arquivo de texto
+
+            //Algoritmo executado, tipo de dado (numerico ou categorico), tamanho do array, tempo decorrido em ms.
+
+            int nSize;
+            string sRelatorio = "";
+
+
+            nSize = 100;
+
+            sRelatorio += "ISBL, " + "Numerico, " + nSize.ToString() + ", " + oUserControl_Alg_ISBL.executar("PublishedTweetLength", nSize).ToString() + "\n";
+            sRelatorio += "ISBB, " + "Numerico, " + nSize.ToString() + ", " + oUserControl_Alg_ISBB.executar("PublishedTweetLength", nSize).ToString() + "\n";
+            sRelatorio += "SHST, " + "Numerico, " + nSize.ToString() + ", " + oUserControl_Alg_SHST.executar("PublishedTweetLength", nSize).ToString() + "\n";
+            sRelatorio += "BBST, " + "Numerico, " + nSize.ToString() + ", " + oUserControl_Alg_BBST.executar("PublishedTweetLength", nSize).ToString() + "\n";
+            sRelatorio += "QSRM, " + "Numerico, " + nSize.ToString() + ", " + oUserControl_Alg_QSRM.executar("PublishedTweetLength", nSize).ToString() + "\n";
+            sRelatorio += "MGST, " + "Numerico, " + nSize.ToString() + ", " + oUserControl_Alg_MGST.executar("PublishedTweetLength", nSize).ToString() + "\n";
+            sRelatorio += "HPST, " + "Numerico, " + nSize.ToString() + ", " + oUserControl_Alg_HPST.executar("PublishedTweetLength", nSize).ToString() + "\n";
+            sRelatorio += "RMSD, " + "Numerico, " + nSize.ToString() + ", " + oUserControl_Alg_RMSD.executar("PublishedTweetLength", nSize).ToString() + "\n";
+
+            nSize = 1000;
+            
+            sRelatorio += "ISBL, " + "Numerico, " + nSize.ToString() + ", " + oUserControl_Alg_ISBL.executar("PublishedTweetLength", nSize).ToString() + "\n";
+            sRelatorio += "ISBB, " + "Numerico, " + nSize.ToString() + ", " + oUserControl_Alg_ISBB.executar("PublishedTweetLength", nSize).ToString() + "\n";
+            sRelatorio += "SHST, " + "Numerico, " + nSize.ToString() + ", " + oUserControl_Alg_SHST.executar("PublishedTweetLength", nSize).ToString() + "\n";
+            sRelatorio += "BBST, " + "Numerico, " + nSize.ToString() + ", " + oUserControl_Alg_BBST.executar("PublishedTweetLength", nSize).ToString() + "\n";
+            sRelatorio += "QSRM, " + "Numerico, " + nSize.ToString() + ", " + oUserControl_Alg_QSRM.executar("PublishedTweetLength", nSize).ToString() + "\n";
+            sRelatorio += "MGST, " + "Numerico, " + nSize.ToString() + ", " + oUserControl_Alg_MGST.executar("PublishedTweetLength", nSize).ToString() + "\n";
+            sRelatorio += "HPST, " + "Numerico, " + nSize.ToString() + ", " + oUserControl_Alg_HPST.executar("PublishedTweetLength", nSize).ToString() + "\n";
+            sRelatorio += "RMSD, " + "Numerico, " + nSize.ToString() + ", " + oUserControl_Alg_RMSD.executar("PublishedTweetLength", nSize).ToString() + "\n";
+
+            nSize = 10000;
+
+            sRelatorio += "ISBL, " + "Numerico, " + nSize.ToString() + ", " + oUserControl_Alg_ISBL.executar("PublishedTweetLength", nSize).ToString() + "\n";
+            sRelatorio += "ISBB, " + "Numerico, " + nSize.ToString() + ", " + oUserControl_Alg_ISBB.executar("PublishedTweetLength", nSize).ToString() + "\n";
+            sRelatorio += "SHST, " + "Numerico, " + nSize.ToString() + ", " + oUserControl_Alg_SHST.executar("PublishedTweetLength", nSize).ToString() + "\n";
+            sRelatorio += "BBST, " + "Numerico, " + nSize.ToString() + ", " + oUserControl_Alg_BBST.executar("PublishedTweetLength", nSize).ToString() + "\n";
+            sRelatorio += "QSRM, " + "Numerico, " + nSize.ToString() + ", " + oUserControl_Alg_QSRM.executar("PublishedTweetLength", nSize).ToString() + "\n";
+            sRelatorio += "MGST, " + "Numerico, " + nSize.ToString() + ", " + oUserControl_Alg_MGST.executar("PublishedTweetLength", nSize).ToString() + "\n";
+            sRelatorio += "HPST, " + "Numerico, " + nSize.ToString() + ", " + oUserControl_Alg_HPST.executar("PublishedTweetLength", nSize).ToString() + "\n";
+            sRelatorio += "RMSD, " + "Numerico, " + nSize.ToString() + ", " + oUserControl_Alg_RMSD.executar("PublishedTweetLength", nSize).ToString() + "\n";
+            
+            MessageBox.Show(sRelatorio);
+            
+
+            FolderBrowserDialog oDialog = new FolderBrowserDialog();
+            oDialog.RootFolder = Environment.SpecialFolder.MyComputer;// = Directory.GetCurrentDirectory();
+            oDialog.SelectedPath = Directory.GetParent(Directory.GetCurrentDirectory()) + "\\Resultados";
+
+            if (oDialog.ShowDialog() == DialogResult.OK)
+            {
+                string sPath = oDialog.SelectedPath;
+
+                File.WriteAllText(sPath + "\\Resultado " +
+                    DateTime.Now.DayOfYear.ToString() + "-" +
+                    DateTime.Now.Hour.ToString() + "-" +
+                    DateTime.Now.Minute.ToString() + "-" +
+                    DateTime.Now.Second.ToString() +
+                                        ".txt", sRelatorio);
+            }
         }
     }
 }
