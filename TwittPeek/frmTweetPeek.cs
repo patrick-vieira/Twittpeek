@@ -38,7 +38,7 @@ namespace TwittPeek
 
         private void inicializaUserControls()
         {
-            oMainTwittPeek = new mainTwittPeek();
+            oMainTwittPeek = new mainTwittPeek();//fazer carregar ultimo arquivo e ver como salva uma classe em binario
 
             oUserControl_SearchTweet = new userControl_SearchTweet(oClassMainTweetinvi);
             pnlMain.Controls.Add(oUserControl_SearchTweet);

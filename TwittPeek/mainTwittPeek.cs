@@ -6,14 +6,63 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Tweetinvi;
 
 namespace TwittPeek
 {
     public class mainTwittPeek
     {
-        ///usar essa classe para ao ivez da frm para ficar mais organizado
-        ///hoje os dados tem que passar pelo frm principal antes de chegar no usrviw que ordena
-        ///
+        public struct Usuarios
+        {
+            public long Id { get; set; }
+            public string Name { get; set; }
+            public string ScreenName { get; set; }
+            public string Description { get; set; }
+            public string Location { get; set; }
+            public int FavouritesCount { get; set; }
+            public int FriendsCount { get; set; }
+            public int FollowersCount { get; set; }
+            public string Language { get; set; }
+            public string ProfileImageUrl { get; set; }
+            public string ProfileImageUrlFullSize { get; set; }
+            public int StatusesCount { get; set; }
+            public bool Verified { get; set; }
+            public string Url { get; set; }
+            public DateTime CreatedAt { get; set; }
+
+        }
+
+        public struct Texto
+        {
+            public long Id { get; set; } //tweet
+            public long CreatedById { get; set; } //user
+            public string FullText { get; set; }
+            public string[] Hashtags { get; set; }
+            public string Language { get; set; }
+            public int PublishedTweetLength { get; set; }
+        }
+
+        public struct Tweets2
+        {
+
+            public long Id { get; set; }
+            public string IdStr { get; set; }
+            public long CreatedById { get; set; } //user
+            public long? InReplyToUserId { get; set; }
+            public long? InReplyToStatusId { get; set; }
+            public bool IsRetweet { get; set; }
+            public DateTime CreatedAt { get; set; }
+            public int FavoriteCount { get; set; }
+            public bool Favorited { get; set; }
+            public int PublishedTweetLength { get; set; }
+            public long? QuotedStatusId { get; set; }
+            public string Url { get; set; }
+            public long?[] UserMentions { get; set; }
+            public string Source { get; set; }
+            
+
+        }
+
         public struct Tweets
         {
             public int index { get; set; }
