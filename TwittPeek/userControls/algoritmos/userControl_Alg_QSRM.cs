@@ -44,7 +44,9 @@ namespace TwittPeek.userControls.algoritmos
 
             quicksort(oMainTwittpeek.arrTweets, 0, oMainTwittpeek.arrTweets.Length - 1, sCampo);
 
-            return DateTime.Now.Ticks - oStart;
+            TimeSpan elapsedSpan = new TimeSpan(DateTime.Now.Ticks - oStart);
+
+            return (long)elapsedSpan.TotalMilliseconds;     
         }
 
         void quicksort(mainTwittPeek.Tweets[] oTweets, int lo, int hi, string sChave)

@@ -42,7 +42,9 @@ namespace TwittPeek.userControls.algoritmos
 
             insercao_direta_busca_binaria(oMainTwittpeek.arrTweets, sCampo);
 
-            return DateTime.Now.Ticks - oStart;
+            TimeSpan elapsedSpan = new TimeSpan(DateTime.Now.Ticks - oStart);
+
+            return (long)elapsedSpan.TotalMilliseconds;
         }
 
 

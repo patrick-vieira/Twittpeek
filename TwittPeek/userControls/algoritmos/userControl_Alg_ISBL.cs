@@ -42,8 +42,10 @@ namespace TwittPeek.userControls.algoritmos
             long oStart = DateTime.Now.Ticks;
 
             insercao_direta(oMainTwittpeek.arrTweets, sCampo);
+            
+            TimeSpan elapsedSpan = new TimeSpan(DateTime.Now.Ticks - oStart);
 
-            return DateTime.Now.Ticks - oStart;
+            return (long)elapsedSpan.TotalMilliseconds;
         }
 
         void insercao_direta(mainTwittPeek.Tweets[] oTweets, string sChave)

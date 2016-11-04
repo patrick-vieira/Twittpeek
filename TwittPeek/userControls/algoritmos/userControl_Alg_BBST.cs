@@ -43,7 +43,9 @@ namespace TwittPeek.userControls.algoritmos
 
             bubblesort(oMainTwittpeek.arrTweets, sCampo);
 
-            return DateTime.Now.Ticks - oStart;
+            TimeSpan elapsedSpan = new TimeSpan(DateTime.Now.Ticks - oStart);
+
+            return (long)elapsedSpan.TotalMilliseconds;
         }
         void bubblesort(mainTwittPeek.Tweets[] oTweets, string sChave)
         {

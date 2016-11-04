@@ -97,12 +97,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmDados.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmDados.Designer.cs">
-      <DependentUpon>frmDados.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmTweetPeek.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,9 +185,6 @@
     <Compile Include="userControls\userControl_TimeLine.Designer.cs">
       <DependentUpon>userControl_TimeLine.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="frmDados.resx">
-      <DependentUpon>frmDados.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmTweetPeek.resx">
       <DependentUpon>frmTweetPeek.cs</DependentUpon>
     </EmbeddedResource>

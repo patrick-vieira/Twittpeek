@@ -39,10 +39,12 @@ namespace TwittPeek.userControls.algoritmos
             oMainTwittpeek.mCarregaDados(nSize);
 
             long oStart = DateTime.Now.Ticks;
-
+            
             RadixSort(oMainTwittpeek.arrTweets, sCampo);
+            
+            TimeSpan elapsedSpan = new TimeSpan(DateTime.Now.Ticks - oStart);
 
-            return DateTime.Now.Ticks - oStart;
+            return (long)elapsedSpan.TotalMilliseconds;
         }
 
         static void RadixSort(mainTwittPeek.Tweets[] oTweets, string sChave)

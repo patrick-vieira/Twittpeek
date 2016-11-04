@@ -52,10 +52,8 @@
             this.mergeSortToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.heapSortToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.radixSortToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.showToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.rELATORIOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,8 +72,7 @@
             this.teste2ToolStripMenuItem,
             this.searchToolStripMenuItem,
             this.triggerDeTestesToolStripMenuItem,
-            this.algoritmosToolStripMenuItem,
-            this.showToolStripMenuItem});
+            this.algoritmosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(641, 24);
@@ -95,21 +92,21 @@
             // teste11ToolStripMenuItem
             // 
             this.teste11ToolStripMenuItem.Name = "teste11ToolStripMenuItem";
-            this.teste11ToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.teste11ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.teste11ToolStripMenuItem.Text = "Twett";
             this.teste11ToolStripMenuItem.Click += new System.EventHandler(this.teste11ToolStripMenuItem_Click);
             // 
             // directToolStripMenuItem
             // 
             this.directToolStripMenuItem.Name = "directToolStripMenuItem";
-            this.directToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.directToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.directToolStripMenuItem.Text = "Direct";
             this.directToolStripMenuItem.Click += new System.EventHandler(this.directToolStripMenuItem_Click);
             // 
             // imagemToolStripMenuItem
             // 
             this.imagemToolStripMenuItem.Name = "imagemToolStripMenuItem";
-            this.imagemToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.imagemToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.imagemToolStripMenuItem.Text = "Imagem";
             this.imagemToolStripMenuItem.Click += new System.EventHandler(this.imagemToolStripMenuItem_Click);
             // 
@@ -245,31 +242,16 @@
             this.radixSortToolStripMenuItem.Text = "Radix Sort";
             this.radixSortToolStripMenuItem.Click += new System.EventHandler(this.radixSortToolStripMenuItem_Click);
             // 
-            // showToolStripMenuItem
-            // 
-            this.showToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.dadosToolStripMenuItem});
-            this.showToolStripMenuItem.Name = "showToolStripMenuItem";
-            this.showToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
-            this.showToolStripMenuItem.Text = "Show";
-            // 
-            // dadosToolStripMenuItem
-            // 
-            this.dadosToolStripMenuItem.Name = "dadosToolStripMenuItem";
-            this.dadosToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
-            this.dadosToolStripMenuItem.Text = "Dados";
-            this.dadosToolStripMenuItem.Click += new System.EventHandler(this.dadosToolStripMenuItem_Click);
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialogImagem";
-            // 
             // rELATORIOToolStripMenuItem
             // 
             this.rELATORIOToolStripMenuItem.Name = "rELATORIOToolStripMenuItem";
             this.rELATORIOToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
             this.rELATORIOToolStripMenuItem.Text = "RELATORIO";
             this.rELATORIOToolStripMenuItem.Click += new System.EventHandler(this.rELATORIOToolStripMenuItem_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialogImagem";
             // 
             // frmTweetPeek
             // 
@@ -312,8 +294,6 @@
         private System.Windows.Forms.ToolStripMenuItem mergeSortToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem heapSortToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem radixSortToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem showToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dadosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem imagemToolStripMenuItem;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.ToolStripMenuItem rELATORIOToolStripMenuItem;

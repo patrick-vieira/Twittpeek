@@ -18,7 +18,6 @@ namespace TwittPeek
     //Cpd2016/2 Senha email twittpeek@mail.com
     public partial class frmTweetPeek : Form
     {
-        static public frmDados frmDados;
         csMainTweetinvi oClassMainTweetinvi;
 
         public mainTwittPeek oMainTwittPeek;
@@ -39,7 +38,6 @@ namespace TwittPeek
 
         private void inicializaUserControls()
         {
-            frmDados = new frmDados();
             oMainTwittPeek = new mainTwittPeek();
 
             oUserControl_SearchTweet = new userControl_SearchTweet(oClassMainTweetinvi);
@@ -195,12 +193,7 @@ namespace TwittPeek
         {
             showUserControl(oUserControl_Alg_RMSD);
         }
-
-        private void dadosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmDados.Show();
-        }
-
+        
         private void imagemToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //define as propriedades do controle 

@@ -42,7 +42,9 @@ namespace TwittPeek.userControls.algoritmos
 
             mergeSort(oMainTwittpeek.arrTweets, 0, oMainTwittpeek.arrTweets.Length - 1, sCampo);
 
-            return DateTime.Now.Ticks - oStart;
+            TimeSpan elapsedSpan = new TimeSpan(DateTime.Now.Ticks - oStart);
+
+            return (long)elapsedSpan.TotalMilliseconds;
         }
 
         void mergeSort(mainTwittPeek.Tweets[] oTweets, int posicaoInicio, int posicaoFim, string sChave)

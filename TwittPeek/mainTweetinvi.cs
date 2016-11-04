@@ -305,10 +305,33 @@ namespace TwittPeek
 
             //shouldStop = !_shouldStop;
 
-            mTesteParametro("PSOL");
+            //mTesteParametro("PSOL");
+
+            //var tweetDTO = TwitterAccessor.ExecutePOSTQuery<ITweetDTO>("https://api.twitter.com/1.1/statuses/update.json?status=hello");
+            //var userDTO = TwitterAccessor.ExecuteGETQuery<ITweetDTO>("https://api.twitter.com/1.1/users/show.json?q=trump");
+            //var jsonObject = TwitterAccessor.GetQueryableJsonObjectFromGETQuery("https://api.twitter.com/1.1/search/tweets.json?q=trump");
+            //var fieldValue = jsonObject["field_name"];
+
+            var matchingTweets = Search.SearchTweets("trump");
+
+            var searchParameter = new SearchTweetsParameters("trump")
+            {
+                GeoCode = new GeoCode(-122.398720, 37.781157, 1, DistanceMeasure.Miles),
+                Lang = Language.Portuguese,
+                SearchType = SearchResultType.Popular,
+                MaximumNumberOfResults = 100,
+                Until = new DateTime(2016, 10, 31),
+                SinceId = 399616835892781056,
+                MaxId = 405001488843284480,
+                Filters = TweetSearchFilters.Images
+            };
+
+            var tweets = Search.SearchTweets(searchParameter);
+
+
 
         }
-        
+
 
         private volatile bool _shouldStop = true;
 

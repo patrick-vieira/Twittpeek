@@ -45,7 +45,9 @@ namespace TwittPeek.userControls.algoritmos
 
             heapSort(oMainTwittpeek.arrTweets, sCampo);
 
-            return DateTime.Now.Ticks - oStart;            
+            TimeSpan elapsedSpan = new TimeSpan(DateTime.Now.Ticks - oStart);
+
+            return (long)elapsedSpan.TotalMilliseconds;
         }
 
         private void Swap(mainTwittPeek.Tweets[] oTweets, int x, int y)//troca dois caras de lugar no array

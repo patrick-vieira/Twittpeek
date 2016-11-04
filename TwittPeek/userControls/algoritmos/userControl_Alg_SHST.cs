@@ -44,7 +44,9 @@ namespace TwittPeek.userControls.algoritmos
 
             shellSort(oMainTwittpeek.arrTweets, sCampo);
 
-            return DateTime.Now.Ticks - oStart;
+            TimeSpan elapsedSpan = new TimeSpan(DateTime.Now.Ticks - oStart);
+
+            return (long)elapsedSpan.TotalMilliseconds; 
         }
 
         void shellSort(mainTwittPeek.Tweets[] oTweets, string sChave)
