@@ -120,6 +120,64 @@ namespace TwittPeek
             
         }
 
+        public void mCarregaDados(IList<Tweetinvi.Models.ITweet> tweets)
+        {
+            int index = 0;
+            int iTemp = 0;
+            bool bTemp;
+
+            arrTweets = new Tweets[tweets.Count];
+
+            foreach (Tweetinvi.Models.ITweet tweet in tweets)
+            {
+                arrTweets[index].ID = tweet.Id;
+
+                arrTweets[index].CreatedAt = tweet.CreatedAt.ToString();
+
+                arrTweets[index].Text = tweet.Text.ToString();
+
+                arrTweets[index].FullText = tweet.FullText.ToString();
+
+                arrTweets[index].Source = tweet.Source.ToString();
+
+                arrTweets[index].CreatedBy = tweet.CreatedBy.ToString();
+
+                Int32.TryParse(tweet.RetweetCount.ToString(), out iTemp);
+                arrTweets[index].RetweetCount = iTemp;
+
+                Boolean.TryParse(tweet.Favorited.ToString(), out bTemp);
+                arrTweets[index].Favorited = bTemp;
+
+                Int32.TryParse(tweet.FavoriteCount.ToString(), out iTemp);
+                arrTweets[index].FavoriteCount = iTemp;
+
+                Boolean.TryParse(tweet.Retweeted.ToString(), out bTemp);
+                arrTweets[index].Retweeted = bTemp;
+
+                arrTweets[index].Language = tweet.Language.ToString();
+
+                Int32.TryParse(tweet.PublishedTweetLength.ToString(), out iTemp);
+                arrTweets[index].PublishedTweetLength = iTemp;
+
+                arrTweets[index].TweetLocalCreationDate = tweet.TweetLocalCreationDate.ToString();
+
+                Boolean.TryParse(tweet.IsRetweet.ToString(), out bTemp);
+                arrTweets[index].IsRetweet = bTemp;
+
+                Boolean.TryParse(tweet.IsTweetPublished.ToString(), out bTemp);
+                arrTweets[index].IsTweetPublished = bTemp;
+
+                Boolean.TryParse(tweet.IsTweetDestroyed.ToString(), out bTemp);
+                arrTweets[index].IsTweetDestroyed = bTemp;
+
+                arrTweets[index].Url = tweet.Url.ToString();
+
+                index++;
+            }
+
+
+        }
+
         public void mCarregaDados(int nQuantidade)
         {
             arrTweets = new Tweets[nQuantidade];
@@ -198,7 +256,7 @@ namespace TwittPeek
         }     
 
 
-        public DataTable preencheGrid(Tweets[] oTweets)
+        public DataTable preencheGrid()
         {
             DataTable oTable = new DataTable("Tweets");
 
@@ -226,13 +284,13 @@ namespace TwittPeek
             oTable.Columns.Add("Url", typeof(string));
 
 
-            if (oTweets == null)
+            if (arrTweets == null)
                 return oTable;
             //melhorar isso aqui tbm, da pra fazer em poucas linhas, assim ta muito feio
 
             oTable.Clear();
 
-            foreach (Tweets oTweet in oTweets)
+            foreach (Tweets oTweet in arrTweets)
             {
                 oTable.Rows.Add(oTweet.all);
             }

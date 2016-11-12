@@ -26,7 +26,8 @@ namespace TwittPeek
         private static userControl_TimeLine oUserControl_TimeLine;
         private static userControl_GetFollowing oUserControl_GetFollowing;
         private static userControl_SearchTweet oUserControl_SearchTweet;
-                
+        private static userControl_SearchParameterized oUserControl_SearchParameterizedTweet;
+
         private static userControl_Alg_ISBL oUserControl_Alg_ISBL;
         private static userControl_Alg_ISBB oUserControl_Alg_ISBB;
         private static userControl_Alg_SHST oUserControl_Alg_SHST;
@@ -44,7 +45,12 @@ namespace TwittPeek
             pnlMain.Controls.Add(oUserControl_SearchTweet);
             oUserControl_SearchTweet.Dock = DockStyle.Fill;
             oUserControl_SearchTweet.Hide();
-            
+
+            oUserControl_SearchParameterizedTweet = new userControl_SearchParameterized(oClassMainTweetinvi, oMainTwittPeek);
+            pnlMain.Controls.Add(oUserControl_SearchParameterizedTweet);
+            oUserControl_SearchParameterizedTweet.Dock = DockStyle.Fill;
+            oUserControl_SearchParameterizedTweet.Hide();
+
             oUserControl_SendTwitt = new userControl_SendTwitt(oClassMainTweetinvi);
             pnlMain.Controls.Add(oUserControl_SendTwitt);
             oUserControl_SendTwitt.Dock = DockStyle.Fill;
@@ -284,6 +290,11 @@ namespace TwittPeek
                     DateTime.Now.Second.ToString() +
                                         ".txt", sRelatorio);
             }
+        }
+
+        private void parameterizedToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            showUserControl(oUserControl_SearchParameterizedTweet);
         }
     }
 }
