@@ -29,7 +29,7 @@ namespace TwittPeek.userControls.algoritmos
         void mMostraDados()
         {
             dataGridViewDados.ClearSelection();
-            dataGridViewDados.DataSource = oMainTwittpeek.preencheGrid(oMainTwittpeek.arrTweets);
+            dataGridViewDados.DataSource = oMainTwittpeek.preencheGrid();
         }
         /// <summary>
         /// executa o ordenamento e retorna o tempo gasto em ticks

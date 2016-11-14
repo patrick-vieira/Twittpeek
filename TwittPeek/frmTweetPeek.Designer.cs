@@ -54,6 +54,7 @@
             this.radixSortToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rELATORIOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.parameterizedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,21 +93,21 @@
             // teste11ToolStripMenuItem
             // 
             this.teste11ToolStripMenuItem.Name = "teste11ToolStripMenuItem";
-            this.teste11ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.teste11ToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.teste11ToolStripMenuItem.Text = "Twett";
             this.teste11ToolStripMenuItem.Click += new System.EventHandler(this.teste11ToolStripMenuItem_Click);
             // 
             // directToolStripMenuItem
             // 
             this.directToolStripMenuItem.Name = "directToolStripMenuItem";
-            this.directToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.directToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.directToolStripMenuItem.Text = "Direct";
             this.directToolStripMenuItem.Click += new System.EventHandler(this.directToolStripMenuItem_Click);
             // 
             // imagemToolStripMenuItem
             // 
             this.imagemToolStripMenuItem.Name = "imagemToolStripMenuItem";
-            this.imagemToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.imagemToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.imagemToolStripMenuItem.Text = "Imagem";
             this.imagemToolStripMenuItem.Click += new System.EventHandler(this.imagemToolStripMenuItem_Click);
             // 
@@ -137,7 +138,8 @@
             // 
             this.searchToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.userToolStripMenuItem,
-            this.twittsToolStripMenuItem});
+            this.twittsToolStripMenuItem,
+            this.parameterizedToolStripMenuItem});
             this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
             this.searchToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.searchToolStripMenuItem.Text = "Search";
@@ -145,13 +147,13 @@
             // userToolStripMenuItem
             // 
             this.userToolStripMenuItem.Name = "userToolStripMenuItem";
-            this.userToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.userToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.userToolStripMenuItem.Text = "User";
             // 
             // twittsToolStripMenuItem
             // 
             this.twittsToolStripMenuItem.Name = "twittsToolStripMenuItem";
-            this.twittsToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.twittsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.twittsToolStripMenuItem.Text = "Twitts";
             this.twittsToolStripMenuItem.Click += new System.EventHandler(this.twittsToolStripMenuItem_Click);
             // 
@@ -253,6 +255,13 @@
             // 
             this.openFileDialog1.FileName = "openFileDialogImagem";
             // 
+            // parameterizedToolStripMenuItem
+            // 
+            this.parameterizedToolStripMenuItem.Name = "parameterizedToolStripMenuItem";
+            this.parameterizedToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.parameterizedToolStripMenuItem.Text = "Parameterized";
+            this.parameterizedToolStripMenuItem.Click += new System.EventHandler(this.parameterizedToolStripMenuItem_Click);
+            // 
             // frmTweetPeek
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -297,6 +306,7 @@
         private System.Windows.Forms.ToolStripMenuItem imagemToolStripMenuItem;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.ToolStripMenuItem rELATORIOToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem parameterizedToolStripMenuItem;
     }
 }
 

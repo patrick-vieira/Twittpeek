@@ -213,6 +213,27 @@ namespace TwittPeek
 
         }
 
+        /// <summary>
+        /// Pesquisa mais detalhada baseada em parametros
+        /// </summary>
+        /// <returns>array de tweets</returns>
+        public IList<ITweet> mSearchTweets(string sSearch, int maxNumberOfResults, DateTime Since, DateTime Until, double latitude, double longitude, double radius)
+        {
+            var searchParameter = new SearchTweetsParameters(sSearch)
+            {
+                //GeoCode = new GeoCode(latitude, longitude, radius, DistanceMeasure.Kilometers),
+                //Lang = Language.Portuguese,
+                SearchType = SearchResultType.Mixed,
+                MaximumNumberOfResults = maxNumberOfResults,
+                Since = Since,
+                Until = Until,
+                //MaxId = 405001488843284480,
+                Filters = TweetSearchFilters.None
+            };
+            
+            return Search.SearchTweets(searchParameter).ToArray();
+        }
+
 
         public void mFilteredStream(string sWord)
         {
@@ -314,18 +335,19 @@ namespace TwittPeek
 
             //var matchingTweets = Search.SearchTweets("trump");
 
-            var searchParameter = new SearchTweetsParameters("dilma")
+            var searchParameter = new SearchTweetsParameters("obama")
             {
-                GeoCode = new GeoCode(-30.027704, -51.228735, 100, DistanceMeasure.Miles),
-                //Lang = Language.Portuguese,
-                //SearchType = SearchResultType.Popular,
+                //GeoCode = new GeoCode(-30.0090019, -51.1971623, 100000, DistanceMeasure.Kilometers),
+                //GeoCode = new GeoCode(40.644444, -73.948333, 1, DistanceMeasure.Miles),
+                
+                Lang = Language.English,
+                SearchType = SearchResultType.Mixed,
                 MaximumNumberOfResults = 100,
-                Until = new DateTime(2016, 10, 31),
-                Since = new DateTime(2016, 10, 25),
+                //Since = new DateTime(2013, 01, 11),
                 //SinceId = 399616835892781056,
+                //Until = new DateTime(2016, 11, 3),
                 //MaxId = 405001488843284480,
-                //Filters = TweetSearchFilters.Images
-                Filters = TweetSearchFilters.Hashtags
+                //Filters = TweetSearchFilters.None
             };
 
             var tweets = Search.SearchTweets(searchParameter);
@@ -333,8 +355,7 @@ namespace TwittPeek
 
 
         }
-
-
+        
         private volatile bool _shouldStop = true;
 
         public void DoWork()
