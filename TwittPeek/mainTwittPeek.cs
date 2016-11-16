@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -42,6 +43,7 @@ namespace TwittPeek
             public int PublishedTweetLength { get; set; }
         }
 
+        [Serializable]
         public struct Tweets2
         {
 
@@ -59,10 +61,11 @@ namespace TwittPeek
             public string Url { get; set; }
             public long?[] UserMentions { get; set; }
             public string Source { get; set; }
-            
+
 
         }
 
+        [Serializable]
         public struct Tweets
         {
             public int index { get; set; }
@@ -161,12 +164,75 @@ namespace TwittPeek
 
             }
         }
-        
+
         public Tweets[] arrTweets;
-        
-        public mainTwittPeek()
+        public Tweets2[] arrTweets2;
+        public string ultimoAberto;
+        public string dadosPath = Directory.GetParent(Directory.GetCurrentDirectory()).ToString() + "\\Dados";
+        public List<string> listaArquivos;
+
+
+        void atualizaListaArquivos()
         {
+            listaArquivos = new List<string>();
+
+            char[] separador = { '.' };
+
+            var arquivos = new DirectoryInfo(dadosPath).GetFiles("*.bin");
+            foreach (var arquivo in arquivos)
+            {
+                listaArquivos.Add(arquivo.Name.Split(separador)[0]);
+            }
+        }
+
+        public mainTwittPeek()
+        {            
+            string line;
+
+            StreamReader file = new StreamReader(dadosPath + "\\" + "ultimo aberto.txt");
+
+            while ((line = file.ReadLine()) != null)
+                ultimoAberto = line;
+
+            file.Close();
+
+            atualizaListaArquivos();
+
+        }
+
+        public void load(string file)
+        {
+            var serializer = new BinaryFormatter();
+
+            if(file != null && file != "")
+                using (var stream = File.OpenRead(dadosPath + "\\" + file + ".bin"))
+                    arrTweets = (Tweets[])serializer.Deserialize(stream);
+        }
+
+        public void save(string file)
+        {
+            var serializer = new BinaryFormatter();
+
+            //grava o arquivo novo
+            using (var stream = File.OpenWrite(dadosPath + "\\" + file + ".bin"))
+                serializer.Serialize(stream, arrTweets);
             
+            //update do ultimo aberto
+            using (StreamWriter sw = File.CreateText(dadosPath + "\\" + "ultimo aberto.txt"))
+                sw.WriteLine(file);
+
+            atualizaListaArquivos();
+        }
+
+        public void add(string file)
+        {
+            //carrega o arquivo em um array o tamanho do novo array vai ser o carregado mais o atual, salva esse novo no mesmo arquivo de antes;
+
+            using (var fileStream = new FileStream(file, FileMode.Append))
+            {
+                var bFormatter = new BinaryFormatter();
+                bFormatter.Serialize(fileStream, arrTweets);
+            }
         }
 
         public void mCarregaDados(IList<Tweetinvi.Models.ITweet> tweets)
@@ -179,6 +245,8 @@ namespace TwittPeek
 
             foreach (Tweetinvi.Models.ITweet tweet in tweets)
             {
+                arrTweets[index].index = index;
+
                 arrTweets[index].ID = tweet.Id;
 
                 arrTweets[index].CreatedAt = tweet.CreatedAt.ToString();

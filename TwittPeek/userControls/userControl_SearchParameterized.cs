@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace TwittPeek.userControls
 {
@@ -20,6 +21,23 @@ namespace TwittPeek.userControls
 
             oClassMainTweetinvi = tweetinvi;
             oMainTwittPeek = twittPeek;
+
+            oMainTwittPeek.load(oMainTwittPeek.ultimoAberto);
+            dataGridViewSearchTwieet.ClearSelection();
+            dataGridViewSearchTwieet.DataSource = oMainTwittPeek.preencheGrid();
+
+            carregaComboBox();
+
+        }
+
+        void carregaComboBox()
+        {
+            cbFiles.Items.Clear();
+
+            foreach (string file in oMainTwittPeek.listaArquivos)
+            {
+                cbFiles.Items.Add(file);
+            }
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -46,6 +64,25 @@ namespace TwittPeek.userControls
             
             dataGridViewSearchTwieet.ClearSelection();
             dataGridViewSearchTwieet.DataSource = oMainTwittPeek.preencheGrid();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            oMainTwittPeek.save(txtSaveName.Text);
+            carregaComboBox();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            oMainTwittPeek.add(cbFiles.Text);
+        }
+
+        private void btnLoad_Click(object sender, EventArgs e)
+        {
+            oMainTwittPeek.load(cbFiles.Text);
+            dataGridViewSearchTwieet.ClearSelection();
+            dataGridViewSearchTwieet.DataSource = oMainTwittPeek.preencheGrid();
+
         }
     }
 }

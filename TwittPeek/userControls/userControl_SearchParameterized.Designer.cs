@@ -30,35 +30,43 @@
         {
             this.dataGridViewSearchTwieet = new System.Windows.Forms.DataGridView();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.btnSearch = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.txtKeyWord = new System.Windows.Forms.TextBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtLatitude = new System.Windows.Forms.TextBox();
-            this.txtLongitude = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.txtRadius = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.txtMaxNumberOfResults = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.txtLongitude = new System.Windows.Forms.TextBox();
+            this.txtLatitude = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.dateTimePickerUntil = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerSince = new System.Windows.Forms.DateTimePicker();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.dateTimePickerSince = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePickerUntil = new System.Windows.Forms.DateTimePicker();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtMaxNumberOfResults = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.cbFiles = new System.Windows.Forms.ComboBox();
+            this.txtSaveName = new System.Windows.Forms.TextBox();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnLoad = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSearchTwieet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -67,8 +75,9 @@
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.tabPage5.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridViewSearchTwieet
@@ -77,7 +86,7 @@
             this.dataGridViewSearchTwieet.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewSearchTwieet.Location = new System.Drawing.Point(0, 0);
             this.dataGridViewSearchTwieet.Name = "dataGridViewSearchTwieet";
-            this.dataGridViewSearchTwieet.Size = new System.Drawing.Size(496, 239);
+            this.dataGridViewSearchTwieet.Size = new System.Drawing.Size(496, 280);
             this.dataGridViewSearchTwieet.TabIndex = 0;
             // 
             // splitContainer1
@@ -90,26 +99,13 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.Controls.Add(this.tabControl1);
-            this.splitContainer1.Panel1.Controls.Add(this.btnSearch);
             // 
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.dataGridViewSearchTwieet);
             this.splitContainer1.Size = new System.Drawing.Size(496, 406);
-            this.splitContainer1.SplitterDistance = 163;
+            this.splitContainer1.SplitterDistance = 122;
             this.splitContainer1.TabIndex = 1;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(0, 126);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(496, 37);
-            this.btnSearch.TabIndex = 1;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // tabControl1
             // 
@@ -117,6 +113,7 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Location = new System.Drawing.Point(3, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -126,6 +123,7 @@
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.txtKeyWord);
+            this.tabPage1.Controls.Add(this.btnSearch);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -133,6 +131,28 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Search for";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // txtKeyWord
+            // 
+            this.txtKeyWord.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtKeyWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKeyWord.Location = new System.Drawing.Point(6, 6);
+            this.txtKeyWord.Name = "txtKeyWord";
+            this.txtKeyWord.Size = new System.Drawing.Size(473, 31);
+            this.txtKeyWord.TabIndex = 5;
+            this.txtKeyWord.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Location = new System.Drawing.Point(6, 43);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(473, 42);
+            this.btnSearch.TabIndex = 1;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // tabPage2
             // 
@@ -150,17 +170,103 @@
             this.tabPage2.Text = "Location";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // txtKeyWord
+            // txtRadius
             // 
-            this.txtKeyWord.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtKeyWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKeyWord.Location = new System.Drawing.Point(6, 6);
-            this.txtKeyWord.Multiline = true;
-            this.txtKeyWord.Name = "txtKeyWord";
-            this.txtKeyWord.Size = new System.Drawing.Size(473, 79);
-            this.txtKeyWord.TabIndex = 5;
-            this.txtKeyWord.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtRadius.Location = new System.Drawing.Point(74, 62);
+            this.txtRadius.Name = "txtRadius";
+            this.txtRadius.Size = new System.Drawing.Size(155, 20);
+            this.txtRadius.TabIndex = 5;
+            this.txtRadius.Text = "1";
+            // 
+            // txtLongitude
+            // 
+            this.txtLongitude.Location = new System.Drawing.Point(74, 40);
+            this.txtLongitude.Name = "txtLongitude";
+            this.txtLongitude.Size = new System.Drawing.Size(155, 20);
+            this.txtLongitude.TabIndex = 4;
+            this.txtLongitude.Text = "37.781157";
+            // 
+            // txtLatitude
+            // 
+            this.txtLatitude.Location = new System.Drawing.Point(74, 17);
+            this.txtLatitude.Name = "txtLatitude";
+            this.txtLatitude.Size = new System.Drawing.Size(155, 20);
+            this.txtLatitude.TabIndex = 3;
+            this.txtLatitude.Text = "-122.398720";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(21, 65);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "radius";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(21, 43);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(50, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "longitude";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(21, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "latitude";
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.dateTimePickerUntil);
+            this.tabPage4.Controls.Add(this.dateTimePickerSince);
+            this.tabPage4.Controls.Add(this.label10);
+            this.tabPage4.Controls.Add(this.label11);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(485, 91);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Date";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // dateTimePickerUntil
+            // 
+            this.dateTimePickerUntil.Location = new System.Drawing.Point(147, 45);
+            this.dateTimePickerUntil.Name = "dateTimePickerUntil";
+            this.dateTimePickerUntil.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePickerUntil.TabIndex = 16;
+            this.dateTimePickerUntil.Value = new System.DateTime(2016, 11, 30, 0, 0, 0, 0);
+            // 
+            // dateTimePickerSince
+            // 
+            this.dateTimePickerSince.Location = new System.Drawing.Point(147, 19);
+            this.dateTimePickerSince.Name = "dateTimePickerSince";
+            this.dateTimePickerSince.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePickerSince.TabIndex = 15;
+            this.dateTimePickerSince.Value = new System.DateTime(2016, 11, 1, 0, 0, 0, 0);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(113, 52);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(28, 13);
+            this.label10.TabIndex = 12;
+            this.label10.Text = "Until";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(107, 25);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(34, 13);
+            this.label11.TabIndex = 11;
+            this.label11.Text = "Since";
             // 
             // tabPage3
             // 
@@ -183,56 +289,53 @@
             this.tabPage3.Text = "Other Setings";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // textBox7
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "latitude";
+            this.textBox7.Location = new System.Drawing.Point(304, 58);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(155, 20);
+            this.textBox7.TabIndex = 17;
             // 
-            // label2
+            // textBox8
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 43);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "longitude";
+            this.textBox8.Location = new System.Drawing.Point(304, 36);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(155, 20);
+            this.textBox8.TabIndex = 16;
             // 
-            // label3
+            // textBox9
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 65);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "radius";
+            this.textBox9.Location = new System.Drawing.Point(304, 13);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(155, 20);
+            this.textBox9.TabIndex = 15;
             // 
-            // txtLatitude
+            // label7
             // 
-            this.txtLatitude.Location = new System.Drawing.Point(74, 17);
-            this.txtLatitude.Name = "txtLatitude";
-            this.txtLatitude.Size = new System.Drawing.Size(155, 20);
-            this.txtLatitude.TabIndex = 3;
-            this.txtLatitude.Text = "-122.398720";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(251, 61);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "label7";
             // 
-            // txtLongitude
+            // label8
             // 
-            this.txtLongitude.Location = new System.Drawing.Point(74, 40);
-            this.txtLongitude.Name = "txtLongitude";
-            this.txtLongitude.Size = new System.Drawing.Size(155, 20);
-            this.txtLongitude.TabIndex = 4;
-            this.txtLongitude.Text = "37.781157";
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(251, 39);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(35, 13);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "label8";
             // 
-            // txtRadius
+            // label9
             // 
-            this.txtRadius.Location = new System.Drawing.Point(74, 62);
-            this.txtRadius.Name = "txtRadius";
-            this.txtRadius.Size = new System.Drawing.Size(155, 20);
-            this.txtRadius.TabIndex = 5;
-            this.txtRadius.Text = "1";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(251, 16);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(35, 13);
+            this.label9.TabIndex = 12;
+            this.label9.Text = "label9";
             // 
             // textBox4
             // 
@@ -283,100 +386,85 @@
             this.label6.TabIndex = 6;
             this.label6.Text = "Max results";
             // 
-            // textBox7
+            // tabPage5
             // 
-            this.textBox7.Location = new System.Drawing.Point(304, 58);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(155, 20);
-            this.textBox7.TabIndex = 17;
+            this.tabPage5.Controls.Add(this.btnLoad);
+            this.tabPage5.Controls.Add(this.label13);
+            this.tabPage5.Controls.Add(this.label12);
+            this.tabPage5.Controls.Add(this.btnAdd);
+            this.tabPage5.Controls.Add(this.cbFiles);
+            this.tabPage5.Controls.Add(this.txtSaveName);
+            this.tabPage5.Controls.Add(this.btnSave);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(485, 91);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Save";
+            this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // textBox8
+            // label13
             // 
-            this.textBox8.Location = new System.Drawing.Point(304, 36);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(155, 20);
-            this.textBox8.TabIndex = 16;
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(151, 11);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(71, 13);
+            this.label13.TabIndex = 5;
+            this.label13.Text = "Adicionar em:";
             // 
-            // textBox9
+            // label12
             // 
-            this.textBox9.Location = new System.Drawing.Point(304, 13);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(155, 20);
-            this.textBox9.TabIndex = 15;
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(19, 11);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(64, 13);
+            this.label12.TabIndex = 4;
+            this.label12.Text = "Salvar novo";
             // 
-            // label7
+            // btnAdd
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(251, 61);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "label7";
+            this.btnAdd.Location = new System.Drawing.Point(149, 54);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(147, 23);
+            this.btnAdd.TabIndex = 3;
+            this.btnAdd.Text = "ADD";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // label8
+            // cbFiles
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(251, 39);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 13);
-            this.label8.TabIndex = 13;
-            this.label8.Text = "label8";
+            this.cbFiles.FormattingEnabled = true;
+            this.cbFiles.Location = new System.Drawing.Point(149, 27);
+            this.cbFiles.Name = "cbFiles";
+            this.cbFiles.Size = new System.Drawing.Size(311, 21);
+            this.cbFiles.TabIndex = 2;
             // 
-            // label9
+            // txtSaveName
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(251, 16);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(35, 13);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "label9";
+            this.txtSaveName.Location = new System.Drawing.Point(22, 27);
+            this.txtSaveName.Name = "txtSaveName";
+            this.txtSaveName.Size = new System.Drawing.Size(100, 20);
+            this.txtSaveName.TabIndex = 1;
             // 
-            // tabPage4
+            // btnSave
             // 
-            this.tabPage4.Controls.Add(this.dateTimePickerUntil);
-            this.tabPage4.Controls.Add(this.dateTimePickerSince);
-            this.tabPage4.Controls.Add(this.label10);
-            this.tabPage4.Controls.Add(this.label11);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(485, 91);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Date";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.btnSave.Location = new System.Drawing.Point(22, 53);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(100, 23);
+            this.btnSave.TabIndex = 0;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // label10
+            // btnLoad
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(113, 52);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(28, 13);
-            this.label10.TabIndex = 12;
-            this.label10.Text = "Until";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(107, 25);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(34, 13);
-            this.label11.TabIndex = 11;
-            this.label11.Text = "Since";
-            // 
-            // dateTimePickerSince
-            // 
-            this.dateTimePickerSince.Location = new System.Drawing.Point(147, 19);
-            this.dateTimePickerSince.Name = "dateTimePickerSince";
-            this.dateTimePickerSince.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePickerSince.TabIndex = 15;
-            this.dateTimePickerSince.Value = new System.DateTime(2016, 11, 1, 0, 0, 0, 0);
-            // 
-            // dateTimePickerUntil
-            // 
-            this.dateTimePickerUntil.Location = new System.Drawing.Point(147, 45);
-            this.dateTimePickerUntil.Name = "dateTimePickerUntil";
-            this.dateTimePickerUntil.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePickerUntil.TabIndex = 16;
-            this.dateTimePickerUntil.Value = new System.DateTime(2016, 11, 30, 0, 0, 0, 0);
+            this.btnLoad.Location = new System.Drawing.Point(302, 54);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(158, 23);
+            this.btnLoad.TabIndex = 6;
+            this.btnLoad.Text = "Load";
+            this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // userControl_SearchParameterized
             // 
@@ -395,10 +483,12 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -436,5 +526,13 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.DateTimePicker dateTimePickerUntil;
         private System.Windows.Forms.DateTimePicker dateTimePickerSince;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.ComboBox cbFiles;
+        private System.Windows.Forms.TextBox txtSaveName;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnLoad;
     }
 }
