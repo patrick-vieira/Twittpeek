@@ -60,13 +60,19 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.btnLoad = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.cbFiles = new System.Windows.Forms.ComboBox();
             this.txtSaveName = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
-            this.btnLoad = new System.Windows.Forms.Button();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.cbCampos = new System.Windows.Forms.ComboBox();
+            this.btnArrange = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rbCrescente = new System.Windows.Forms.RadioButton();
+            this.rbDecrescente = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSearchTwieet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -78,6 +84,8 @@
             this.tabPage4.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage5.SuspendLayout();
+            this.tabPage6.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridViewSearchTwieet
@@ -114,6 +122,7 @@
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage5);
+            this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Location = new System.Drawing.Point(3, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -403,6 +412,16 @@
             this.tabPage5.Text = "Save";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
+            // btnLoad
+            // 
+            this.btnLoad.Location = new System.Drawing.Point(302, 54);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(158, 23);
+            this.btnLoad.TabIndex = 6;
+            this.btnLoad.Text = "Load";
+            this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -456,15 +475,69 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // btnLoad
+            // tabPage6
             // 
-            this.btnLoad.Location = new System.Drawing.Point(302, 54);
-            this.btnLoad.Name = "btnLoad";
-            this.btnLoad.Size = new System.Drawing.Size(158, 23);
-            this.btnLoad.TabIndex = 6;
-            this.btnLoad.Text = "Load";
-            this.btnLoad.UseVisualStyleBackColor = true;
-            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
+            this.tabPage6.Controls.Add(this.groupBox1);
+            this.tabPage6.Controls.Add(this.btnArrange);
+            this.tabPage6.Controls.Add(this.cbCampos);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(485, 91);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Arrange";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // cbCampos
+            // 
+            this.cbCampos.FormattingEnabled = true;
+            this.cbCampos.Location = new System.Drawing.Point(29, 30);
+            this.cbCampos.Name = "cbCampos";
+            this.cbCampos.Size = new System.Drawing.Size(169, 21);
+            this.cbCampos.TabIndex = 0;
+            // 
+            // btnArrange
+            // 
+            this.btnArrange.Location = new System.Drawing.Point(29, 57);
+            this.btnArrange.Name = "btnArrange";
+            this.btnArrange.Size = new System.Drawing.Size(169, 23);
+            this.btnArrange.TabIndex = 1;
+            this.btnArrange.Text = "Ordenar";
+            this.btnArrange.UseVisualStyleBackColor = true;
+            this.btnArrange.Click += new System.EventHandler(this.btnArrange_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.rbDecrescente);
+            this.groupBox1.Controls.Add(this.rbCrescente);
+            this.groupBox1.Location = new System.Drawing.Point(204, 19);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(94, 61);
+            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Ordem";
+            // 
+            // rbCrescente
+            // 
+            this.rbCrescente.AutoSize = true;
+            this.rbCrescente.Location = new System.Drawing.Point(6, 19);
+            this.rbCrescente.Name = "rbCrescente";
+            this.rbCrescente.Size = new System.Drawing.Size(73, 17);
+            this.rbCrescente.TabIndex = 0;
+            this.rbCrescente.TabStop = true;
+            this.rbCrescente.Text = "Crescente";
+            this.rbCrescente.UseVisualStyleBackColor = true;
+            // 
+            // rbDecrescente
+            // 
+            this.rbDecrescente.AutoSize = true;
+            this.rbDecrescente.Location = new System.Drawing.Point(6, 37);
+            this.rbDecrescente.Name = "rbDecrescente";
+            this.rbDecrescente.Size = new System.Drawing.Size(86, 17);
+            this.rbDecrescente.TabIndex = 1;
+            this.rbDecrescente.TabStop = true;
+            this.rbDecrescente.Text = "Decrescente";
+            this.rbDecrescente.UseVisualStyleBackColor = true;
             // 
             // userControl_SearchParameterized
             // 
@@ -489,6 +562,9 @@
             this.tabPage3.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
+            this.tabPage6.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -534,5 +610,11 @@
         private System.Windows.Forms.TextBox txtSaveName;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnLoad;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton rbDecrescente;
+        private System.Windows.Forms.RadioButton rbCrescente;
+        private System.Windows.Forms.Button btnArrange;
+        private System.Windows.Forms.ComboBox cbCampos;
     }
 }

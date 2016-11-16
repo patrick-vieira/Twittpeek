@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Reflection;
+using System.Text.RegularExpressions;
 
 namespace TwittPeek.userControls
 {
@@ -27,6 +29,16 @@ namespace TwittPeek.userControls
             dataGridViewSearchTwieet.DataSource = oMainTwittPeek.preencheGrid();
 
             carregaComboBox();
+
+            FieldInfo[] fi = typeof(mainTwittPeek.Tweets).GetFields(BindingFlags.Public | BindingFlags.Instance | BindingFlags.NonPublic);
+
+            foreach (FieldInfo info in fi)
+            {
+                var a = Regex.Match("User name (sales)", @"\(([^)]*)\)").Groups[1].Value;
+                var b = Regex.Match(info.Name, @"\[<->]\").Groups[1].Value;
+                Console.WriteLine(info.Name);
+                cbCampos.Items.Add(info.Name);
+            }
 
         }
 
@@ -82,6 +94,11 @@ namespace TwittPeek.userControls
             oMainTwittPeek.load(cbFiles.Text);
             dataGridViewSearchTwieet.ClearSelection();
             dataGridViewSearchTwieet.DataSource = oMainTwittPeek.preencheGrid();
+
+        }
+
+        private void btnArrange_Click(object sender, EventArgs e)
+        {
 
         }
     }
