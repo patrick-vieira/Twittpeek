@@ -34,10 +34,8 @@ namespace TwittPeek.userControls
 
             foreach (FieldInfo info in fi)
             {
-                var a = Regex.Match("User name (sales)", @"\(([^)]*)\)").Groups[1].Value;
-                var b = Regex.Match(info.Name, @"\[<->]\").Groups[1].Value;
-                Console.WriteLine(info.Name);
-                cbCampos.Items.Add(info.Name);
+                string fieldName = Regex.Match(info.Name, @"\<(.*)\>").Groups[1].Value;
+                cbCampos.Items.Add(fieldName);
             }
 
         }
@@ -98,6 +96,11 @@ namespace TwittPeek.userControls
         }
 
         private void btnArrange_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAppendSearch_Click(object sender, EventArgs e)
         {
 
         }
