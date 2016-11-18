@@ -111,9 +111,65 @@ namespace TwittPeek.userControls
         {
 
         }
-
-
         void RadixSort(mainTwittPeek.Tweets[] oTweets, string sChave, bool crescente)
+        {
+            int i;
+            mainTwittPeek.Tweets maior = oTweets[0]; //assume que o maior é o primeiro
+
+            int bucketSize = 10;
+            int[] contadorEscaninhos = new int[bucketSize]; //uma lista com o numero de elementos em cada escaninho
+
+            List<mainTwittPeek.Tweets[]> escaninhos = new List<mainTwittPeek.Tweets[]>();
+
+            for (i = 0; i < bucketSize; i++)
+            {
+                mainTwittPeek.Tweets[] escaninho = new mainTwittPeek.Tweets[oTweets.Length];
+                escaninhos.Add(escaninho);
+            }
+
+            //pega o maior valor dessa chave, para saber quantos caracteres vamos precisar verificar
+            int maiorNumero = 0;
+            for (i = 0; i < oTweets.Length; i++)
+            {
+                if (maiorNumero < (int)oTweets[i].getField(sChave))
+                    maiorNumero = (int)oTweets[i].getField(sChave);
+            }
+            int tamanhoMaiorNumero = maiorNumero.ToString().Length;
+            //verificar digito a digito até o tamanho do maior, ex roda 4x se o maior valor for 8734
+            for (int indexDigito = 0; indexDigito < tamanhoMaiorNumero; indexDigito++)
+            {
+                //para cada elemento ordenar nos buckets pelo digito de index
+                for (i = 0; i < oTweets.Length; i++)
+                {
+                    int chave = (int)oTweets[i].getField(sChave);
+                    int digito = (chave / (int)Math.Pow(10, indexDigito)) % 10;
+
+                    //coloca o tweet no escaninho do digito, na posição da pilha marcada pelo contador de digitos do escaninho
+                    escaninhos[digito][contadorEscaninhos[digito]] = oTweets[i];
+                    contadorEscaninhos[digito]++;
+                }
+
+                int indexArrayPrincipal = crescente ? 0 : oTweets.Length-1 ;                
+                int indexContadorEscaninhos = 0;
+                //reordenar o array removendo os dados dos buckets em ordem                
+                foreach (mainTwittPeek.Tweets[] escaninho in escaninhos)
+                {
+                    int indexEscaninho = 0;
+                    while (contadorEscaninhos[indexContadorEscaninhos] > 0)
+                    {
+                        oTweets[indexArrayPrincipal] = escaninho[indexEscaninho];
+                        contadorEscaninhos[indexContadorEscaninhos]--;
+                        indexEscaninho++;
+                        indexArrayPrincipal = crescente ? indexArrayPrincipal + 1 : indexArrayPrincipal - 1;
+                    }
+                    indexContadorEscaninhos++;
+                    indexEscaninho = 0;
+                }
+            }
+        }
+
+
+        void BucketSort(mainTwittPeek.Tweets[] oTweets, string sChave, bool crescente)
         {
             int i;
             mainTwittPeek.Tweets maior = oTweets[0]; //assume que o maior é o primeiro
@@ -140,13 +196,14 @@ namespace TwittPeek.userControls
             int bucketSize = 10;
             while ((int)maior.getField(sChave) / exp > 0)
             {
+                int[] bucket = new int[bucketSize];
+
                 if (crescente)
                 {
-                    int[] bucket = new int[bucketSize];
                     for (i = 0; i < oTweets.Length; i++)
                         bucket[((int)oTweets[i].getField(sChave) / exp) % bucketSize]++; //contagem o simbolo % é tipo um limitador se a divisão for maior que 10 subtrai 10, ex 55/5 = 11, (55/5)%10 = 1
                     for (i = 1; i < bucketSize; i++)
-                        bucket[i] += bucket[i - 1];
+                        bucket[i] += bucket[i - 1]; //somando o valor dos buckets
                     for (i = oTweets.Length - 1; i >= 0; i--)
                         b[--bucket[((int)oTweets[i].getField(sChave) / exp) % bucketSize]] = oTweets[i];
                     for (i = 0; i < oTweets.Length; i++)
@@ -154,10 +211,10 @@ namespace TwittPeek.userControls
                 }
                 else
                 {
-                    int[] bucket = new int[bucketSize];
                     for (i = 0; i < oTweets.Length; i++)
                         bucket[((int)oTweets[i].getField(sChave) / exp) % bucketSize]++; //contagem o simbolo % é tipo um limitador se a divisão for maior que 10 subtrai 10, ex 55/5 = 11, (55/5)%10 = 1
                     for (i = 1; i < bucketSize; i++)
+
                         bucket[i] += bucket[i - 1];
                     for (i = oTweets.Length - 1; i >= 0; i--)
                         b[--bucket[((int)oTweets[i].getField(sChave) / exp) % bucketSize]] = oTweets[i];
@@ -167,6 +224,7 @@ namespace TwittPeek.userControls
                 exp *= bucketSize;
             }
         }
+
 
     }
 }
