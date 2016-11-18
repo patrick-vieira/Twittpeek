@@ -32,6 +32,7 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnAppendSearch = new System.Windows.Forms.Button();
             this.txtKeyWord = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -73,7 +74,6 @@
             this.rbCrescente = new System.Windows.Forms.RadioButton();
             this.btnArrange = new System.Windows.Forms.Button();
             this.cbCampos = new System.Windows.Forms.ComboBox();
-            this.btnAppendSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSearchTwieet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -142,6 +142,17 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Search for";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // btnAppendSearch
+            // 
+            this.btnAppendSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAppendSearch.Location = new System.Drawing.Point(248, 43);
+            this.btnAppendSearch.Name = "btnAppendSearch";
+            this.btnAppendSearch.Size = new System.Drawing.Size(231, 42);
+            this.btnAppendSearch.TabIndex = 6;
+            this.btnAppendSearch.Text = "Append Search";
+            this.btnAppendSearch.UseVisualStyleBackColor = true;
+            this.btnAppendSearch.Click += new System.EventHandler(this.btnAppendSearch_Click);
             // 
             // txtKeyWord
             // 
@@ -508,13 +519,13 @@
             this.rbDecrescente.Name = "rbDecrescente";
             this.rbDecrescente.Size = new System.Drawing.Size(86, 17);
             this.rbDecrescente.TabIndex = 1;
-            this.rbDecrescente.TabStop = true;
             this.rbDecrescente.Text = "Decrescente";
             this.rbDecrescente.UseVisualStyleBackColor = true;
             // 
             // rbCrescente
             // 
             this.rbCrescente.AutoSize = true;
+            this.rbCrescente.Checked = true;
             this.rbCrescente.Location = new System.Drawing.Point(6, 19);
             this.rbCrescente.Name = "rbCrescente";
             this.rbCrescente.Size = new System.Drawing.Size(73, 17);
@@ -540,17 +551,6 @@
             this.cbCampos.Name = "cbCampos";
             this.cbCampos.Size = new System.Drawing.Size(169, 21);
             this.cbCampos.TabIndex = 0;
-            // 
-            // btnAppendSearch
-            // 
-            this.btnAppendSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAppendSearch.Location = new System.Drawing.Point(248, 43);
-            this.btnAppendSearch.Name = "btnAppendSearch";
-            this.btnAppendSearch.Size = new System.Drawing.Size(231, 42);
-            this.btnAppendSearch.TabIndex = 6;
-            this.btnAppendSearch.Text = "Append Search";
-            this.btnAppendSearch.UseVisualStyleBackColor = true;
-            this.btnAppendSearch.Click += new System.EventHandler(this.btnAppendSearch_Click);
             // 
             // userControl_SearchParameterized
             // 
