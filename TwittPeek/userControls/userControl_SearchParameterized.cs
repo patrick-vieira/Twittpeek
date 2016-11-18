@@ -101,7 +101,7 @@ namespace TwittPeek.userControls
             string chave = cbCampos.Text.Split('-')[0];
             string tipo = cbCampos.Text.Split('-')[1];
 
-            RadixSort(oMainTwittPeek.arrTweets, chave, tipo);
+            RadixSort(oMainTwittPeek.arrTweets, chave, rbCrescente.Checked);
 
             dataGridViewSearchTwieet.ClearSelection();
             dataGridViewSearchTwieet.DataSource = oMainTwittPeek.preencheGrid();
@@ -111,9 +111,9 @@ namespace TwittPeek.userControls
         {
 
         }
-        
 
-        void RadixSort(mainTwittPeek.Tweets[] oTweets, string sChave, string tipo)
+
+        void RadixSort(mainTwittPeek.Tweets[] oTweets, string sChave, bool crescente)
         {
             int i;
             mainTwittPeek.Tweets maior = oTweets[0]; //assume que o maior é o primeiro
@@ -124,99 +124,47 @@ namespace TwittPeek.userControls
             //percorre todo arrei procurando o maior valor
             for (i = 0; i < oTweets.Length; i++)
             {
-                switch (tipo)
+                if (true)
                 {
-                    case "Int32":
-                        {
-                            if ((int)oTweets[i].getField(sChave) > (int)maior.getField(sChave)) // tenta achar um novo maior no vetor
-                                maior = oTweets[i];
-                            break;
-                        }
-                    case "Int64":
-                        {
-                            if ((long)oTweets[i].getField(sChave) > (long)maior.getField(sChave)) // tenta achar um novo maior no vetor
-                                maior = oTweets[i];
-                            break;
-                        }
-                    case "String":
-                        {
-                            string strMenor;
-                            string strMaior;
-                            //verifica qual string tem mais caracteres
-                            if (oTweets[i].getField(sChave).ToString().Length > maior.getField(sChave).ToString().Length)
-                            {
-                                strMaior = oTweets[i].getField(sChave).ToString();
-                                strMenor = maior.getField(sChave).ToString();
-                            }
-                            else
-                            {
-                                strMenor = oTweets[i].getField(sChave).ToString();
-                                strMaior = maior.getField(sChave).ToString();
-                            }
-
-
-                            //compara todos os caracteres da string para decidir qual é a "maior"
-                            bool bContinua = true;
-                            int index = 0;
-                            
-                            while (bContinua && strMenor.Length > index)
-                            {
-                                if (oTweets[i].getField(sChave).ToString()[index] > maior.getField(sChave).ToString()[index]) // tenta achar um novo maior no vetor
-                                {
-                                    maior = oTweets[i];
-                                    bContinua = false;
-                                }
-                                index++;
-                            }
-                            break;
-                        }
+                    if ((int)oTweets[i].getField(sChave) > (int)maior.getField(sChave)) // tenta achar um novo maior no vetor
+                        maior = oTweets[i];
                 }
+                else
+                {
+                    if ((int)oTweets[i].getField(sChave) < (int)maior.getField(sChave)) // tenta achar um novo maior no vetor
+                        maior = oTweets[i];
+                }
+
             }
 
-            switch (tipo)
+            int bucketSize = 10;
+            while ((int)maior.getField(sChave) / exp > 0)
             {
-                case "Int32":
-                    {
-                        int bucketSize = 10;
-                        while ((int)maior.getField(sChave) / exp > 0)
-                        {
-                            int[] bucket = new int[oTweets.Length];
-                            for (i = 0; i < oTweets.Length; i++)
-                                bucket[((int)oTweets[i].getField(sChave) / exp) % bucketSize]++; //contagem o simbolo % é tipo um limitador se a divisão for maior que 10 subtrai 10, ex 55/5 = 11, (55/5)%10 = 1
-                            for (i = 1; i < bucketSize; i++)
-                                bucket[i] += bucket[i - 1];
-                            for (i = oTweets.Length - 1; i >= 0; i--)
-                                b[--bucket[((int)oTweets[i].getField(sChave) / exp) % bucketSize]] = oTweets[i];
-                            for (i = 0; i < oTweets.Length; i++)
-                                oTweets[i] = b[i];
-                            exp *= bucketSize;
-                        }
-                        break;
-                    }
-                case "Int64":
-                    {
-
-                        int bucketSize = 102;
-
-                        while ((long)maior.getField(sChave) / exp > 0)
-                        {
-                            int[] bucket = new int[oTweets.Length];
-                            for (i = 0; i < oTweets.Length; i++)
-                                bucket[((long)oTweets[i].getField(sChave) / exp) % bucketSize]++; //contagem o simbolo % é tipo um limitador se a divisão for maior que 10 subtrai 10, ex 55/5 = 11, (55/5)%10 = 1
-                            for (i = 1; i < bucketSize; i++)
-                                bucket[i] += bucket[i - 1];
-                            for (i = oTweets.Length - 1; i >= 0; i--)
-                                b[--bucket[((long)oTweets[i].getField(sChave) / exp) % bucketSize]] = oTweets[i];
-                            for (i = 0; i < oTweets.Length; i++)
-                                oTweets[i] = b[i];
-                            exp *= bucketSize;
-                        }
-                        break;
-                    }
-                case "String":
-                    {
-                        break;
-                    }
+                if (crescente)
+                {
+                    int[] bucket = new int[bucketSize];
+                    for (i = 0; i < oTweets.Length; i++)
+                        bucket[((int)oTweets[i].getField(sChave) / exp) % bucketSize]++; //contagem o simbolo % é tipo um limitador se a divisão for maior que 10 subtrai 10, ex 55/5 = 11, (55/5)%10 = 1
+                    for (i = 1; i < bucketSize; i++)
+                        bucket[i] += bucket[i - 1];
+                    for (i = oTweets.Length - 1; i >= 0; i--)
+                        b[--bucket[((int)oTweets[i].getField(sChave) / exp) % bucketSize]] = oTweets[i];
+                    for (i = 0; i < oTweets.Length; i++)
+                        oTweets[i] = b[i];
+                }
+                else
+                {
+                    int[] bucket = new int[bucketSize];
+                    for (i = 0; i < oTweets.Length; i++)
+                        bucket[((int)oTweets[i].getField(sChave) / exp) % bucketSize]++; //contagem o simbolo % é tipo um limitador se a divisão for maior que 10 subtrai 10, ex 55/5 = 11, (55/5)%10 = 1
+                    for (i = 1; i < bucketSize; i++)
+                        bucket[i] += bucket[i - 1];
+                    for (i = oTweets.Length - 1; i >= 0; i--)
+                        b[--bucket[((int)oTweets[i].getField(sChave) / exp) % bucketSize]] = oTweets[i];
+                    for (i = 0; i < oTweets.Length; i++)
+                        oTweets[oTweets.Length - 1 - i] = b[i];
+                }
+                exp *= bucketSize;
             }
         }
 
