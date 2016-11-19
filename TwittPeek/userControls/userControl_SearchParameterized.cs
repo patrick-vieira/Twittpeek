@@ -154,12 +154,12 @@ namespace TwittPeek.userControls
                 //reordenar o array removendo os dados dos buckets em ordem                
                 foreach (mainTwittPeek.Tweets[] escaninho in escaninhos)
                 {
-                    int indexEscaninho = 0;
+                    int indexEscaninho = crescente ? 0 : contadorEscaninhos[indexContadorEscaninhos] -1;
                     while (contadorEscaninhos[indexContadorEscaninhos] > 0)
                     {
                         oTweets[indexArrayPrincipal] = escaninho[indexEscaninho];
                         contadorEscaninhos[indexContadorEscaninhos]--;
-                        indexEscaninho++;
+                        indexEscaninho = crescente ? indexEscaninho + 1: indexEscaninho - 1;
                         indexArrayPrincipal = crescente ? indexArrayPrincipal + 1 : indexArrayPrincipal - 1;
                     }
                     indexContadorEscaninhos++;
