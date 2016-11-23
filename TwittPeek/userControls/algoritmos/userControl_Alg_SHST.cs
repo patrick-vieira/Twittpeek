@@ -94,8 +94,7 @@ namespace TwittPeek.userControls.algoritmos
             long oStart = DateTime.Now.Ticks;
 
             shellSort(oMainTwittpeek.arrTweets, "ID");
-
-            lblResultTime_ID.Text = (DateTime.Now.Ticks - oStart).ToString();
+            
 
             mMostraDados();
         }

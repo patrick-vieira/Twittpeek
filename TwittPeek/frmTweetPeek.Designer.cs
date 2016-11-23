@@ -41,7 +41,7 @@
             this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.twittsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.triggerDeTestesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.parameterizedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.algoritmosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.insertionSortComBuscaLinearISBLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscaLinearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,7 +54,6 @@
             this.radixSortToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rELATORIOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.parameterizedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,7 +71,6 @@
             this.testeToolStripMenuItem,
             this.teste2ToolStripMenuItem,
             this.searchToolStripMenuItem,
-            this.triggerDeTestesToolStripMenuItem,
             this.algoritmosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -93,21 +91,21 @@
             // teste11ToolStripMenuItem
             // 
             this.teste11ToolStripMenuItem.Name = "teste11ToolStripMenuItem";
-            this.teste11ToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.teste11ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.teste11ToolStripMenuItem.Text = "Twett";
             this.teste11ToolStripMenuItem.Click += new System.EventHandler(this.teste11ToolStripMenuItem_Click);
             // 
             // directToolStripMenuItem
             // 
             this.directToolStripMenuItem.Name = "directToolStripMenuItem";
-            this.directToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.directToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.directToolStripMenuItem.Text = "Direct";
             this.directToolStripMenuItem.Click += new System.EventHandler(this.directToolStripMenuItem_Click);
             // 
             // imagemToolStripMenuItem
             // 
             this.imagemToolStripMenuItem.Name = "imagemToolStripMenuItem";
-            this.imagemToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.imagemToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.imagemToolStripMenuItem.Text = "Imagem";
             this.imagemToolStripMenuItem.Click += new System.EventHandler(this.imagemToolStripMenuItem_Click);
             // 
@@ -123,14 +121,14 @@
             // teste21ToolStripMenuItem
             // 
             this.teste21ToolStripMenuItem.Name = "teste21ToolStripMenuItem";
-            this.teste21ToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.teste21ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.teste21ToolStripMenuItem.Text = "TimeLine";
             this.teste21ToolStripMenuItem.Click += new System.EventHandler(this.teste21ToolStripMenuItem_Click);
             // 
             // followingToolStripMenuItem
             // 
             this.followingToolStripMenuItem.Name = "followingToolStripMenuItem";
-            this.followingToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.followingToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.followingToolStripMenuItem.Text = "Following";
             this.followingToolStripMenuItem.Click += new System.EventHandler(this.followingToolStripMenuItem_Click);
             // 
@@ -157,12 +155,12 @@
             this.twittsToolStripMenuItem.Text = "Twitts";
             this.twittsToolStripMenuItem.Click += new System.EventHandler(this.twittsToolStripMenuItem_Click);
             // 
-            // triggerDeTestesToolStripMenuItem
+            // parameterizedToolStripMenuItem
             // 
-            this.triggerDeTestesToolStripMenuItem.Name = "triggerDeTestesToolStripMenuItem";
-            this.triggerDeTestesToolStripMenuItem.Size = new System.Drawing.Size(107, 20);
-            this.triggerDeTestesToolStripMenuItem.Text = "Trigger de Testes";
-            this.triggerDeTestesToolStripMenuItem.Click += new System.EventHandler(this.triggerDeTestesToolStripMenuItem_Click);
+            this.parameterizedToolStripMenuItem.Name = "parameterizedToolStripMenuItem";
+            this.parameterizedToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.parameterizedToolStripMenuItem.Text = "Parameterized";
+            this.parameterizedToolStripMenuItem.Click += new System.EventHandler(this.parameterizedToolStripMenuItem_Click);
             // 
             // algoritmosToolStripMenuItem
             // 
@@ -255,13 +253,6 @@
             // 
             this.openFileDialog1.FileName = "openFileDialogImagem";
             // 
-            // parameterizedToolStripMenuItem
-            // 
-            this.parameterizedToolStripMenuItem.Name = "parameterizedToolStripMenuItem";
-            this.parameterizedToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.parameterizedToolStripMenuItem.Text = "Parameterized";
-            this.parameterizedToolStripMenuItem.Click += new System.EventHandler(this.parameterizedToolStripMenuItem_Click);
-            // 
             // frmTweetPeek
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -290,7 +281,6 @@
         private System.Windows.Forms.ToolStripMenuItem directToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem userToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem triggerDeTestesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem followingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem twittsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem algoritmosToolStripMenuItem;

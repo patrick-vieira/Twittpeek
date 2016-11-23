@@ -110,7 +110,6 @@ namespace TwittPeek.userControls.algoritmos
         {
             long oStart = DateTime.Now.Ticks;
             insercao_direta_busca_binaria(oMainTwittpeek.arrTweets, "ID");
-            lblResultTime_ID.Text = (DateTime.Now.Ticks - oStart).ToString();
             mMostraDados();
         }
 

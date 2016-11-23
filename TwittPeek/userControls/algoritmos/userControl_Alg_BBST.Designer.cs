@@ -38,14 +38,10 @@
             this.label13 = new System.Windows.Forms.Label();
             this.btnExecutar_FavoriteCount = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.lblResultTime_RetweetCount = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.btnExecutar_RetweetCount = new System.Windows.Forms.Button();
-            this.lblResultTime_ID = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.btnExecutar_ID = new System.Windows.Forms.Button();
             this.lblResultTime = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnExecutar = new System.Windows.Forms.Button();
@@ -152,15 +148,6 @@
             this.label10.TabIndex = 89;
             this.label10.Text = "RetweetCount";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(190, 138);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(18, 13);
-            this.label9.TabIndex = 88;
-            this.label9.Text = "ID";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -197,35 +184,6 @@
             this.btnExecutar_RetweetCount.Text = "EXECUTAR";
             this.btnExecutar_RetweetCount.UseVisualStyleBackColor = true;
             this.btnExecutar_RetweetCount.Click += new System.EventHandler(this.btnExecutar_RetweetCount_Click);
-            // 
-            // lblResultTime_ID
-            // 
-            this.lblResultTime_ID.AutoSize = true;
-            this.lblResultTime_ID.Location = new System.Drawing.Point(225, 183);
-            this.lblResultTime_ID.Name = "lblResultTime_ID";
-            this.lblResultTime_ID.Size = new System.Drawing.Size(38, 13);
-            this.lblResultTime_ID.TabIndex = 83;
-            this.lblResultTime_ID.Text = "999ms";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(187, 182);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(43, 13);
-            this.label5.TabIndex = 82;
-            this.label5.Text = "Tempo:";
-            // 
-            // btnExecutar_ID
-            // 
-            this.btnExecutar_ID.Enabled = false;
-            this.btnExecutar_ID.Location = new System.Drawing.Point(190, 154);
-            this.btnExecutar_ID.Name = "btnExecutar_ID";
-            this.btnExecutar_ID.Size = new System.Drawing.Size(73, 26);
-            this.btnExecutar_ID.TabIndex = 81;
-            this.btnExecutar_ID.Text = "EXECUTAR";
-            this.btnExecutar_ID.UseVisualStyleBackColor = true;
-            this.btnExecutar_ID.Click += new System.EventHandler(this.btnExecutar_ID_Click);
             // 
             // lblResultTime
             // 
@@ -346,14 +304,10 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.btnExecutar_FavoriteCount);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.lblResultTime_RetweetCount);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnExecutar_RetweetCount);
-            this.Controls.Add(this.lblResultTime_ID);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.btnExecutar_ID);
             this.Controls.Add(this.lblResultTime);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnExecutar);
@@ -386,14 +340,10 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button btnExecutar_FavoriteCount;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lblResultTime_RetweetCount;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnExecutar_RetweetCount;
-        private System.Windows.Forms.Label lblResultTime_ID;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btnExecutar_ID;
         private System.Windows.Forms.Label lblResultTime;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnExecutar;

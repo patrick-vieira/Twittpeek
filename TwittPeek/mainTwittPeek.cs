@@ -43,10 +43,6 @@ namespace TwittPeek
             public int PublishedTweetLength { get; set; }
         }
 
-
-
-
-
         [Serializable]
         public struct TweetsEstruturado
         {
@@ -130,26 +126,6 @@ namespace TwittPeek
             }
         }
 
-        private TweetsEstruturado getTweet(Tweetinvi.Models.ITweet oTweet)
-        {
-            TweetsEstruturado oTweet2 = new TweetsEstruturado();
-
-            oTweet2.ID = oTweet.Id;
-            oTweet2.CreatedAt = oTweet.CreatedAt.ToString();
-            oTweet2.Source = oTweet.Source;
-            oTweet2.RetweetCount = oTweet.RetweetCount;
-            oTweet2.Favorited = oTweet.Favorited;
-            oTweet2.FavoriteCount = oTweet.FavoriteCount;
-            oTweet2.Retweeted = oTweet.Retweeted;
-            oTweet2.IsRetweet = oTweet.IsRetweet;
-            oTweet2.Url = oTweet.Url;
-
-            oTweet2.oTexto = getTexto(oTweet);
-            oTweet2.oUsuario = getUsuario(oTweet);
-
-            return oTweet2;
-        }
-
         private Texto getTexto(Tweetinvi.Models.ITweet oTweet)
         {
             Texto oTexto = new Texto();
@@ -190,6 +166,174 @@ namespace TwittPeek
             
             return oUsuario;
         }
+
+        void atualizaListaArquivos()
+        {
+            listaArquivos = new List<string>();
+
+            char[] separador = { '.' };
+
+            var arquivos = new DirectoryInfo(dadosPath).GetFiles("*.bin");
+            foreach (var arquivo in arquivos)
+            {
+                listaArquivos.Add(arquivo.Name.Split(separador)[0]);
+            }
+        }
+
+        public TweetsEstruturado[] arrTweetsEstruturado;
+        public string ultimoAberto;
+        public string dadosPath = Directory.GetParent(Directory.GetCurrentDirectory()).ToString() + "\\Dados";
+        public List<string> listaArquivos;
+
+        public mainTwittPeek()
+        {            
+            string line;
+
+            StreamReader file = new StreamReader(dadosPath + "\\" + "ultimo aberto.txt");
+
+            while ((line = file.ReadLine()) != null)
+                ultimoAberto = line;
+
+            file.Close();
+
+            atualizaListaArquivos();
+
+        }        
+
+        public void load_estruturado(string file)
+        {
+            var serializer = new BinaryFormatter();
+
+            if (file != null && file != "")
+                using (var stream = File.OpenRead(dadosPath + "\\" + file + ".bin"))
+                    arrTweetsEstruturado = (TweetsEstruturado[])serializer.Deserialize(stream);
+        }
+
+        public void save_estruturado(string file)
+        {
+            var serializer = new BinaryFormatter();
+
+            //grava o arquivo novo
+            using (var stream = File.OpenWrite(dadosPath + "\\" + file + ".bin"))
+                serializer.Serialize(stream, arrTweetsEstruturado);
+
+            //update do ultimo aberto
+            using (StreamWriter sw = File.CreateText(dadosPath + "\\" + "ultimo aberto.txt"))
+                sw.WriteLine(file);
+
+            atualizaListaArquivos();
+        }
+
+        public void add_estruturado(string file)
+        {
+            //carrega o arquivo em um array o tamanho do novo array vai ser o carregado mais o atual, salva esse novo no mesmo arquivo de antes;
+
+            using (var fileStream = new FileStream(file, FileMode.Append))
+            {
+                var bFormatter = new BinaryFormatter();
+                bFormatter.Serialize(fileStream, arrTweetsEstruturado);
+            }
+        }
+
+        public void mAppendDados_estruturado(IList<Tweetinvi.Models.ITweet> tweets)
+        {
+            int index = arrTweetsEstruturado.Length;
+            Array.Resize<TweetsEstruturado>(ref arrTweetsEstruturado, tweets.Count + arrTweetsEstruturado.Length);
+
+
+            foreach (Tweetinvi.Models.ITweet tweet in tweets)
+            {
+                arrTweetsEstruturado[index].chave = index;
+                arrTweetsEstruturado[index].ID = tweet.Id;
+                arrTweetsEstruturado[index].CreatedAt = tweet.CreatedAt.ToString();
+                arrTweetsEstruturado[index].Source = tweet.Source;
+                arrTweetsEstruturado[index].RetweetCount = tweet.RetweetCount;
+                arrTweetsEstruturado[index].Favorited = tweet.Favorited;
+                arrTweetsEstruturado[index].FavoriteCount = tweet.FavoriteCount;
+                arrTweetsEstruturado[index].Retweeted = tweet.Retweeted;
+                arrTweetsEstruturado[index].IsRetweet = tweet.IsRetweet;
+                arrTweetsEstruturado[index].Url = tweet.Url;
+
+                arrTweetsEstruturado[index].oTexto = getTexto(tweet);
+                arrTweetsEstruturado[index].oUsuario = getUsuario(tweet);
+
+                index++;
+            }
+        }
+
+        public void mCarregaDados_estruturado(IList<Tweetinvi.Models.ITweet> tweets)
+        {
+            int index = 0;
+
+            arrTweetsEstruturado = new TweetsEstruturado[tweets.Count];
+
+            foreach (Tweetinvi.Models.ITweet tweet in tweets)
+            {
+                arrTweetsEstruturado[index].chave = index;
+                arrTweetsEstruturado[index].ID = tweet.Id;
+                arrTweetsEstruturado[index].CreatedAt = tweet.CreatedAt.ToString();
+                arrTweetsEstruturado[index].Source = tweet.Source;
+                arrTweetsEstruturado[index].RetweetCount = tweet.RetweetCount;
+                arrTweetsEstruturado[index].Favorited = tweet.Favorited;
+                arrTweetsEstruturado[index].FavoriteCount = tweet.FavoriteCount;
+                arrTweetsEstruturado[index].Retweeted = tweet.Retweeted;
+                arrTweetsEstruturado[index].IsRetweet = tweet.IsRetweet;
+                arrTweetsEstruturado[index].Url = tweet.Url;
+
+                arrTweetsEstruturado[index].oTexto = getTexto(tweet);
+                arrTweetsEstruturado[index].oUsuario = getUsuario(tweet);
+
+                index++;
+            }
+        }
+
+        public DataTable preencheGrid_estruturado()
+        {
+            DataTable oTable = new DataTable("Tweets");
+            
+            oTable.Columns.Add("chave", typeof(int));
+            oTable.Columns.Add("ID", typeof(long));
+            oTable.Columns.Add("CreatedAt", typeof(string));
+            oTable.Columns.Add("oUsuario.Name", typeof(string));
+            oTable.Columns.Add("FullText", typeof(string));
+            oTable.Columns.Add("oTexto.Hashtags", typeof(string));
+            oTable.Columns.Add("oTexto.PublishedTweetLength", typeof(int));
+            oTable.Columns.Add("oUsuario.Location", typeof(string));
+            oTable.Columns.Add("oUsuario.FollowersCount", typeof(int));
+            oTable.Columns.Add("oUsuario.FriendsCount", typeof(int));
+            oTable.Columns.Add("oUsuario.Verified", typeof(bool));
+            oTable.Columns.Add("oUsuario.ProfileImageUrl", typeof(string));
+            oTable.Columns.Add("Source", typeof(string));
+            oTable.Columns.Add("RetweetCount", typeof(int));
+            oTable.Columns.Add("Favorited", typeof(bool));
+            oTable.Columns.Add("FavoriteCount", typeof(int));
+            oTable.Columns.Add("Retweeted", typeof(bool));
+            oTable.Columns.Add("oTexto.Language", typeof(string));
+            oTable.Columns.Add("IsRetweet", typeof(bool));
+            oTable.Columns.Add("Url", typeof(string));
+            
+
+            if (arrTweetsEstruturado == null)
+                return oTable;
+            //melhorar isso aqui tbm, da pra fazer em poucas linhas, assim ta muito feio
+
+            oTable.Clear();
+
+            foreach (TweetsEstruturado oTweet in arrTweetsEstruturado)
+            {
+                oTable.Rows.Add(oTweet.all);
+            }
+
+            return oTable;
+        }
+
+
+
+
+
+
+
+
 
         [Serializable]
         public struct Tweets
@@ -292,223 +436,7 @@ namespace TwittPeek
         }
 
         public Tweets[] arrTweets;
-        public TweetsEstruturado[] arrTweetsEstruturado;
-        public string ultimoAberto;
-        public string dadosPath = Directory.GetParent(Directory.GetCurrentDirectory()).ToString() + "\\Dados";
-        public List<string> listaArquivos;
 
-
-        void atualizaListaArquivos()
-        {
-            listaArquivos = new List<string>();
-
-            char[] separador = { '.' };
-
-            var arquivos = new DirectoryInfo(dadosPath).GetFiles("*.bin");
-            foreach (var arquivo in arquivos)
-            {
-                listaArquivos.Add(arquivo.Name.Split(separador)[0]);
-            }
-        }
-
-        public mainTwittPeek()
-        {            
-            string line;
-
-            StreamReader file = new StreamReader(dadosPath + "\\" + "ultimo aberto.txt");
-
-            while ((line = file.ReadLine()) != null)
-                ultimoAberto = line;
-
-            file.Close();
-
-            atualizaListaArquivos();
-
-        }
-
-        public void load(string file)
-        {
-            var serializer = new BinaryFormatter();
-
-            if(file != null && file != "")
-                using (var stream = File.OpenRead(dadosPath + "\\" + file + ".bin"))
-                    arrTweets = (Tweets[])serializer.Deserialize(stream);
-        }
-
-        public void load_estruturado(string file)
-        {
-            var serializer = new BinaryFormatter();
-
-            if (file != null && file != "")
-                using (var stream = File.OpenRead(dadosPath + "\\" + file + ".bin"))
-                    arrTweetsEstruturado = (TweetsEstruturado[])serializer.Deserialize(stream);
-        }
-
-        public void save(string file)
-        {
-            var serializer = new BinaryFormatter();
-
-            //grava o arquivo novo
-            using (var stream = File.OpenWrite(dadosPath + "\\" + file + ".bin"))
-                serializer.Serialize(stream, arrTweets);
-            
-            //update do ultimo aberto
-            using (StreamWriter sw = File.CreateText(dadosPath + "\\" + "ultimo aberto.txt"))
-                sw.WriteLine(file);
-
-            atualizaListaArquivos();
-        }
-
-        public void save_estruturado(string file)
-        {
-            var serializer = new BinaryFormatter();
-
-            //grava o arquivo novo
-            using (var stream = File.OpenWrite(dadosPath + "\\" + file + ".bin"))
-                serializer.Serialize(stream, arrTweetsEstruturado);
-
-            //update do ultimo aberto
-            using (StreamWriter sw = File.CreateText(dadosPath + "\\" + "ultimo aberto.txt"))
-                sw.WriteLine(file);
-
-            atualizaListaArquivos();
-        }
-
-        public void add(string file)
-        {
-            //carrega o arquivo em um array o tamanho do novo array vai ser o carregado mais o atual, salva esse novo no mesmo arquivo de antes;
-
-            using (var fileStream = new FileStream(file, FileMode.Append))
-            {
-                var bFormatter = new BinaryFormatter();
-                bFormatter.Serialize(fileStream, arrTweets);
-            }
-        }
-
-        public void add_estruturado(string file)
-        {
-            //carrega o arquivo em um array o tamanho do novo array vai ser o carregado mais o atual, salva esse novo no mesmo arquivo de antes;
-
-            using (var fileStream = new FileStream(file, FileMode.Append))
-            {
-                var bFormatter = new BinaryFormatter();
-                bFormatter.Serialize(fileStream, arrTweetsEstruturado);
-            }
-        }
-        public void mAppendDados_estruturado(IList<Tweetinvi.Models.ITweet> tweets)
-        {
-            int index = arrTweetsEstruturado.Length;
-            Array.Resize<TweetsEstruturado>(ref arrTweetsEstruturado, tweets.Count + arrTweetsEstruturado.Length);
-
-
-            foreach (Tweetinvi.Models.ITweet tweet in tweets)
-            {
-                arrTweetsEstruturado[index].chave = index;
-                arrTweetsEstruturado[index].ID = tweet.Id;
-                arrTweetsEstruturado[index].CreatedAt = tweet.CreatedAt.ToString();
-                arrTweetsEstruturado[index].Source = tweet.Source;
-                arrTweetsEstruturado[index].RetweetCount = tweet.RetweetCount;
-                arrTweetsEstruturado[index].Favorited = tweet.Favorited;
-                arrTweetsEstruturado[index].FavoriteCount = tweet.FavoriteCount;
-                arrTweetsEstruturado[index].Retweeted = tweet.Retweeted;
-                arrTweetsEstruturado[index].IsRetweet = tweet.IsRetweet;
-                arrTweetsEstruturado[index].Url = tweet.Url;
-
-                arrTweetsEstruturado[index].oTexto = getTexto(tweet);
-                arrTweetsEstruturado[index].oUsuario = getUsuario(tweet);
-
-                index++;
-            }
-        }
-
-        public void mCarregaDados_estruturado(IList<Tweetinvi.Models.ITweet> tweets)
-        {
-            int index = 0;
-
-            arrTweetsEstruturado = new TweetsEstruturado[tweets.Count];
-
-            foreach (Tweetinvi.Models.ITweet tweet in tweets)
-            {
-                arrTweetsEstruturado[index].chave = index;
-                arrTweetsEstruturado[index].ID = tweet.Id;
-                arrTweetsEstruturado[index].CreatedAt = tweet.CreatedAt.ToString();
-                arrTweetsEstruturado[index].Source = tweet.Source;
-                arrTweetsEstruturado[index].RetweetCount = tweet.RetweetCount;
-                arrTweetsEstruturado[index].Favorited = tweet.Favorited;
-                arrTweetsEstruturado[index].FavoriteCount = tweet.FavoriteCount;
-                arrTweetsEstruturado[index].Retweeted = tweet.Retweeted;
-                arrTweetsEstruturado[index].IsRetweet = tweet.IsRetweet;
-                arrTweetsEstruturado[index].Url = tweet.Url;
-
-                arrTweetsEstruturado[index].oTexto = getTexto(tweet);
-                arrTweetsEstruturado[index].oUsuario = getUsuario(tweet);
-
-                index++;
-            }
-        }
-
-
-        public void mCarregaDados(IList<Tweetinvi.Models.ITweet> tweets)
-        {
-            int index = 0;
-            int iTemp = 0;
-            bool bTemp;
-
-            arrTweets = new Tweets[tweets.Count];
-
-            foreach (Tweetinvi.Models.ITweet tweet in tweets)
-            {
-                arrTweets[index].index = index;
-
-                arrTweets[index].ID = tweet.Id;
-
-                arrTweets[index].CreatedAt = tweet.CreatedAt.ToString();
-
-                arrTweets[index].Text = tweet.Text.ToString();
-
-                arrTweets[index].FullText = tweet.FullText.ToString();
-
-                arrTweets[index].Source = tweet.Source.ToString();
-
-                arrTweets[index].CreatedBy = tweet.CreatedBy.ToString();
-
-                Int32.TryParse(tweet.RetweetCount.ToString(), out iTemp);
-                arrTweets[index].RetweetCount = iTemp;
-
-                Boolean.TryParse(tweet.Favorited.ToString(), out bTemp);
-                arrTweets[index].Favorited = bTemp;
-
-                Int32.TryParse(tweet.FavoriteCount.ToString(), out iTemp);
-                arrTweets[index].FavoriteCount = iTemp;
-
-                Boolean.TryParse(tweet.Retweeted.ToString(), out bTemp);
-                arrTweets[index].Retweeted = bTemp;
-
-                arrTweets[index].Language = tweet.Language.ToString();
-
-                Int32.TryParse(tweet.PublishedTweetLength.ToString(), out iTemp);
-                arrTweets[index].PublishedTweetLength = iTemp;
-
-                arrTweets[index].TweetLocalCreationDate = tweet.TweetLocalCreationDate.ToString();
-
-                Boolean.TryParse(tweet.IsRetweet.ToString(), out bTemp);
-                arrTweets[index].IsRetweet = bTemp;
-
-                Boolean.TryParse(tweet.IsTweetPublished.ToString(), out bTemp);
-                arrTweets[index].IsTweetPublished = bTemp;
-
-                Boolean.TryParse(tweet.IsTweetDestroyed.ToString(), out bTemp);
-                arrTweets[index].IsTweetDestroyed = bTemp;
-
-                arrTweets[index].Url = tweet.Url.ToString();
-
-                index++;
-            }
-
-
-        }
-
-       
         public void mCarregaDados(int nQuantidade)
         {
             arrTweets = new Tweets[nQuantidade];
@@ -584,9 +512,40 @@ namespace TwittPeek
             }
 
 
-        }     
+        }
 
+        public void add(string file)
+        {
+            //carrega o arquivo em um array o tamanho do novo array vai ser o carregado mais o atual, salva esse novo no mesmo arquivo de antes;
 
+            using (var fileStream = new FileStream(file, FileMode.Append))
+            {
+                var bFormatter = new BinaryFormatter();
+                bFormatter.Serialize(fileStream, arrTweets);
+            }
+        }
+        public void save(string file)
+        {
+            var serializer = new BinaryFormatter();
+
+            //grava o arquivo novo
+            using (var stream = File.OpenWrite(dadosPath + "\\" + file + ".bin"))
+                serializer.Serialize(stream, arrTweets);
+
+            //update do ultimo aberto
+            using (StreamWriter sw = File.CreateText(dadosPath + "\\" + "ultimo aberto.txt"))
+                sw.WriteLine(file);
+
+            atualizaListaArquivos();
+        }
+        public void load(string file)
+        {
+            var serializer = new BinaryFormatter();
+
+            if (file != null && file != "")
+                using (var stream = File.OpenRead(dadosPath + "\\" + file + ".bin"))
+                    arrTweets = (Tweets[])serializer.Deserialize(stream);
+        }
         public DataTable preencheGrid()
         {
             DataTable oTable = new DataTable("Tweets");
@@ -622,46 +581,6 @@ namespace TwittPeek
             oTable.Clear();
 
             foreach (Tweets oTweet in arrTweets)
-            {
-                oTable.Rows.Add(oTweet.all);
-            }
-            
-            return oTable;
-        }
-
-        public DataTable preencheGrid_estruturado()
-        {
-            DataTable oTable = new DataTable("Tweets");
-            
-            oTable.Columns.Add("chave", typeof(int));
-            oTable.Columns.Add("ID", typeof(long));
-            oTable.Columns.Add("CreatedAt", typeof(string));
-            oTable.Columns.Add("oUsuario.Name", typeof(string));
-            oTable.Columns.Add("FullText", typeof(string));
-            oTable.Columns.Add("oTexto.Hashtags", typeof(string));
-            oTable.Columns.Add("oTexto.PublishedTweetLength", typeof(int));
-            oTable.Columns.Add("oUsuario.Location", typeof(string));
-            oTable.Columns.Add("oUsuario.FollowersCount", typeof(int));
-            oTable.Columns.Add("oUsuario.FriendsCount", typeof(int));
-            oTable.Columns.Add("oUsuario.Verified", typeof(bool));
-            oTable.Columns.Add("oUsuario.ProfileImageUrl", typeof(string));
-            oTable.Columns.Add("Source", typeof(string));
-            oTable.Columns.Add("RetweetCount", typeof(int));
-            oTable.Columns.Add("Favorited", typeof(bool));
-            oTable.Columns.Add("FavoriteCount", typeof(int));
-            oTable.Columns.Add("Retweeted", typeof(bool));
-            oTable.Columns.Add("oTexto.Language", typeof(string));
-            oTable.Columns.Add("IsRetweet", typeof(bool));
-            oTable.Columns.Add("Url", typeof(string));
-            
-
-            if (arrTweetsEstruturado == null)
-                return oTable;
-            //melhorar isso aqui tbm, da pra fazer em poucas linhas, assim ta muito feio
-
-            oTable.Clear();
-
-            foreach (TweetsEstruturado oTweet in arrTweetsEstruturado)
             {
                 oTable.Rows.Add(oTweet.all);
             }

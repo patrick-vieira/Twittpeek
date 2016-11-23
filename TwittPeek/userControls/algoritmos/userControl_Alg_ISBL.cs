@@ -85,8 +85,7 @@ namespace TwittPeek.userControls.algoritmos
             long oStart = DateTime.Now.Ticks;
 
             insercao_direta(oMainTwittpeek.arrTweets, "ID");
-
-            lblResultTime_ID.Text = (DateTime.Now.Ticks - oStart).ToString();
+            
 
             mMostraDados();
         }
