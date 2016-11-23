@@ -49,12 +49,12 @@ namespace TwittPeek
             oUserControl_SearchParameterizedTweet = new userControl_SearchParameterized(oClassMainTweetinvi, oMainTwittPeek);
             pnlMain.Controls.Add(oUserControl_SearchParameterizedTweet);
             oUserControl_SearchParameterizedTweet.Dock = DockStyle.Fill;
-            oUserControl_SearchParameterizedTweet.Hide();
+            oUserControl_SearchParameterizedTweet.Show();
 
             oUserControl_SendTwitt = new userControl_SendTwitt(oClassMainTweetinvi);
             pnlMain.Controls.Add(oUserControl_SendTwitt);
             oUserControl_SendTwitt.Dock = DockStyle.Fill;
-            oUserControl_SendTwitt.Show();
+            oUserControl_SendTwitt.Hide();
 
             oUserControl_TimeLine = new userControl_TimeLine(oClassMainTweetinvi);
             pnlMain.Controls.Add(oUserControl_TimeLine);

@@ -13,6 +13,7 @@ namespace TwittPeek
 {
     public class mainTwittPeek
     {
+        [Serializable]
         public struct Usuarios
         {
             public long Id { get; set; }
@@ -20,12 +21,10 @@ namespace TwittPeek
             public string ScreenName { get; set; }
             public string Description { get; set; }
             public string Location { get; set; }
-            public int FavouritesCount { get; set; }
             public int FriendsCount { get; set; }
             public int FollowersCount { get; set; }
             public string Language { get; set; }
             public string ProfileImageUrl { get; set; }
-            public string ProfileImageUrlFullSize { get; set; }
             public int StatusesCount { get; set; }
             public bool Verified { get; set; }
             public string Url { get; set; }
@@ -33,6 +32,7 @@ namespace TwittPeek
 
         }
 
+        [Serializable]
         public struct Texto
         {
             public long Id { get; set; } //tweet
@@ -43,26 +43,152 @@ namespace TwittPeek
             public int PublishedTweetLength { get; set; }
         }
 
+
+
+
+
         [Serializable]
-        public struct Tweets2
+        public struct TweetsEstruturado
         {
+            public int chave { get; set; }
+            public Texto oTexto { get; set; }
+            public Usuarios oUsuario { get; set; }
 
-            public long Id { get; set; }
-            public string IdStr { get; set; }
-            public long CreatedById { get; set; } //user
-            public long? InReplyToUserId { get; set; }
-            public long? InReplyToStatusId { get; set; }
-            public bool IsRetweet { get; set; }
-            public DateTime CreatedAt { get; set; }
-            public int FavoriteCount { get; set; }
-            public bool Favorited { get; set; }
-            public int PublishedTweetLength { get; set; }
-            public long? QuotedStatusId { get; set; }
-            public string Url { get; set; }
-            public long?[] UserMentions { get; set; }
+            public long ID { get; set; }
+            public string CreatedAt { get; set; }
             public string Source { get; set; }
+            public int RetweetCount { get; set; }
+            public bool Favorited { get; set; }
+            public int FavoriteCount { get; set; }
+            public bool Retweeted { get; set; }
+            public bool IsRetweet { get; set; }
+            public string Url { get; set; }
 
+            public object[] all
+            {
+                get
+                {
+                    return new object[]
+                    {
+                        chave,
+                        ID,
+                        CreatedAt,
+                        oUsuario.Name,
+                        oTexto.FullText,
+                        string.Join(",",oTexto.Hashtags),
+                        oTexto.PublishedTweetLength,
+                        oUsuario.Location,
+                        oUsuario.FollowersCount,
+                        oUsuario.FriendsCount,
+                        oUsuario.Verified,
+                        oUsuario.ProfileImageUrl,
+                        Source,
+                        RetweetCount,
+                        Favorited,
+                        FavoriteCount,
+                        Retweeted,
+                        oTexto.Language,
+                        IsRetweet,
+                        Url
+                    };
+                }
 
+            }
+
+            public object getField(string field_name)
+            {
+                object oReturn = null;
+
+                switch (field_name)
+                {
+                    case "chave":
+                        return chave;                        
+
+                    case "PublishedTweetLength":
+                        return oTexto.PublishedTweetLength;
+
+                    case "RetweetCount":
+                        return RetweetCount;
+
+                    case "FavoriteCount":
+                        return FavoriteCount;
+
+                    case "FriendsCount":
+                        return oUsuario.FriendsCount;
+
+                    case "FollowersCount":
+                        return oUsuario.FollowersCount;
+
+                    case "StatusesCount":
+                        return oUsuario.StatusesCount;
+
+                    default:
+                        return oReturn;
+
+                };
+
+            }
+        }
+
+        private TweetsEstruturado getTweet(Tweetinvi.Models.ITweet oTweet)
+        {
+            TweetsEstruturado oTweet2 = new TweetsEstruturado();
+
+            oTweet2.ID = oTweet.Id;
+            oTweet2.CreatedAt = oTweet.CreatedAt.ToString();
+            oTweet2.Source = oTweet.Source;
+            oTweet2.RetweetCount = oTweet.RetweetCount;
+            oTweet2.Favorited = oTweet.Favorited;
+            oTweet2.FavoriteCount = oTweet.FavoriteCount;
+            oTweet2.Retweeted = oTweet.Retweeted;
+            oTweet2.IsRetweet = oTweet.IsRetweet;
+            oTweet2.Url = oTweet.Url;
+
+            oTweet2.oTexto = getTexto(oTweet);
+            oTweet2.oUsuario = getUsuario(oTweet);
+
+            return oTweet2;
+        }
+
+        private Texto getTexto(Tweetinvi.Models.ITweet oTweet)
+        {
+            Texto oTexto = new Texto();
+            oTexto.Id = oTweet.Id;
+            oTexto.CreatedById = oTweet.CreatedBy.Id;  
+            oTexto.FullText = oTweet.FullText;
+
+            oTexto.Hashtags = new string[oTweet.Hashtags.Count];
+            int hash_count = 0;
+            foreach (Tweetinvi.Logic.TwitterEntities.HashtagEntity hashtag in oTweet.Hashtags)
+            {
+                oTexto.Hashtags[hash_count] = hashtag.Text;
+                hash_count++;
+            }
+            oTexto.Language = oTweet.Language.ToString();
+            oTexto.PublishedTweetLength = oTweet.PublishedTweetLength;
+
+            return oTexto;
+        }
+
+        private Usuarios getUsuario(Tweetinvi.Models.ITweet oTweet)
+        {
+            Usuarios oUsuario = new Usuarios();
+
+            oUsuario.Id = oTweet.CreatedBy.Id;
+            oUsuario.Name = oTweet.CreatedBy.Name;
+            oUsuario.ScreenName = oTweet.CreatedBy.ScreenName;
+            oUsuario.Description = oTweet.CreatedBy.Description;
+            oUsuario.Location = oTweet.CreatedBy.Location.ToString();
+            oUsuario.FriendsCount = oTweet.CreatedBy.FriendsCount;
+            oUsuario.FollowersCount = oTweet.CreatedBy.FollowersCount;
+            oUsuario.Language = oTweet.CreatedBy.Language.ToString();
+            oUsuario.ProfileImageUrl = oTweet.CreatedBy.ProfileImageUrl;
+            oUsuario.StatusesCount = oTweet.CreatedBy.StatusesCount;
+            oUsuario.Verified = oTweet.CreatedBy.Verified;
+            oUsuario.Url = oTweet.CreatedBy.Url;
+            oUsuario.CreatedAt = oTweet.CreatedBy.CreatedAt;
+            
+            return oUsuario;
         }
 
         [Serializable]
@@ -166,7 +292,7 @@ namespace TwittPeek
         }
 
         public Tweets[] arrTweets;
-        public Tweets2[] arrTweets2;
+        public TweetsEstruturado[] arrTweetsEstruturado;
         public string ultimoAberto;
         public string dadosPath = Directory.GetParent(Directory.GetCurrentDirectory()).ToString() + "\\Dados";
         public List<string> listaArquivos;
@@ -209,6 +335,15 @@ namespace TwittPeek
                     arrTweets = (Tweets[])serializer.Deserialize(stream);
         }
 
+        public void load_estruturado(string file)
+        {
+            var serializer = new BinaryFormatter();
+
+            if (file != null && file != "")
+                using (var stream = File.OpenRead(dadosPath + "\\" + file + ".bin"))
+                    arrTweetsEstruturado = (TweetsEstruturado[])serializer.Deserialize(stream);
+        }
+
         public void save(string file)
         {
             var serializer = new BinaryFormatter();
@@ -217,6 +352,21 @@ namespace TwittPeek
             using (var stream = File.OpenWrite(dadosPath + "\\" + file + ".bin"))
                 serializer.Serialize(stream, arrTweets);
             
+            //update do ultimo aberto
+            using (StreamWriter sw = File.CreateText(dadosPath + "\\" + "ultimo aberto.txt"))
+                sw.WriteLine(file);
+
+            atualizaListaArquivos();
+        }
+
+        public void save_estruturado(string file)
+        {
+            var serializer = new BinaryFormatter();
+
+            //grava o arquivo novo
+            using (var stream = File.OpenWrite(dadosPath + "\\" + file + ".bin"))
+                serializer.Serialize(stream, arrTweetsEstruturado);
+
             //update do ultimo aberto
             using (StreamWriter sw = File.CreateText(dadosPath + "\\" + "ultimo aberto.txt"))
                 sw.WriteLine(file);
@@ -234,6 +384,69 @@ namespace TwittPeek
                 bFormatter.Serialize(fileStream, arrTweets);
             }
         }
+
+        public void add_estruturado(string file)
+        {
+            //carrega o arquivo em um array o tamanho do novo array vai ser o carregado mais o atual, salva esse novo no mesmo arquivo de antes;
+
+            using (var fileStream = new FileStream(file, FileMode.Append))
+            {
+                var bFormatter = new BinaryFormatter();
+                bFormatter.Serialize(fileStream, arrTweetsEstruturado);
+            }
+        }
+        public void mAppendDados_estruturado(IList<Tweetinvi.Models.ITweet> tweets)
+        {
+            int index = arrTweetsEstruturado.Length;
+            Array.Resize<TweetsEstruturado>(ref arrTweetsEstruturado, tweets.Count + arrTweetsEstruturado.Length);
+
+
+            foreach (Tweetinvi.Models.ITweet tweet in tweets)
+            {
+                arrTweetsEstruturado[index].chave = index;
+                arrTweetsEstruturado[index].ID = tweet.Id;
+                arrTweetsEstruturado[index].CreatedAt = tweet.CreatedAt.ToString();
+                arrTweetsEstruturado[index].Source = tweet.Source;
+                arrTweetsEstruturado[index].RetweetCount = tweet.RetweetCount;
+                arrTweetsEstruturado[index].Favorited = tweet.Favorited;
+                arrTweetsEstruturado[index].FavoriteCount = tweet.FavoriteCount;
+                arrTweetsEstruturado[index].Retweeted = tweet.Retweeted;
+                arrTweetsEstruturado[index].IsRetweet = tweet.IsRetweet;
+                arrTweetsEstruturado[index].Url = tweet.Url;
+
+                arrTweetsEstruturado[index].oTexto = getTexto(tweet);
+                arrTweetsEstruturado[index].oUsuario = getUsuario(tweet);
+
+                index++;
+            }
+        }
+
+        public void mCarregaDados_estruturado(IList<Tweetinvi.Models.ITweet> tweets)
+        {
+            int index = 0;
+
+            arrTweetsEstruturado = new TweetsEstruturado[tweets.Count];
+
+            foreach (Tweetinvi.Models.ITweet tweet in tweets)
+            {
+                arrTweetsEstruturado[index].chave = index;
+                arrTweetsEstruturado[index].ID = tweet.Id;
+                arrTweetsEstruturado[index].CreatedAt = tweet.CreatedAt.ToString();
+                arrTweetsEstruturado[index].Source = tweet.Source;
+                arrTweetsEstruturado[index].RetweetCount = tweet.RetweetCount;
+                arrTweetsEstruturado[index].Favorited = tweet.Favorited;
+                arrTweetsEstruturado[index].FavoriteCount = tweet.FavoriteCount;
+                arrTweetsEstruturado[index].Retweeted = tweet.Retweeted;
+                arrTweetsEstruturado[index].IsRetweet = tweet.IsRetweet;
+                arrTweetsEstruturado[index].Url = tweet.Url;
+
+                arrTweetsEstruturado[index].oTexto = getTexto(tweet);
+                arrTweetsEstruturado[index].oUsuario = getUsuario(tweet);
+
+                index++;
+            }
+        }
+
 
         public void mCarregaDados(IList<Tweetinvi.Models.ITweet> tweets)
         {
@@ -295,6 +508,7 @@ namespace TwittPeek
 
         }
 
+       
         public void mCarregaDados(int nQuantidade)
         {
             arrTweets = new Tweets[nQuantidade];
@@ -415,6 +629,44 @@ namespace TwittPeek
             return oTable;
         }
 
+        public DataTable preencheGrid_estruturado()
+        {
+            DataTable oTable = new DataTable("Tweets");
+            
+            oTable.Columns.Add("chave", typeof(int));
+            oTable.Columns.Add("ID", typeof(long));
+            oTable.Columns.Add("CreatedAt", typeof(string));
+            oTable.Columns.Add("oUsuario.Name", typeof(string));
+            oTable.Columns.Add("FullText", typeof(string));
+            oTable.Columns.Add("oTexto.Hashtags", typeof(string));
+            oTable.Columns.Add("oTexto.PublishedTweetLength", typeof(int));
+            oTable.Columns.Add("oUsuario.Location", typeof(string));
+            oTable.Columns.Add("oUsuario.FollowersCount", typeof(int));
+            oTable.Columns.Add("oUsuario.FriendsCount", typeof(int));
+            oTable.Columns.Add("oUsuario.Verified", typeof(bool));
+            oTable.Columns.Add("oUsuario.ProfileImageUrl", typeof(string));
+            oTable.Columns.Add("Source", typeof(string));
+            oTable.Columns.Add("RetweetCount", typeof(int));
+            oTable.Columns.Add("Favorited", typeof(bool));
+            oTable.Columns.Add("FavoriteCount", typeof(int));
+            oTable.Columns.Add("Retweeted", typeof(bool));
+            oTable.Columns.Add("oTexto.Language", typeof(string));
+            oTable.Columns.Add("IsRetweet", typeof(bool));
+            oTable.Columns.Add("Url", typeof(string));
+            
 
+            if (arrTweetsEstruturado == null)
+                return oTable;
+            //melhorar isso aqui tbm, da pra fazer em poucas linhas, assim ta muito feio
+
+            oTable.Clear();
+
+            foreach (TweetsEstruturado oTweet in arrTweetsEstruturado)
+            {
+                oTable.Rows.Add(oTweet.all);
+            }
+
+            return oTable;
+        }
     }
 }

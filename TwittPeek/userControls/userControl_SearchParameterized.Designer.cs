@@ -64,7 +64,6 @@
             this.btnLoad = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.cbFiles = new System.Windows.Forms.ComboBox();
             this.txtSaveName = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
@@ -74,6 +73,11 @@
             this.rbCrescente = new System.Windows.Forms.RadioButton();
             this.btnArrange = new System.Windows.Forms.Button();
             this.cbCampos = new System.Windows.Forms.ComboBox();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.btnFiltrar = new System.Windows.Forms.Button();
+            this.cbCamposFiltro = new System.Windows.Forms.ComboBox();
+            this.txtFiltro = new System.Windows.Forms.TextBox();
+            this.cbFiltro = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSearchTwieet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -87,6 +91,7 @@
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.tabPage7.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridViewSearchTwieet
@@ -95,7 +100,7 @@
             this.dataGridViewSearchTwieet.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewSearchTwieet.Location = new System.Drawing.Point(0, 0);
             this.dataGridViewSearchTwieet.Name = "dataGridViewSearchTwieet";
-            this.dataGridViewSearchTwieet.Size = new System.Drawing.Size(496, 280);
+            this.dataGridViewSearchTwieet.Size = new System.Drawing.Size(683, 280);
             this.dataGridViewSearchTwieet.TabIndex = 0;
             // 
             // splitContainer1
@@ -112,7 +117,7 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.dataGridViewSearchTwieet);
-            this.splitContainer1.Size = new System.Drawing.Size(496, 406);
+            this.splitContainer1.Size = new System.Drawing.Size(683, 406);
             this.splitContainer1.SplitterDistance = 122;
             this.splitContainer1.TabIndex = 1;
             // 
@@ -124,10 +129,11 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage6);
+            this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Location = new System.Drawing.Point(3, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(493, 117);
+            this.tabControl1.Size = new System.Drawing.Size(677, 117);
             this.tabControl1.TabIndex = 5;
             // 
             // tabPage1
@@ -138,7 +144,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(485, 91);
+            this.tabPage1.Size = new System.Drawing.Size(669, 91);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Search for";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -161,7 +167,7 @@
             this.txtKeyWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtKeyWord.Location = new System.Drawing.Point(6, 6);
             this.txtKeyWord.Name = "txtKeyWord";
-            this.txtKeyWord.Size = new System.Drawing.Size(473, 31);
+            this.txtKeyWord.Size = new System.Drawing.Size(657, 31);
             this.txtKeyWord.TabIndex = 5;
             this.txtKeyWord.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -187,7 +193,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(485, 91);
+            this.tabPage2.Size = new System.Drawing.Size(669, 91);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Location";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -251,7 +257,7 @@
             this.tabPage4.Controls.Add(this.label11);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(485, 91);
+            this.tabPage4.Size = new System.Drawing.Size(669, 91);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Date";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -306,7 +312,7 @@
             this.tabPage3.Controls.Add(this.label6);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(485, 91);
+            this.tabPage3.Size = new System.Drawing.Size(669, 91);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Other Setings";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -413,23 +419,22 @@
             this.tabPage5.Controls.Add(this.btnLoad);
             this.tabPage5.Controls.Add(this.label13);
             this.tabPage5.Controls.Add(this.label12);
-            this.tabPage5.Controls.Add(this.btnAdd);
             this.tabPage5.Controls.Add(this.cbFiles);
             this.tabPage5.Controls.Add(this.txtSaveName);
             this.tabPage5.Controls.Add(this.btnSave);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(485, 91);
+            this.tabPage5.Size = new System.Drawing.Size(669, 91);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Save";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // btnLoad
             // 
-            this.btnLoad.Location = new System.Drawing.Point(302, 54);
+            this.btnLoad.Location = new System.Drawing.Point(207, 54);
             this.btnLoad.Name = "btnLoad";
-            this.btnLoad.Size = new System.Drawing.Size(158, 23);
+            this.btnLoad.Size = new System.Drawing.Size(253, 23);
             this.btnLoad.TabIndex = 6;
             this.btnLoad.Text = "Load";
             this.btnLoad.UseVisualStyleBackColor = true;
@@ -438,11 +443,11 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(151, 11);
+            this.label13.Location = new System.Drawing.Point(204, 11);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(71, 13);
+            this.label13.Size = new System.Drawing.Size(50, 13);
             this.label13.TabIndex = 5;
-            this.label13.Text = "Adicionar em:";
+            this.label13.Text = "Carregar:";
             // 
             // label12
             // 
@@ -453,36 +458,26 @@
             this.label12.TabIndex = 4;
             this.label12.Text = "Salvar novo";
             // 
-            // btnAdd
-            // 
-            this.btnAdd.Location = new System.Drawing.Point(149, 54);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(147, 23);
-            this.btnAdd.TabIndex = 3;
-            this.btnAdd.Text = "ADD";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
             // cbFiles
             // 
             this.cbFiles.FormattingEnabled = true;
-            this.cbFiles.Location = new System.Drawing.Point(149, 27);
+            this.cbFiles.Location = new System.Drawing.Point(207, 27);
             this.cbFiles.Name = "cbFiles";
-            this.cbFiles.Size = new System.Drawing.Size(311, 21);
+            this.cbFiles.Size = new System.Drawing.Size(253, 21);
             this.cbFiles.TabIndex = 2;
             // 
             // txtSaveName
             // 
             this.txtSaveName.Location = new System.Drawing.Point(22, 27);
             this.txtSaveName.Name = "txtSaveName";
-            this.txtSaveName.Size = new System.Drawing.Size(100, 20);
+            this.txtSaveName.Size = new System.Drawing.Size(179, 20);
             this.txtSaveName.TabIndex = 1;
             // 
             // btnSave
             // 
             this.btnSave.Location = new System.Drawing.Point(22, 53);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(100, 23);
+            this.btnSave.Size = new System.Drawing.Size(179, 23);
             this.btnSave.TabIndex = 0;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -496,7 +491,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(485, 91);
+            this.tabPage6.Size = new System.Drawing.Size(669, 91);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Arrange";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -552,13 +547,87 @@
             this.cbCampos.Size = new System.Drawing.Size(169, 21);
             this.cbCampos.TabIndex = 0;
             // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.cbFiltro);
+            this.tabPage7.Controls.Add(this.txtFiltro);
+            this.tabPage7.Controls.Add(this.btnFiltrar);
+            this.tabPage7.Controls.Add(this.cbCamposFiltro);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(669, 91);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "Filtro";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // btnFiltrar
+            // 
+            this.btnFiltrar.Location = new System.Drawing.Point(27, 52);
+            this.btnFiltrar.Name = "btnFiltrar";
+            this.btnFiltrar.Size = new System.Drawing.Size(561, 23);
+            this.btnFiltrar.TabIndex = 3;
+            this.btnFiltrar.Text = "Filtrar";
+            this.btnFiltrar.UseVisualStyleBackColor = true;
+            this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
+            // 
+            // cbCamposFiltro
+            // 
+            this.cbCamposFiltro.FormattingEnabled = true;
+            this.cbCamposFiltro.Items.AddRange(new object[] {
+            "chave",
+            "ID",
+            "CreatedAt-string",
+            "oUsuario.Name-string",
+            "FullText-string",
+            "oTexto.Hashtags-string",
+            "oTexto.PublishedTweetLength",
+            "oUsuario.Location-string",
+            "oUsuario.FollowersCount",
+            "oUsuario.FriendsCount",
+            "oUsuario.ProfileImageUrl-string",
+            "Source-string",
+            "RetweetCount",
+            "FavoriteCount",
+            "oTexto.Language-string",
+            "Url-string"});
+            this.cbCamposFiltro.Location = new System.Drawing.Point(27, 25);
+            this.cbCamposFiltro.Name = "cbCamposFiltro";
+            this.cbCamposFiltro.Size = new System.Drawing.Size(169, 21);
+            this.cbCamposFiltro.TabIndex = 2;
+            // 
+            // txtFiltro
+            // 
+            this.txtFiltro.Location = new System.Drawing.Point(353, 25);
+            this.txtFiltro.Name = "txtFiltro";
+            this.txtFiltro.Size = new System.Drawing.Size(235, 20);
+            this.txtFiltro.TabIndex = 4;
+            // 
+            // cbFiltro
+            // 
+            this.cbFiltro.FormattingEnabled = true;
+            this.cbFiltro.Items.AddRange(new object[] {
+            "=",
+            ">",
+            ">=",
+            "<",
+            "<=",
+            "começa com *",
+            "contem *",
+            "não contem *"});
+            this.cbFiltro.Location = new System.Drawing.Point(221, 24);
+            this.cbFiltro.Name = "cbFiltro";
+            this.cbFiltro.Size = new System.Drawing.Size(93, 21);
+            this.cbFiltro.TabIndex = 5;
+            this.cbFiltro.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // userControl_SearchParameterized
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.splitContainer1);
             this.Name = "userControl_SearchParameterized";
-            this.Size = new System.Drawing.Size(496, 406);
+            this.Size = new System.Drawing.Size(683, 406);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSearchTwieet)).EndInit();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
@@ -578,6 +647,8 @@
             this.tabPage6.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -618,7 +689,6 @@
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.ComboBox cbFiles;
         private System.Windows.Forms.TextBox txtSaveName;
         private System.Windows.Forms.Button btnSave;
@@ -630,5 +700,10 @@
         private System.Windows.Forms.Button btnArrange;
         private System.Windows.Forms.ComboBox cbCampos;
         private System.Windows.Forms.Button btnAppendSearch;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.TextBox txtFiltro;
+        private System.Windows.Forms.Button btnFiltrar;
+        private System.Windows.Forms.ComboBox cbCamposFiltro;
+        private System.Windows.Forms.ComboBox cbFiltro;
     }
 }
