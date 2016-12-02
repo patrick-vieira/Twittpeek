@@ -181,21 +181,32 @@ namespace TwittPeek
         }
 
         public TweetsEstruturado[] arrTweetsEstruturado;
-        public string ultimoAberto;
+        public string ultimoAberto
+        {
+            get
+            {
+                string line;
+                string temp = "";
+                StreamReader file = new StreamReader(dadosPath + "\\" + "ultimo aberto.txt");
+                while ((line = file.ReadLine()) != null)
+                    temp = line;
+                file.Close();
+
+                return temp;
+            }
+            set
+            {
+                var serializer = new BinaryFormatter();
+                using (StreamWriter sw = File.CreateText(dadosPath + "\\" + "ultimo aberto.txt"))
+                    sw.WriteLine(value);
+                
+            }
+        }
         public string dadosPath = Directory.GetParent(Directory.GetCurrentDirectory()).ToString() + "\\Dados";
         public List<string> listaArquivos;
 
         public mainTwittPeek()
-        {            
-            string line;
-
-            StreamReader file = new StreamReader(dadosPath + "\\" + "ultimo aberto.txt");
-
-            while ((line = file.ReadLine()) != null)
-                ultimoAberto = line;
-
-            file.Close();
-
+        {           
             atualizaListaArquivos();
 
         }        
@@ -218,8 +229,7 @@ namespace TwittPeek
                 serializer.Serialize(stream, arrTweetsEstruturado);
 
             //update do ultimo aberto
-            using (StreamWriter sw = File.CreateText(dadosPath + "\\" + "ultimo aberto.txt"))
-                sw.WriteLine(file);
+            ultimoAberto = file;
 
             atualizaListaArquivos();
         }

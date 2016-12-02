@@ -109,6 +109,7 @@ namespace TwittPeek.userControls
         private void btnSave_Click(object sender, EventArgs e)
         {
             //oMainTwittPeek.save(txtSaveName.Text);
+            oMainTwittPeek.ultimoAberto = txtSaveName.Text;
             oMainTwittPeek.save_estruturado(txtSaveName.Text);
             carregaComboBox();
         }
@@ -122,6 +123,7 @@ namespace TwittPeek.userControls
         {
             //oMainTwittPeek.load(cbFiles.Text);
             oMainTwittPeek.load_estruturado(cbFiles.Text);
+            oMainTwittPeek.ultimoAberto = cbFiles.Text;
             dataGridViewSearchTwieet.ClearSelection();
             dataGridViewSearchTwieet.DataSource = oMainTwittPeek.preencheGrid_estruturado();
 
@@ -368,35 +370,7 @@ namespace TwittPeek.userControls
                 else
                     (dataGridViewSearchTwieet.DataSource as DataTable).DefaultView.RowFilter = string.Format("{0} {1} {2}", campo, cbFiltro.Text, txtFiltro.Text);
             }
-
-
-
-            /*=
->
->=
-<
-<=
-começa com*
-contem*
-não contem *
-
-chave
-ID
-CreatedAt-string
-oUsuario.Name-string
-FullText-string
-oTexto.Hashtags-string
-oTexto.PublishedTweetLength
-oUsuario.Location-string
-oUsuario.FollowersCount
-oUsuario.FriendsCount
-oUsuario.ProfileImageUrl-string
-Source-string
-RetweetCount
-FavoriteCount
-oTexto.Language-string
-Url-string
-**/
+                      
 
         }
 
